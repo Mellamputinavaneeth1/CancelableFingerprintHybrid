@@ -1,7 +1,7 @@
-# Byte-compiled / optimized / DLL files
+﻿# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*$py.class
+*.class
 
 # Pytest / coverage caches
 .pytest_cache/
@@ -12,6 +12,14 @@ htmlcov/
 *.db
 *.tmp
 test_creds.db
+
+# Scratch and debugging scripts
+scratch_*.py
+scratch/
+
+# Runtime and feature extraction caches
+artifacts/socofing/cache/
+*.cache
 
 # Large release distribution archives (> 100 MB exceeds GitHub push limits)
 *.zip
