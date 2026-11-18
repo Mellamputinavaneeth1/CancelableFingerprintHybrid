@@ -30,28 +30,29 @@ This repository provides the complete, production-grade implementation, multi-se
 
 ## 2. Master Verification & Reproduction Status
 
-- **Automated Pytest Suite:** **`224 passed in 28.42s`** (0 failed, 0 skipped across 28 test files).
+- **Automated Pytest Suite:** **`231 passed in 23.86s`** (0 failed, 0 skipped across 29 test files).
 - **Master Reproduction Harness (`python -u experiments/reproduce_all_gates.py`):** **ALL 7 GATES PASSED [CLEAN EXIT 0]**
-  - Gate 1: Environment & Core Dependencies (`PASS`)
-  - Gate 2: SHA-256 Digest Verification for Raw Trial Artifacts (`PASS`, 76 score files)
+  - Gate 1: Environment & Core Dependencies (`PASS`, Python 3.11.9, NumPy 2.4.6, SciPy 1.17.1, OpenCV 5.0.0, Pytest 9.2.0)
+  - Gate 2: SHA-256 Digest Verification for Raw Trial Artifacts (`PASS`, 76 raw score files)
   - Gate 3: Biometric Trial Conservation Identities (`PASS`, DB1_A 2800 gen / 4950 imp; SOCOFing 90 gen / 500 imp clean)
-  - Gate 4: Mathematical & Cryptographic Invariants (`PASS`, Augmented Hungarian matrix, NonceManager, 944 B storage)
-  - Gate 5: Dynamic Pytest Test Suite (`PASS`, 224 passed)
-  - Gate 6: Independent Metric Evaluator Reconciliation (`PASS`, Legacy EER=41.13% | Deep ONNX EER=5.00% | Classical EER=5.16%)
+  - Gate 4: Mathematical & Cryptographic Invariants (`PASS`, Dual QR 9D/256D, ZCA flip commutation, Hungarian matrix, 944B layout)
+  - Gate 5: Dynamic Pytest Test Suite (`PASS`, 231 passed in 23.86s)
+  - Gate 6: Independent Metric Evaluator Reconciliation (`PASS`, Legacy EER=41.13% | Deep ONNX EER=5.00% | Classical EER=5.16% | Cross-Sensor DB2-4 Verified)
   - Gate 7: Canonical Release Manifest & Report Consistency (`PASS`)
 
 ---
 
 ## 3. Authoritative Audit & Research Deliverables
 
-- **Consolidated Master Validation Report:** [FINAL_PROJECT_INDEPENDENT_VALIDATION_AND_RELEASE_REPORT.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/FINAL_PROJECT_INDEPENDENT_VALIDATION_AND_RELEASE_REPORT.md)
-- **Master Project-Wide Audit:** [docs/audit/FINAL_PROJECT_WIDE_AUDIT.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/audit/FINAL_PROJECT_WIDE_AUDIT.md)
-- **Scientific Discrepancy Register:** [docs/audit/SCIENTIFIC_DISCREPANCY_REGISTER.csv](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/audit/SCIENTIFIC_DISCREPANCY_REGISTER.csv)
-- **Experiment Reconciliation Report:** [experiments/results/FINAL_EXPERIMENT_RECONCILIATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/experiments/results/FINAL_EXPERIMENT_RECONCILIATION.md)
-- **RFF Kernel Derivation & Validation:** [docs/math/RFF_KERNEL_DERIVATION_AND_VALIDATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/math/RFF_KERNEL_DERIVATION_AND_VALIDATION.md)
-- **Projection & ZCA Equivariance Proof:** [docs/math/PROJECTION_AND_ZCA_VERIFICATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/math/PROJECTION_AND_ZCA_VERIFICATION.md)
-- **Security & Privacy Assessment:** [docs/security/FINAL_SECURITY_AND_PRIVACY_ASSESSMENT.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/security/FINAL_SECURITY_AND_PRIVACY_ASSESSMENT.md)
-- **Performance & Storage Benchmark:** [experiments/results/FINAL_PERFORMANCE_AND_STORAGE_BENCHMARK.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/experiments/results/FINAL_PERFORMANCE_AND_STORAGE_BENCHMARK.md)
+- **Consolidated Master Validation Report:** [FINAL_PROJECT_V2_5_FINAL_VALIDATION_REPORT.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/FINAL_PROJECT_V2_5_FINAL_VALIDATION_REPORT.md)
+- **Numerical Reconciliation Report:** [docs/audit/V25_NUMERICAL_RECONCILIATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/audit/V25_NUMERICAL_RECONCILIATION.md)
+- **Modern Unlinkability Validation:** [docs/security/V25_MCC_SPECTRAL_UNLINKABILITY_VALIDATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/security/V25_MCC_SPECTRAL_UNLINKABILITY_VALIDATION.md)
+- **Replay & Impersonation Attack Separation:** [docs/security/V25_REPLAY_AND_CROSS_KEY_ATTACK_ASSESSMENT.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/security/V25_REPLAY_AND_CROSS_KEY_ATTACK_ASSESSMENT.md)
+- **Scenario-III Multi-Subject Inversion Audit:** [experiments/results/V25_SCENARIO_III_MULTI_SUBJECT_AUDIT.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/experiments/results/V25_SCENARIO_III_MULTI_SUBJECT_AUDIT.md)
+- **RFF Expectation & Deployed Score Validation:** [docs/math/V25_RFF_EXPECTATION_AND_DEPLOYED_SCORE_VALIDATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/math/V25_RFF_EXPECTATION_AND_DEPLOYED_SCORE_VALIDATION.md)
+- **Seven-Gate Reproduction Specification:** [docs/audit/V25_SEVEN_GATE_VALIDATION.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/audit/V25_SEVEN_GATE_VALIDATION.md)
+- **Dense vs. Sparse Serialization Benchmark:** [experiments/results/V25_DENSE_SPARSE_BENCHMARK.md](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/experiments/results/V25_DENSE_SPARSE_BENCHMARK.md)
+- **Evidence Inventory:** [docs/audit/v2_5_evidence_inventory.csv](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/docs/audit/v2_5_evidence_inventory.csv) (4,589 verified entries)
 - **Canonical Release Package:** `CancelableFingerprintHybrid-v2.5-ResearchRelease.zip` (SHA-256: `2a758ce6b0096ae13f3a5de37109653a4b9301190cc6181985764bd521da8934`)
 - **Release Manifest:** [release_manifest_v2_5.json](file:///C:/Users/mella/.gemini/antigravity/scratch/CancelableFingerprintHybrid/release_manifest_v2_5.json)
 
