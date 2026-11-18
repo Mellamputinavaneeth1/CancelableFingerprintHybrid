@@ -1,0 +1,199 @@
+{
+  "subset": "DB1_A",
+  "is_pilot_set_b": false,
+  "sensor_provenance": {
+    "sensor_name": "TouchView II",
+    "vendor": "Identix",
+    "technology": "Optical (Total Internal Reflection prism)",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      388,
+      374
+    ],
+    "cross_sensor_scope_notice": "Evaluated on DB1_A (Identix TouchView II optical TIR prism). DB1_A represents optical prism sensors and does not substitute for cross-sensor evaluation across DB2 (CMOS optical), DB3 (capacitive solid-state), or DB4 (synthetic SFinGe)."
+  },
+  "descriptor_dim": 256,
+  "topology": "mcc_spectral",
+  "engine": "classical",
+  "k_nn": null,
+  "dpi": 500.0,
+  "total_images": 800,
+  "file_read_error_count": 0,
+  "capture_device_fta": "N/A (offline database)",
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 2800,
+  "num_impostor": 4950,
+  "avg_triangles_per_fingerprint": 56.79875,
+  "template_storage": {
+    "num_triangles": 57,
+    "in_dim": 256,
+    "out_dim": 192,
+    "descriptor_bytes": 1368,
+    "weights_bytes": 114,
+    "header_bytes": 48,
+    "matrix_uncompressed_bytes": 3249,
+    "matrix_full_2bit_packed_bytes": 813,
+    "matrix_symmetric_2bit_packed_bytes": 399,
+    "total_credential_descriptor_only_bytes": 1530,
+    "total_credential_uncompressed_bytes": 4779,
+    "total_credential_full_2bit_bytes": 2343,
+    "total_credential_packed_bytes": 58448,
+    "baseline_unprotected_bytes": 58644,
+    "compression_ratio_descriptor_raw": 0.9765625,
+    "true_compression_ratio_descriptor_only": 0.9739103744628607,
+    "true_compression_ratio_packed": 0.9671066093718027,
+    "true_compression_ratio_uncompressed": 0.9185082872928176,
+    "edge_token_packed_bytes": 56519
+  },
+  "dataset_storage_statistics": {
+    "num_enrolled_templates": 800,
+    "triangles": {
+      "mean": 56.79875,
+      "std": 17.50180700492095,
+      "min": 9,
+      "max": 80
+    },
+    "packed_credential_bytes": {
+      "mean": 1959.52375,
+      "std": 692.3122629536022,
+      "min": 291,
+      "max": 2918,
+      "total_dataset_bytes": 1567619
+    },
+    "descriptor_only_bytes": {
+      "mean": 1524.7675,
+      "std": 455.04698212794466,
+      "min": 282,
+      "max": 2128,
+      "total_dataset_bytes": 1219814
+    },
+    "dense_uncompressed_bytes": {
+      "mean": 5057.17875,
+      "std": 2382.4342733428,
+      "min": 363,
+      "max": 8528,
+      "total_dataset_bytes": 4045743
+    },
+    "baseline_unprotected_bytes": {
+      "mean": 58437.115,
+      "std": 17991.857601058735,
+      "min": 9300,
+      "max": 82288,
+      "total_dataset_bytes": 46749692
+    },
+    "aggregate_serialized_compression": {
+      "packed_vs_baseline": 0.9664678218628692,
+      "descriptor_only_vs_baseline": 0.9739075500219339,
+      "dense_vs_baseline": 0.9134594726313918
+    }
+  },
+  "matching_throughput_comp_per_sec": 23.817575700472723,
+  "protected": {
+    "eer": 0.05178043168620577,
+    "auc": 0.9782517316017316,
+    "eer_threshold": 0.019547753614258558,
+    "tar_at_1pct_far": 0.9325,
+    "tar_at_01pct_far": 0.8903571428571428,
+    "clustered_eer_95ci": [
+      0.045296887176916156,
+      0.09353433291291985
+    ],
+    "clustered_auc_95ci": [
+      0.9680749767333644,
+      0.9870284620991253
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.032883986928104576,
+      0.06609547123623011
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.03321428571428572,
+      0.07178571428571429
+    ],
+    "genuine_score_mean": 0.09954428672790527,
+    "genuine_score_std": 0.06538312137126923,
+    "impostor_score_mean": 0.010618507862091064,
+    "impostor_score_std": 0.005369743797928095,
+    "frozen_set_b_threshold_evaluation": {
+      "calibrated_from_subset": "DB1_B",
+      "frozen_operating_threshold": 0.020817,
+      "tar_at_frozen_threshold": 0.9446428571428571,
+      "far_at_frozen_threshold": 0.030707070707070707,
+      "frr_at_frozen_threshold": 0.055357142857142855,
+      "confusion_at_frozen_threshold": {
+        "tp": 2645,
+        "fn": 155,
+        "fp": 152,
+        "tn": 4798
+      },
+      "operating_points": {
+        "at_set_b_eer": {
+          "threshold": 0.020817,
+          "confusion_matrix": {
+            "tp": 2645,
+            "fn": 155,
+            "fp": 152,
+            "tn": 4798
+          },
+          "tar": 0.9446428571428571,
+          "frr": 0.055357142857142855,
+          "far": 0.030707070707070707,
+          "tnr": 0.9692929292929293
+        },
+        "at_set_b_1pct_far": {
+          "threshold": 0.027369,
+          "confusion_matrix": {
+            "tp": 2572,
+            "fn": 228,
+            "fp": 16,
+            "tn": 4934
+          },
+          "tar": 0.9185714285714286,
+          "frr": 0.08142857142857143,
+          "far": 0.0032323232323232323,
+          "tnr": 0.9967676767676767
+        },
+        "at_set_b_01pct_far": {
+          "threshold": 0.039093,
+          "confusion_matrix": {
+            "tp": 2361,
+            "fn": 439,
+            "fp": 2,
+            "tn": 4948
+          },
+          "tar": 0.8432142857142857,
+          "frr": 0.15678571428571428,
+          "far": 0.00040404040404040404,
+          "tnr": 0.9995959595959596
+        }
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.04351761378246336,
+    "auc": 0.9831878066378066,
+    "genuine_score_mean": 0.1836206018924713,
+    "impostor_score_mean": 0.024909386411309242
+  },
+  "paired_difference_protected_vs_unprotected": {
+    "delta_eer_point": 0.008262817903742406,
+    "delta_eer_95ci": [
+      0.0025653928375692775,
+      0.02964548941538423
+    ],
+    "delta_auc_point": -0.0049360750360749606,
+    "delta_auc_95ci": [
+      -0.008810193848312942,
+      -0.0015581403815349004
+    ],
+    "delta_eer_mean": 0.01582849578359497,
+    "delta_auc_mean": -0.004873121063348198
+  },
+  "security": {
+    "descriptor_dim": 256,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Excludes Direct Minutiae-Type Storage (0 variables stored); Weak Residual Geometric Signal"
+  }
+}

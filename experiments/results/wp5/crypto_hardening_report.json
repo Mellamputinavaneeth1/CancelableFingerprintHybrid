@@ -1,0 +1,127 @@
+{
+  "title": "WP5 Cryptographic Hardening & AEAD Security Audit Report",
+  "timestamp": "2026-11-10 00:11:51",
+  "key_hierarchy": {
+    "master_secret": "256-bit CSPRNG seed stored inside KMS trust boundary",
+    "derivation_algorithm": "RFC 5869 HKDF-SHA256 with domain separation context",
+    "scoping_models": {
+      "application_scoped": "HKDF(Master, salt=AppID, info='projection') -> 1 matrix for all subjects in app. Optimal 1:N screening.",
+      "credential_scoped": "HKDF(Master, salt=CredSalt, info=AppID||CredID) -> Unique matrix per credential. Maximum isolation, but reprojection overhead on 1:N.",
+      "epoch_specific": "HKDF(Master, salt=Salt||EpochID, info=...) -> Cryptographic forward secrecy upon key revocation."
+    }
+  },
+  "screening_benchmark": {
+    "N_10": {
+      "gallery_size_N": 10,
+      "application_scoped": {
+        "screening_time_sec": 0.00982,
+        "throughput_matches_per_sec": 1018.1
+      },
+      "credential_scoped": {
+        "screening_time_sec": 0.0101,
+        "throughput_matches_per_sec": 989.8
+      },
+      "reprojection_overhead_ratio": 1.03
+    },
+    "N_50": {
+      "gallery_size_N": 50,
+      "application_scoped": {
+        "screening_time_sec": 0.04861,
+        "throughput_matches_per_sec": 1028.7
+      },
+      "credential_scoped": {
+        "screening_time_sec": 0.05082,
+        "throughput_matches_per_sec": 983.9
+      },
+      "reprojection_overhead_ratio": 1.05
+    },
+    "N_100": {
+      "gallery_size_N": 100,
+      "application_scoped": {
+        "screening_time_sec": 0.09877,
+        "throughput_matches_per_sec": 1012.4
+      },
+      "credential_scoped": {
+        "screening_time_sec": 0.09925,
+        "throughput_matches_per_sec": 1007.6
+      },
+      "reprojection_overhead_ratio": 1.0
+    },
+    "N_500": {
+      "gallery_size_N": 500,
+      "application_scoped": {
+        "screening_time_sec": 0.47588,
+        "throughput_matches_per_sec": 1050.7
+      },
+      "credential_scoped": {
+        "screening_time_sec": 0.50621,
+        "throughput_matches_per_sec": 987.7
+      },
+      "reprojection_overhead_ratio": 1.06
+    },
+    "N_1000": {
+      "gallery_size_N": 1000,
+      "application_scoped": {
+        "screening_time_sec": 0.97307,
+        "throughput_matches_per_sec": 1027.7
+      },
+      "credential_scoped": {
+        "screening_time_sec": 1.01095,
+        "throughput_matches_per_sec": 989.2
+      },
+      "reprojection_overhead_ratio": 1.04
+    }
+  },
+  "nonce_audit": {
+    "num_nonces_sampled": 100000,
+    "collisions_observed": 0,
+    "generation_time_sec": 0.0172,
+    "entropy_bits": 96,
+    "collision_probability_theoretical": "p ~ (k^2)/(2 * 2^96) ~ 10^10 / 1.58 * 10^29 ~ 6.3 * 10^-20"
+  },
+  "tamper_matrix": [
+    {
+      "test_case": "1-bit tamper in Header AAD",
+      "detected": true,
+      "error_type": "AeadIntegrityError"
+    },
+    {
+      "test_case": "1-bit tamper in Ciphertext payload",
+      "detected": true,
+      "error_type": "AeadIntegrityError"
+    },
+    {
+      "test_case": "1-bit tamper in Poly1305 MAC tag",
+      "detected": true,
+      "error_type": "AeadIntegrityError"
+    },
+    {
+      "test_case": "Decryption with wrong storage key",
+      "detected": true,
+      "error_type": "AeadIntegrityError"
+    },
+    {
+      "test_case": "Payload truncation",
+      "detected": true,
+      "error_type": "BiometricServiceException"
+    },
+    {
+      "test_case": "Schema version mismatch",
+      "detected": true,
+      "error_type": "BiometricServiceException"
+    }
+  ],
+  "framing_vs_crypto_separation": {
+    "crc32_properties": {
+      "type": "Linear Cyclic Redundancy Check (GF(2) polynomial)",
+      "purpose": "Transmission framing & bit-flip noise detection",
+      "cryptographic_security": "None (Forger can recompute CRC32 in O(1) time)"
+    },
+    "poly1305_properties": {
+      "type": "Carter-Wegman polynomial MAC over prime 2^130 - 5",
+      "purpose": "Cryptographic authentication & tamper-proofing",
+      "cryptographic_security": "128-bit security margin under RFC 8439"
+    }
+  },
+  "hardware_boundary_statement": "The software-level inspect.currentframe() guard in KeyService simulates a KMS/HSM interface by preventing in-process caller access. However, production deployment requires physical HSM hardware (PKCS#11, AWS CloudHSM, Google Cloud KMS) to guarantee memory-bus isolation."
+}

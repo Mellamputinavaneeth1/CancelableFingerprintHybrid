@@ -1,0 +1,29 @@
+# Protection, Key Derivation, Quantization and Encoding Configuration
+protection:
+  master_key_env_var: "FP_MASTER_KEY"
+  default_master_key: "CancelableBioMasterSecret_2026_256Bits_KMS!"
+  hkdf:
+    hash_algorithm: "sha256"
+    salt_length: 32
+  
+  projection:
+    input_dim: 12  # Primary 12-D, or 9-D for pure geometric
+    output_dim: 32
+    method: "orthonormal_qr"  # HMAC-SHA256 counter PRF + QR positive-diagonal stabilization
+
+  quantization:
+    method: "one_bit_sign"
+    bits_per_dimension: 1
+    default_threshold: 0.0
+
+  bloom:
+    enabled_branch: false  # Maintained as ablation branch
+    filter_size_bits: 256
+    num_hashes: 3
+    salt_hashing: true
+
+matching:
+  matcher_type: "bipartite"  # Augmented Hungarian assignment
+  hamming_distance_threshold: 0.22
+  operating_threshold: 0.20
+  min_matched_descriptors: 3

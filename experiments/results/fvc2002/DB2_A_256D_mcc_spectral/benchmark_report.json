@@ -1,0 +1,199 @@
+{
+  "subset": "DB2_A",
+  "is_pilot_set_b": false,
+  "sensor_provenance": {
+    "sensor_name": "FX2000",
+    "vendor": "Biometrika",
+    "technology": "Optical (CMOS surface)",
+    "native_dpi": 569.0,
+    "image_size_px": [
+      296,
+      560
+    ],
+    "cross_sensor_scope_notice": "Evaluated on DB1_A (Identix TouchView II optical TIR prism). DB1_A represents optical prism sensors and does not substitute for cross-sensor evaluation across DB2 (CMOS optical), DB3 (capacitive solid-state), or DB4 (synthetic SFinGe)."
+  },
+  "descriptor_dim": 256,
+  "topology": "mcc_spectral",
+  "engine": "classical",
+  "k_nn": null,
+  "dpi": 569.0,
+  "total_images": 800,
+  "file_read_error_count": 0,
+  "capture_device_fta": "N/A (offline database)",
+  "fte_count": 11,
+  "fte_rate": 0.01375,
+  "num_genuine": 2800,
+  "num_impostor": 4950,
+  "avg_triangles_per_fingerprint": 37.252217997465145,
+  "template_storage": {
+    "num_triangles": 37,
+    "in_dim": 256,
+    "out_dim": 192,
+    "descriptor_bytes": 888,
+    "weights_bytes": 74,
+    "header_bytes": 48,
+    "matrix_uncompressed_bytes": 1369,
+    "matrix_full_2bit_packed_bytes": 343,
+    "matrix_symmetric_2bit_packed_bytes": 167,
+    "total_credential_descriptor_only_bytes": 1010,
+    "total_credential_uncompressed_bytes": 2379,
+    "total_credential_full_2bit_bytes": 1353,
+    "total_credential_packed_bytes": 38442,
+    "baseline_unprotected_bytes": 38084,
+    "compression_ratio_descriptor_raw": 0.9765625,
+    "true_compression_ratio_descriptor_only": 0.9734796765045688,
+    "true_compression_ratio_packed": 0.9690946329167104,
+    "true_compression_ratio_uncompressed": 0.9375328221825439,
+    "edge_token_packed_bytes": 37265
+  },
+  "dataset_storage_statistics": {
+    "num_enrolled_templates": 789,
+    "triangles": {
+      "mean": 37.252217997465145,
+      "std": 30.680759600373314,
+      "min": 3,
+      "max": 80
+    },
+    "packed_credential_bytes": {
+      "mean": 1303.3067173637517,
+      "std": 1146.5059311480536,
+      "min": 127,
+      "max": 2918,
+      "total_dataset_bytes": 1028309
+    },
+    "descriptor_only_bytes": {
+      "mean": 1016.5576679340938,
+      "std": 797.6997496097061,
+      "min": 126,
+      "max": 2128,
+      "total_dataset_bytes": 802064
+    },
+    "dense_uncompressed_bytes": {
+      "mean": 3345.594423320659,
+      "std": 3634.2975883907525,
+      "min": 135,
+      "max": 8528,
+      "total_dataset_bytes": 2639674
+    },
+    "baseline_unprotected_bytes": {
+      "mean": 38343.28010139417,
+      "std": 31539.820869183764,
+      "min": 3132,
+      "max": 82288,
+      "total_dataset_bytes": 30252848
+    },
+    "aggregate_serialized_compression": {
+      "packed_vs_baseline": 0.9660095142116868,
+      "descriptor_only_vs_baseline": 0.9734879836767765,
+      "dense_vs_baseline": 0.9127462644178161
+    }
+  },
+  "matching_throughput_comp_per_sec": 56.9223330707626,
+  "protected": {
+    "eer": 0.14174142480211083,
+    "auc": 0.8975208152958153,
+    "eer_threshold": 0.0398989301988909,
+    "tar_at_1pct_far": 0.5278571428571428,
+    "tar_at_01pct_far": 0.2828571428571428,
+    "clustered_eer_95ci": [
+      0.11338946517995904,
+      0.17369150431161784
+    ],
+    "clustered_auc_95ci": [
+      0.8693762065637065,
+      0.92774194606414
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.09122519942728574,
+      0.20244897959183675
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.0975,
+      0.18428571428571427
+    ],
+    "genuine_score_mean": 0.11131223291158676,
+    "genuine_score_std": 0.0748649537563324,
+    "impostor_score_mean": 0.016638971865177155,
+    "impostor_score_std": 0.021563781425356865,
+    "frozen_set_b_threshold_evaluation": {
+      "calibrated_from_subset": "DB2_B",
+      "frozen_operating_threshold": 0.014791,
+      "tar_at_frozen_threshold": 0.8828571428571429,
+      "far_at_frozen_threshold": 0.33555555555555555,
+      "frr_at_frozen_threshold": 0.11714285714285715,
+      "confusion_at_frozen_threshold": {
+        "tp": 2472,
+        "fn": 328,
+        "fp": 1661,
+        "tn": 3289
+      },
+      "operating_points": {
+        "at_set_b_eer": {
+          "threshold": 0.014791,
+          "confusion_matrix": {
+            "tp": 2472,
+            "fn": 328,
+            "fp": 1661,
+            "tn": 3289
+          },
+          "tar": 0.8828571428571429,
+          "frr": 0.11714285714285715,
+          "far": 0.33555555555555555,
+          "tnr": 0.6644444444444444
+        },
+        "at_set_b_1pct_far": {
+          "threshold": 0.018335,
+          "confusion_matrix": {
+            "tp": 2472,
+            "fn": 328,
+            "fp": 1355,
+            "tn": 3595
+          },
+          "tar": 0.8828571428571429,
+          "frr": 0.11714285714285715,
+          "far": 0.2737373737373737,
+          "tnr": 0.7262626262626263
+        },
+        "at_set_b_01pct_far": {
+          "threshold": 0.022174,
+          "confusion_matrix": {
+            "tp": 2467,
+            "fn": 333,
+            "fp": 1167,
+            "tn": 3783
+          },
+          "tar": 0.8810714285714286,
+          "frr": 0.11892857142857143,
+          "far": 0.23575757575757575,
+          "tnr": 0.7642424242424243
+        }
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.12291021671826625,
+    "auc": 0.9052637445887446,
+    "genuine_score_mean": 0.18661899864673615,
+    "impostor_score_mean": 0.033434659242630005
+  },
+  "paired_difference_protected_vs_unprotected": {
+    "delta_eer_point": 0.018831208083844572,
+    "delta_eer_95ci": [
+      0.012537561206485526,
+      0.025332206054973203
+    ],
+    "delta_auc_point": -0.007742929292929301,
+    "delta_auc_95ci": [
+      -0.014628619494290285,
+      0.00016845056065240005
+    ],
+    "delta_eer_mean": 0.018995883722537285,
+    "delta_auc_mean": -0.007604983757811894
+  },
+  "security": {
+    "descriptor_dim": 256,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Excludes Direct Minutiae-Type Storage (0 variables stored); Weak Residual Geometric Signal"
+  }
+}

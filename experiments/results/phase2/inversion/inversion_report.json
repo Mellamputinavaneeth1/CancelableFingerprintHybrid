@@ -1,0 +1,215 @@
+{
+  "dataset": "DB1_B",
+  "operating_threshold": 0.3751,
+  "evaluated_fingers": 10,
+  "total_triangles_evaluated": 3000,
+  "factorial_grid": {
+    "9D_pure_geometry": {
+      "M_32": {
+        "dimension": 9,
+        "embedding_bits": 32,
+        "polytope_feasibility_rate": 100.0,
+        "chebyshev_radius": {
+          "mean": 0.0771670010434118,
+          "p95": 0.11255464556925704
+        },
+        "continuous_mae": 0.17377082426473497,
+        "continuous_rmse": 0.40958639255561957,
+        "normalized_euclidean_error": 0.33831662066280843,
+        "angular_wrap_mae": 0.0830751467589289,
+        "minutiae_type_recovery_accuracy": null,
+        "qp_continuous_mae": 0.5737504014819861,
+        "qp_continuous_rmse": 1.2014940746713296,
+        "scenario_2_unknown_key": {
+          "mae": 0.5897406276017427,
+          "rmse": 1.232677178819637,
+          "angular_mae": 0.31433398100733756,
+          "mean_auth_score": 0.03266001455485821,
+          "asr_at_threshold": 0.0
+        },
+        "authentication_evaluation": {
+          "baseline_genuine_mean_score": 0.3422894269227982,
+          "chebyshev_gallery_mean_score": 0.3422894269227982,
+          "chebyshev_asr_pct": 10.0,
+          "qp_gallery_mean_score": 0.3422894269227982,
+          "cross_key_reissuance_mean_score": 0.3001173347234726,
+          "cross_key_reissuance_asr_pct": 0.0,
+          "continuous_unprotected_mean_score": 0.46439162236748954,
+          "operating_threshold": 0.3751
+        }
+      },
+      "M_64": {
+        "dimension": 9,
+        "embedding_bits": 64,
+        "polytope_feasibility_rate": 100.0,
+        "chebyshev_radius": {
+          "mean": 0.04158361258988262,
+          "p95": 0.06881936751607805
+        },
+        "continuous_mae": 0.11289967872947454,
+        "continuous_rmse": 0.27655292321160907,
+        "normalized_euclidean_error": 0.2185913345317046,
+        "angular_wrap_mae": 0.05493352020159364,
+        "minutiae_type_recovery_accuracy": null,
+        "qp_continuous_mae": 0.5429048055708409,
+        "qp_continuous_rmse": 1.1405376494410564,
+        "scenario_2_unknown_key": {
+          "mae": 0.5860213111639023,
+          "rmse": 1.2229915570745369,
+          "angular_mae": 0.3141525087952614,
+          "mean_auth_score": 0.027723205275833607,
+          "asr_at_threshold": 0.0
+        },
+        "authentication_evaluation": {
+          "baseline_genuine_mean_score": 0.30613289773464203,
+          "chebyshev_gallery_mean_score": 0.30613289773464203,
+          "chebyshev_asr_pct": 0.0,
+          "qp_gallery_mean_score": 0.30613289773464203,
+          "cross_key_reissuance_mean_score": 0.2937860250473022,
+          "cross_key_reissuance_asr_pct": 0.0,
+          "continuous_unprotected_mean_score": 0.466978931411502,
+          "operating_threshold": 0.3751
+        }
+      },
+      "M_128": {
+        "dimension": 9,
+        "embedding_bits": 128,
+        "polytope_feasibility_rate": 100.0,
+        "chebyshev_radius": {
+          "mean": 0.018382466008230083,
+          "p95": 0.03252503006366007
+        },
+        "continuous_mae": 0.06518805399537086,
+        "continuous_rmse": 0.16020581204608922,
+        "normalized_euclidean_error": 0.1230664328932762,
+        "angular_wrap_mae": 0.03426143027469516,
+        "minutiae_type_recovery_accuracy": null,
+        "qp_continuous_mae": 0.4376120153963566,
+        "qp_continuous_rmse": 0.9353018173924414,
+        "scenario_2_unknown_key": {
+          "mae": 0.5914092173278331,
+          "rmse": 1.2380107166047507,
+          "angular_mae": 0.31485927310585976,
+          "mean_auth_score": 0.00650102118961513,
+          "asr_at_threshold": 0.0
+        },
+        "authentication_evaluation": {
+          "baseline_genuine_mean_score": 0.28828786313533783,
+          "chebyshev_gallery_mean_score": 0.28828786313533783,
+          "chebyshev_asr_pct": 0.0,
+          "qp_gallery_mean_score": 0.28828786313533783,
+          "cross_key_reissuance_mean_score": 0.28777978122234343,
+          "cross_key_reissuance_asr_pct": 0.0,
+          "continuous_unprotected_mean_score": 0.46927973305404824,
+          "operating_threshold": 0.3751
+        }
+      }
+    },
+    "12D_minutiae_type": {
+      "M_32": {
+        "dimension": 12,
+        "embedding_bits": 32,
+        "polytope_feasibility_rate": 100.0,
+        "chebyshev_radius": {
+          "mean": 0.06836257295467141,
+          "p95": 0.11347430244024259
+        },
+        "continuous_mae": 0.1895887952670455,
+        "continuous_rmse": 0.4803959297606651,
+        "normalized_euclidean_error": 0.3764890233576298,
+        "angular_wrap_mae": 0.0879085237942636,
+        "minutiae_type_recovery_accuracy": 0.9506666666666667,
+        "qp_continuous_mae": 0.33720098580420016,
+        "qp_continuous_rmse": 0.7420852609411639,
+        "scenario_2_unknown_key": {
+          "mae": 0.5900989044606686,
+          "rmse": 1.2336488882917156,
+          "angular_mae": 0.3152579925954342,
+          "mean_auth_score": 0.004506067299371352,
+          "asr_at_threshold": 0.0
+        },
+        "authentication_evaluation": {
+          "baseline_genuine_mean_score": 0.302938175201416,
+          "chebyshev_gallery_mean_score": 0.302938175201416,
+          "chebyshev_asr_pct": 0.0,
+          "qp_gallery_mean_score": 0.302938175201416,
+          "cross_key_reissuance_mean_score": 0.25810394883155824,
+          "cross_key_reissuance_asr_pct": 0.0,
+          "continuous_unprotected_mean_score": 0.46235452104082153,
+          "operating_threshold": 0.3751
+        }
+      },
+      "M_64": {
+        "dimension": 12,
+        "embedding_bits": 64,
+        "polytope_feasibility_rate": 100.0,
+        "chebyshev_radius": {
+          "mean": 0.045801265866144816,
+          "p95": 0.07192538730181033
+        },
+        "continuous_mae": 0.12337668504193425,
+        "continuous_rmse": 0.3129612836513603,
+        "normalized_euclidean_error": 0.24675997801621755,
+        "angular_wrap_mae": 0.056470865331590174,
+        "minutiae_type_recovery_accuracy": 0.9946666666666666,
+        "qp_continuous_mae": 0.28207304763793944,
+        "qp_continuous_rmse": 0.6746835129108706,
+        "scenario_2_unknown_key": {
+          "mae": 0.5900940908938647,
+          "rmse": 1.2336429435705036,
+          "angular_mae": 0.31471265077590943,
+          "mean_auth_score": 5.8265301049686965e-06,
+          "asr_at_threshold": 0.0
+        },
+        "authentication_evaluation": {
+          "baseline_genuine_mean_score": 0.3004375174641609,
+          "chebyshev_gallery_mean_score": 0.3004375174641609,
+          "chebyshev_asr_pct": 0.0,
+          "qp_gallery_mean_score": 0.3004375174641609,
+          "cross_key_reissuance_mean_score": 0.28275311142206194,
+          "cross_key_reissuance_asr_pct": 0.0,
+          "continuous_unprotected_mean_score": 0.46414847147083255,
+          "operating_threshold": 0.3751
+        }
+      },
+      "M_128": {
+        "dimension": 12,
+        "embedding_bits": 128,
+        "polytope_feasibility_rate": 100.0,
+        "chebyshev_radius": {
+          "mean": 0.020204496271240997,
+          "p95": 0.0343598567205598
+        },
+        "continuous_mae": 0.05561508915759623,
+        "continuous_rmse": 0.12475130737756128,
+        "normalized_euclidean_error": 0.10113027473539114,
+        "angular_wrap_mae": 0.030813574677333234,
+        "minutiae_type_recovery_accuracy": 1.0,
+        "qp_continuous_mae": 0.1436872662715614,
+        "qp_continuous_rmse": 0.3101245669658624,
+        "scenario_2_unknown_key": {
+          "mae": 0.5900325786024332,
+          "rmse": 1.2356234187927597,
+          "angular_mae": 0.3138774769604206,
+          "mean_auth_score": 0.0,
+          "asr_at_threshold": 0.0
+        },
+        "authentication_evaluation": {
+          "baseline_genuine_mean_score": 0.2566628247499466,
+          "chebyshev_gallery_mean_score": 0.2566628247499466,
+          "chebyshev_asr_pct": 0.0,
+          "qp_gallery_mean_score": 0.2566628247499466,
+          "cross_key_reissuance_mean_score": 0.25744573324918746,
+          "cross_key_reissuance_asr_pct": 0.0,
+          "continuous_unprotected_mean_score": 0.46749089819029993,
+          "operating_threshold": 0.3751
+        }
+      }
+    }
+  },
+  "key_findings": {
+    "9d_vs_12d_type_leakage": "Under Known-Key Scenario III, 12-D representations allow exact MILP integer lattice recovery of minutiae types (d9, d10, d11) with 95.1% (M=32) to 100.0% (M=128) accuracy. In contrast, the 9-D Pure Geometric candidate stores 0 discrete variables, rendering MILP minutiae-type lattice inversion completely inapplicable (0 variables stored).",
+    "reconstruction_error_scaling": "Increasing projection bit length M from 32 to 128 tightens the polyhedral cone, reducing continuous MAE and inscribed Chebyshev radius r*, but does NOT provide cross-key authentication utility upon re-issuance (cross-key scores 0.25-0.30 << T_accept=0.3751, ASR = 0.0%).",
+    "authentication_feasibility": "Known-key inverted descriptors reproduce query bitstrings under W, but cross-key re-issuance neutralizes the attack: match scores against fresh re-issued templates drop below the acceptance threshold (0.25-0.30 << T_accept=0.3751, ASR = 0.0%), confirming strong revocability and cancellation resistance."
+  }
+}

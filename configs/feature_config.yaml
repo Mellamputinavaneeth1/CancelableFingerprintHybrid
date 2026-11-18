@@ -1,0 +1,29 @@
+# Preprocessing and Feature Extraction Configuration
+preprocessing:
+  target_size: [300, 300]
+  clahe:
+    clip_limit: 3.0
+    tile_grid_size: [8, 8]
+  gaussian_blur_kernel: [5, 5]
+  segmentation:
+    block_size: 16
+    variance_threshold: 120.0
+    morph_kernel_size: 5
+
+minutiae:
+  border_margin: 15
+  min_distance_between_minutiae: 10
+  quality_threshold: 0.35
+  max_minutiae: 80
+
+graph:
+  algorithm: "delaunay"  # Primary: "delaunay", Ablation: "knn"
+  knn_k: 5
+  max_edge_length: 120.0
+  descriptor:
+    dimension: 12  # Primary 12-D, or 9-D for pure geometric
+    canonical_tie_breaker: "geometry_only"
+    relative_tie_tolerance: 0.03
+    include_perimeter_mm: true
+    dpi: 500.0
+    quality_separation: true  # Quality strictly separated as matching weight w = Q_Delta

@@ -1,0 +1,42 @@
+{
+  "pooled_benchmark": "pooled_all",
+  "subsets_included": [
+    "DB1_A",
+    "DB1_B",
+    "DB2_B",
+    "DB3_B",
+    "DB4_B"
+  ],
+  "total_comparisons": 9050,
+  "num_genuine": 3920,
+  "num_impostor": 5130,
+  "eer": 0.41900923551186975,
+  "auc": 0.6176347117794486,
+  "eer_threshold": 0.37428562061750853,
+  "tar_at_1pct_far": 0.053316326530612246,
+  "tar_at_01pct_far": 0.014285714285714235,
+  "bootstrap_eer_95ci": [
+    0.410156524998164,
+    0.4293087777365947
+  ],
+  "bootstrap_auc_95ci": [
+    0.6075952778772328,
+    0.6289042049568365
+  ],
+  "genuine_mean": 0.3826497495174408,
+  "genuine_std": 0.0368959978222847,
+  "impostor_mean": 0.36789125204086304,
+  "impostor_std": 0.03153561055660248,
+  "frozen_dev_threshold_eval": {
+    "threshold": 0.3751,
+    "tar": 0.5744897959183674,
+    "far": 0.4118908382066277,
+    "frr": 0.42551020408163265,
+    "confusion": {
+      "tp": 2252,
+      "fn": 1668,
+      "fp": 2113,
+      "tn": 3017
+    }
+  }
+}

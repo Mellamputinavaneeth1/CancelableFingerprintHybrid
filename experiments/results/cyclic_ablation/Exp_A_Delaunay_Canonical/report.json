@@ -1,0 +1,38 @@
+{
+  "name": "Exp_A_Delaunay_Canonical",
+  "topology": "delaunay",
+  "mode": "canonical",
+  "consensus": false,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.4357142857142857,
+  "auc": 0.5836507936507936,
+  "eer_threshold": 0.36350230705802505,
+  "tar_at_1pct_far": 0.0035714285714285587,
+  "tar_at_01pct_far": 0.0035714285714285587,
+  "clopper_pearson_95ci": [
+    0.3768035489540643,
+    0.496000131299323
+  ],
+  "bootstrap_eer_95ci": [
+    0.3584158415841584,
+    0.5151515151515151
+  ],
+  "bootstrap_auc_95ci": [
+    0.4976984126984127,
+    0.6742857142857143
+  ],
+  "clustered_eer_95ci": [
+    0.3,
+    0.57
+  ],
+  "clustered_auc_95ci": [
+    0.41904761904761906,
+    0.7182539682539683
+  ],
+  "genuine_mean": 0.3681047260761261,
+  "genuine_std": 0.02846255712211132,
+  "impostor_mean": 0.36169764399528503,
+  "impostor_std": 0.028009194880723953,
+  "throughput_comp_per_sec": 171.42232681098358
+}

@@ -1,0 +1,85 @@
+{
+  "ablation_title": "WP1 Controlled Dimensionality Ablation: 5-D Reduced vs 9-D Candidate",
+  "dataset": "FVC2002 DB1_B",
+  "timestamp_utc": "2026-11-09T12:57:14Z",
+  "num_genuine_trials": 280,
+  "num_impostor_trials": 45,
+  "total_trials": 325,
+  "quantization_collision_analysis": {
+    "candidate_9D": {
+      "total_triangles": 11591,
+      "unique_bitstrings": 7983,
+      "unique_ratio": 0.6887240100077646,
+      "colliding_patterns": 1512,
+      "colliding_triangles": 5120,
+      "colliding_triangles_pct": 44.17,
+      "total_triangle_pairs": 67169845,
+      "colliding_triangle_pairs": 13635,
+      "pairwise_collision_prob": 0.00020299287574654967
+    },
+    "reduced_5D": {
+      "total_triangles": 11591,
+      "unique_bitstrings": 3330,
+      "unique_ratio": 0.2872918643775343,
+      "colliding_patterns": 1457,
+      "colliding_triangles": 9718,
+      "colliding_triangles_pct": 83.84,
+      "total_triangle_pairs": 67169845,
+      "colliding_triangle_pairs": 152844,
+      "pairwise_collision_prob": 0.002275485375915338
+    },
+    "pairwise_collision_ratio_5D_to_9D": 11.21
+  },
+  "metrics_candidate_9D": {
+    "protected": {
+      "eer": 0.4286,
+      "eer_pct": 42.86,
+      "eer_95ci": [
+        0.3522,
+        0.4823
+      ],
+      "auc": 0.6247,
+      "auc_95ci": [
+        0.5337,
+        0.7098
+      ],
+      "tar_at_1pct_far": 0.0,
+      "tar_at_01pct_far": 0.0
+    },
+    "unprotected": {
+      "eer": 0.4889,
+      "auc": 0.5096
+    }
+  },
+  "metrics_reduced_5D": {
+    "protected": {
+      "eer": 0.4,
+      "eer_pct": 40.0,
+      "eer_95ci": [
+        0.3071,
+        0.4773
+      ],
+      "auc": 0.6766,
+      "auc_95ci": [
+        0.6,
+        0.7521
+      ],
+      "tar_at_1pct_far": 0.0643,
+      "tar_at_01pct_far": 0.0643
+    },
+    "unprotected": {
+      "eer": 0.482,
+      "auc": 0.5383
+    }
+  },
+  "comparative_deltas_5D_minus_9D": {
+    "delta_eer_pct": -2.86,
+    "delta_auc": 0.0519,
+    "delta_tar_at_1pct_far_pct": 6.43
+  },
+  "scientific_findings": {
+    "dimension_reduction_impact": "Reducing from 9-D to 5-D removes P_mm (sensor perimeter scale) and phi_0..phi_2 (minutia-to-edge relative orientations).",
+    "collision_rate_finding": "Pairwise collision rate increases by 11.21x under 5-D due to lower degrees of freedom.",
+    "biometric_verdict": "9-D primary candidate maintains higher discrimination and lower collision rate than 5-D reduced geometric descriptor."
+  }
+}

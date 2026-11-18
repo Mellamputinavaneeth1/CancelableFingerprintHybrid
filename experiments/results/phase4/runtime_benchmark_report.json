@@ -1,0 +1,128 @@
+{
+  "benchmark": "Phase 4 Runtime & Latency Profiling",
+  "num_warmup": 10,
+  "num_repetitions": 100,
+  "stages": {
+    "stage_1_preprocessing": {
+      "mean_ms": 16.5664,
+      "std_ms": 1.6128,
+      "median_ms": 16.2548,
+      "p95_ms": 18.2399,
+      "min_ms": 14.9137,
+      "max_ms": 26.3509
+    },
+    "stage_2_minutiae_extraction": {
+      "mean_ms": 58.8973,
+      "std_ms": 3.5443,
+      "median_ms": 58.3984,
+      "p95_ms": 62.8258,
+      "min_ms": 55.366,
+      "max_ms": 81.8417
+    },
+    "stage_3_triangle_generation": {
+      "mean_ms": 2.0247,
+      "std_ms": 0.4122,
+      "median_ms": 2.114,
+      "p95_ms": 2.6869,
+      "min_ms": 1.3936,
+      "max_ms": 2.996
+    },
+    "stage_4_descriptor_construction": {
+      "mean_ms": 8.7392,
+      "std_ms": 1.1927,
+      "median_ms": 8.4101,
+      "p95_ms": 9.8455,
+      "min_ms": 8.0442,
+      "max_ms": 16.5798
+    },
+    "stage_5_key_derivation_cold": {
+      "mean_ms": 0.5771,
+      "std_ms": 0.1274,
+      "median_ms": 0.6018,
+      "p95_ms": 0.8054,
+      "min_ms": 0.3936,
+      "max_ms": 0.9582
+    },
+    "stage_5_key_retrieval_warm": {
+      "mean_ms": 0.004,
+      "std_ms": 0.0031,
+      "median_ms": 0.0037,
+      "p95_ms": 0.0057,
+      "min_ms": 0.0019,
+      "max_ms": 0.0281
+    },
+    "stage_6_bitstring_generation": {
+      "mean_ms": 0.0689,
+      "std_ms": 0.0208,
+      "median_ms": 0.0728,
+      "p95_ms": 0.1008,
+      "min_ms": 0.0387,
+      "max_ms": 0.1358
+    },
+    "stage_7_cost_construction": {
+      "mean_ms": 1.3819,
+      "std_ms": 0.2428,
+      "median_ms": 1.3405,
+      "p95_ms": 1.8579,
+      "min_ms": 1.1092,
+      "max_ms": 2.3333
+    },
+    "stage_8_hungarian_assignment": {
+      "mean_ms": 1.6104,
+      "std_ms": 0.2039,
+      "median_ms": 1.5508,
+      "p95_ms": 2.0037,
+      "min_ms": 1.4454,
+      "max_ms": 2.6008
+    },
+    "stage_8_greedy_assignment": {
+      "mean_ms": 2.6824,
+      "std_ms": 0.3525,
+      "median_ms": 2.5739,
+      "p95_ms": 3.2846,
+      "min_ms": 2.1789,
+      "max_ms": 4.3866
+    },
+    "stage_9_graph_consensus": {
+      "mean_ms": 5.4248,
+      "std_ms": 0.5618,
+      "median_ms": 5.3434,
+      "p95_ms": 5.9215,
+      "min_ms": 4.9245,
+      "max_ms": 8.718
+    },
+    "stage_10_decision": {
+      "mean_ms": 0.0043,
+      "std_ms": 0.0013,
+      "median_ms": 0.0043,
+      "p95_ms": 0.0065,
+      "min_ms": 0.0021,
+      "max_ms": 0.0086
+    }
+  },
+  "interactive_single_query_latency": {
+    "full_pipeline_warm_cache": {
+      "mean_ms": 86.5098,
+      "std_ms": 2.3201,
+      "median_ms": 86.0395,
+      "p95_ms": 90.3109,
+      "min_ms": 82.1061,
+      "max_ms": 91.6377
+    },
+    "interactive_queries_per_second": 11.62
+  },
+  "offline_batch_throughput": {
+    "hungarian_comparisons_per_second": 369.63,
+    "greedy_1to1_comparisons_per_second": 306.38,
+    "speedup_factor_greedy_vs_hungarian": 0.83,
+    "genuine_workload": {
+      "hungarian_comp_per_second": 369.63,
+      "greedy_1to1_comp_per_second": 306.38
+    },
+    "impostor_screening_workload": {
+      "hungarian_comp_per_second": 207.81,
+      "greedy_1to1_comp_per_second": 1242.41,
+      "speedup_factor_greedy_vs_hungarian": 5.98
+    }
+  }
+}

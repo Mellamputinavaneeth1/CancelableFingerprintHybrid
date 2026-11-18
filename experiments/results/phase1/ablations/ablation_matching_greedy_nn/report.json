@@ -1,0 +1,30 @@
+{
+  "condition_name": "ablation_matching_greedy_nn",
+  "dataset": "DB1_B",
+  "in_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "projection_dim": 32,
+  "matcher_algo": "greedy_nn",
+  "use_quality_weights": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.4444444444444444,
+  "auc": 0.6376190476190476,
+  "eer_threshold": 0.47563657618533145,
+  "tar_at_1pct_far": 0.0071428571428571175,
+  "tar_at_01pct_far": 0.0071428571428571175,
+  "bootstrap_eer_95ci": [
+    0.35555555555555557,
+    0.5111111111111111
+  ],
+  "bootstrap_auc_95ci": [
+    0.5518253968253968,
+    0.7263492063492063
+  ],
+  "genuine_mean": 0.4824315309524536,
+  "genuine_std": 0.03484176844358444,
+  "impostor_mean": 0.46254611015319824,
+  "impostor_std": 0.04172953963279724,
+  "throughput_comp_per_sec": 1073.2736785333266
+}

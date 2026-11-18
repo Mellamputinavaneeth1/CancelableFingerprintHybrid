@@ -1,0 +1,281 @@
+{
+  "title": "Full SOCOFing 5-Fold Subject-Disjoint Robustness Benchmark",
+  "timestamp": "2026-11-09 21:58:23",
+  "protocol": "5-Fold Outer Subject-Disjoint CV (Dev-Fit 80%, Dev-Cal 20%, Held-Out Test)",
+  "descriptor_dim": 5,
+  "matcher": "hungarian",
+  "total_trials": 600,
+  "total_genuine": 100,
+  "total_impostor": 500,
+  "total_time_seconds": 17.42,
+  "throughput_comp_per_sec": 34.4,
+  "pooled_out_of_fold_metrics": {
+    "eer_pct": 25.222222222222225,
+    "auc": 0.82334,
+    "clustered_eer_95ci": [
+      18.0,
+      32.631147540983605
+    ],
+    "clustered_auc_95ci": [
+      0.7343,
+      0.8937
+    ],
+    "genuine_mean": 0.7567762732505798,
+    "genuine_std": 0.1194656640291214,
+    "impostor_mean": 0.677484393119812,
+    "impostor_std": 0.08789222687482834
+  },
+  "severity_breakdown": {
+    "Easy": {
+      "trials": 180,
+      "genuine": 30,
+      "impostor": 150,
+      "eer_pct": 17.777777777777775,
+      "auc": 0.8962222222222223,
+      "mean_coverage": 0.9570451893344852
+    },
+    "Medium": {
+      "trials": 180,
+      "genuine": 30,
+      "impostor": 150,
+      "eer_pct": 25.151515151515152,
+      "auc": 0.8297777777777777,
+      "mean_coverage": 0.9364768938148126
+    },
+    "Hard": {
+      "trials": 180,
+      "genuine": 30,
+      "impostor": 150,
+      "eer_pct": 33.33333333333333,
+      "auc": 0.708,
+      "mean_coverage": 0.8878930025142878
+    }
+  },
+  "alteration_breakdown": {
+    "Central_Rotation": {
+      "trials": 180,
+      "genuine": 30,
+      "impostor": 150,
+      "eer_pct": 26.111111111111114,
+      "auc": 0.8224444444444444,
+      "mean_coverage": 0.9451698689936653
+    },
+    "Z-cut": {
+      "trials": 180,
+      "genuine": 30,
+      "impostor": 150,
+      "eer_pct": 20.0,
+      "auc": 0.9004444444444445,
+      "mean_coverage": 0.9488985867810579
+    },
+    "Obliteration": {
+      "trials": 180,
+      "genuine": 30,
+      "impostor": 150,
+      "eer_pct": 33.666666666666664,
+      "auc": 0.7031111111111111,
+      "mean_coverage": 0.8873466298888625
+    }
+  },
+  "folds": {
+    "fold_01": {
+      "test_trials_count": 120,
+      "num_genuine": 20,
+      "num_impostor": 100,
+      "calibration": {
+        "frozen_t_eer": 0.7091304047638709,
+        "frozen_t_1pct_far": 0.74151211977005
+      },
+      "roc_metrics": {
+        "eer_pct": 20.0,
+        "auc": 0.846,
+        "native_eer_threshold": 0.6981509097121021
+      },
+      "frozen_evaluations": {
+        "at_frozen_t_eer": {
+          "threshold": 0.7091304047638709,
+          "tar_pct": 75.0,
+          "far_pct": 13.0,
+          "confusion": {
+            "tp": 15,
+            "fn": 5,
+            "fp": 13,
+            "tn": 87
+          }
+        },
+        "at_frozen_t_1pct_far": {
+          "threshold": 0.74151211977005,
+          "tar_pct": 60.0,
+          "far_pct": 0.0,
+          "confusion": {
+            "tp": 12,
+            "fn": 8,
+            "fp": 0,
+            "tn": 100
+          }
+        }
+      }
+    },
+    "fold_02": {
+      "test_trials_count": 120,
+      "num_genuine": 20,
+      "num_impostor": 100,
+      "calibration": {
+        "frozen_t_eer": 0.7178553519138942,
+        "frozen_t_1pct_far": 0.7429155111312866
+      },
+      "roc_metrics": {
+        "eer_pct": 28.000000000000004,
+        "auc": 0.7975,
+        "native_eer_threshold": 0.7084049268661438
+      },
+      "frozen_evaluations": {
+        "at_frozen_t_eer": {
+          "threshold": 0.7178553519138942,
+          "tar_pct": 65.0,
+          "far_pct": 22.0,
+          "confusion": {
+            "tp": 13,
+            "fn": 7,
+            "fp": 22,
+            "tn": 78
+          }
+        },
+        "at_frozen_t_1pct_far": {
+          "threshold": 0.7429155111312866,
+          "tar_pct": 35.0,
+          "far_pct": 6.0,
+          "confusion": {
+            "tp": 7,
+            "fn": 13,
+            "fp": 6,
+            "tn": 94
+          }
+        }
+      }
+    },
+    "fold_03": {
+      "test_trials_count": 120,
+      "num_genuine": 20,
+      "num_impostor": 100,
+      "calibration": {
+        "frozen_t_eer": 0.6999992072466735,
+        "frozen_t_1pct_far": 0.7248028516769409
+      },
+      "roc_metrics": {
+        "eer_pct": 15.0,
+        "auc": 0.89,
+        "native_eer_threshold": 0.7350401747788514
+      },
+      "frozen_evaluations": {
+        "at_frozen_t_eer": {
+          "threshold": 0.6999992072466735,
+          "tar_pct": 95.0,
+          "far_pct": 57.99999999999999,
+          "confusion": {
+            "tp": 19,
+            "fn": 1,
+            "fp": 58,
+            "tn": 42
+          }
+        },
+        "at_frozen_t_1pct_far": {
+          "threshold": 0.7248028516769409,
+          "tar_pct": 90.0,
+          "far_pct": 26.0,
+          "confusion": {
+            "tp": 18,
+            "fn": 2,
+            "fp": 26,
+            "tn": 74
+          }
+        }
+      }
+    },
+    "fold_04": {
+      "test_trials_count": 120,
+      "num_genuine": 20,
+      "num_impostor": 100,
+      "calibration": {
+        "frozen_t_eer": 0.7151485416982267,
+        "frozen_t_1pct_far": 0.75304114818573
+      },
+      "roc_metrics": {
+        "eer_pct": 31.153846153846153,
+        "auc": 0.7145,
+        "native_eer_threshold": 0.7272767963361693
+      },
+      "frozen_evaluations": {
+        "at_frozen_t_eer": {
+          "threshold": 0.7151485416982267,
+          "tar_pct": 80.0,
+          "far_pct": 44.0,
+          "confusion": {
+            "tp": 16,
+            "fn": 4,
+            "fp": 44,
+            "tn": 56
+          }
+        },
+        "at_frozen_t_1pct_far": {
+          "threshold": 0.75304114818573,
+          "tar_pct": 35.0,
+          "far_pct": 16.0,
+          "confusion": {
+            "tp": 7,
+            "fn": 13,
+            "fp": 16,
+            "tn": 84
+          }
+        }
+      }
+    },
+    "fold_05": {
+      "test_trials_count": 120,
+      "num_genuine": 20,
+      "num_impostor": 100,
+      "calibration": {
+        "frozen_t_eer": 0.6831899633926911,
+        "frozen_t_1pct_far": 0.7250078916549683
+      },
+      "roc_metrics": {
+        "eer_pct": 25.833333333333336,
+        "auc": 0.8385,
+        "native_eer_threshold": 0.7149810231939331
+      },
+      "frozen_evaluations": {
+        "at_frozen_t_eer": {
+          "threshold": 0.6831899633926911,
+          "tar_pct": 90.0,
+          "far_pct": 66.0,
+          "confusion": {
+            "tp": 18,
+            "fn": 2,
+            "fp": 66,
+            "tn": 34
+          }
+        },
+        "at_frozen_t_1pct_far": {
+          "threshold": 0.7250078916549683,
+          "tar_pct": 65.0,
+          "far_pct": 15.0,
+          "confusion": {
+            "tp": 13,
+            "fn": 7,
+            "fp": 15,
+            "tn": 85
+          }
+        }
+      }
+    }
+  },
+  "gate_assertions": {
+    "Gate_3_Splits": true,
+    "Gate_5_Calibration": true,
+    "Gate_6_Credential_AEAD": true,
+    "Gate_7_Trials_Invariants": true,
+    "Gate_8_Matching_Deterministic": true,
+    "Gate_9_Subject_Clustered_Bootstrap": true,
+    "Gate_10_Reproducibility": true
+  }
+}

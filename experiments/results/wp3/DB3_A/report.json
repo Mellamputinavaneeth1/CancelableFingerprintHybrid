@@ -1,0 +1,166 @@
+{
+  "subset": "DB3_A",
+  "database_family": "FVC2002_DB3",
+  "sensor_provenance": {
+    "sensor_name": "100 SC",
+    "vendor": "Precise Biometrics",
+    "technology": "Capacitive (solid-state silicon sensor)",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      300,
+      300
+    ],
+    "data_provenance": "Calibrated capacitive silicon sensor simulation architecture",
+    "is_synthetic": true
+  },
+  "num_genuine": 2800,
+  "num_impostor": 4950,
+  "total_comparisons": 7750,
+  "total_images": 800,
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "avg_triangles": 140.5125,
+  "throughput_comp_per_sec": 75.0,
+  "bootstrap_replicates": 2000,
+  "protected": {
+    "eer_pct": 29.09,
+    "auc": 0.8088,
+    "eer_threshold": 0.43735,
+    "tar_at_1pct_far": 9.96,
+    "tar_at_01pct_far": 2.68,
+    "clustered_eer_95ci": [
+      25.47,
+      31.83
+    ],
+    "clustered_auc_95ci": [
+      0.783,
+      0.8387
+    ],
+    "genuine_mean": 0.4777,
+    "genuine_std": 0.0621,
+    "impostor_mean": 0.3171,
+    "impostor_std": 0.1503
+  },
+  "unprotected_baseline": {
+    "eer_pct": 34.36,
+    "auc": 0.7614,
+    "genuine_mean": 0.3364,
+    "genuine_std": 0.1057,
+    "impostor_mean": 0.2245,
+    "impostor_std": 0.1286
+  },
+  "paired_difference": {
+    "delta_eer_point": -0.0527,
+    "delta_eer_95ci": [
+      -0.105,
+      -0.0227
+    ],
+    "delta_auc_point": 0.0474,
+    "delta_auc_95ci": [
+      0.0329,
+      0.0605
+    ]
+  },
+  "frozen_baseline_evaluations": {
+    "T_EER": {
+      "threshold": 0.3751,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 97.29,
+      "far_pct": 51.13,
+      "frr_pct": 2.71,
+      "confusion": {
+        "tp": 2724,
+        "fn": 76,
+        "fp": 2531,
+        "tn": 2419
+      }
+    },
+    "T_1pct_FAR": {
+      "threshold": 0.4497,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 63.29,
+      "far_pct": 24.34,
+      "frr_pct": 36.71,
+      "confusion": {
+        "tp": 1772,
+        "fn": 1028,
+        "fp": 1205,
+        "tn": 3745
+      }
+    },
+    "T_01pct_FAR": {
+      "threshold": 0.4705,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 51.14,
+      "far_pct": 16.48,
+      "frr_pct": 48.86,
+      "confusion": {
+        "tp": 1432,
+        "fn": 1368,
+        "fp": 816,
+        "tn": 4134
+      }
+    }
+  },
+  "transferred_threshold_evaluations": {
+    "T_EER": {
+      "transferred_threshold": 0.3619,
+      "source_calibration": "DB1_B freshly calibrated developmental partition",
+      "tar_pct": 99.21,
+      "far_pct": 53.78,
+      "frr_pct": 0.79,
+      "confusion": {
+        "tp": 2778,
+        "fn": 22,
+        "fp": 2662,
+        "tn": 2288
+      }
+    },
+    "T_1pct_FAR": {
+      "transferred_threshold": 0.4545,
+      "source_calibration": "DB1_B freshly calibrated developmental partition",
+      "tar_pct": 60.64,
+      "far_pct": 22.18,
+      "frr_pct": 39.36,
+      "confusion": {
+        "tp": 1698,
+        "fn": 1102,
+        "fp": 1098,
+        "tn": 3852
+      }
+    },
+    "T_01pct_FAR": {
+      "transferred_threshold": 0.4545,
+      "source_calibration": "DB1_B freshly calibrated developmental partition",
+      "tar_pct": 60.64,
+      "far_pct": 22.18,
+      "frr_pct": 39.36,
+      "confusion": {
+        "tp": 1698,
+        "fn": 1102,
+        "fp": 1098,
+        "tn": 3852
+      }
+    }
+  },
+  "storage": {
+    "num_triangles": 141,
+    "in_dim": 9,
+    "out_dim": 32,
+    "descriptor_bytes": 564,
+    "weights_bytes": 282,
+    "header_bytes": 32,
+    "matrix_uncompressed_bytes": 19881,
+    "matrix_full_2bit_packed_bytes": 4971,
+    "matrix_symmetric_2bit_packed_bytes": 2468,
+    "total_credential_descriptor_only_bytes": 878,
+    "total_credential_uncompressed_bytes": 20759,
+    "total_credential_full_2bit_bytes": 5849,
+    "total_credential_packed_bytes": 3346,
+    "baseline_unprotected_bytes": 5672,
+    "compression_ratio_descriptor_raw": 0.8888888888888888,
+    "true_compression_ratio_descriptor_only": 0.8452045133991537,
+    "true_compression_ratio_packed": 0.41008462623413255,
+    "true_compression_ratio_uncompressed": -2.6599083215796897
+  }
+}

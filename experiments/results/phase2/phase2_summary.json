@@ -1,0 +1,103 @@
+{
+  "execution_timestamp": "2026-11-08T20:23:05Z",
+  "total_runtime_seconds": 103.16977143287659,
+  "status": "COMPLETED_AND_FULLY_VERIFIED",
+  "benchmark_dataset": "FVC2002 DB1_B",
+  "threat_models_summary": [
+    {
+      "threat_model_id": "TM-1",
+      "threat_model_name": "Stolen-Credential (Scenario II)",
+      "attacker_capability": "Database stolen; transform key W unknown; attempts brute-force/hill climbing/pseudo-inverse inversion",
+      "target_asset": "Raw fingerprint minutiae coordinates and original continuous descriptors",
+      "defense_mechanism": "Keyed orthonormal projection W with zero-threshold sign quantization acts as non-invertible compressive mapping",
+      "empirical_finding": "Continuous MAE = 0.5897, Mean Attack Score = 0.0327, Attack Success Rate (ASR) = 0.0% @ T=0.3751",
+      "status": "Resistant (0.0% ASR)"
+    },
+    {
+      "threat_model_id": "TM-2",
+      "threat_model_name": "Known-Key (Scenario III)",
+      "attacker_capability": "Database compromised AND transform key W compromised; formulates polyhedral feasibility (HiGHS MILP/QP)",
+      "target_asset": "Polytope Chebyshev center inversion & minutiae-type discrete attribute lattice",
+      "defense_mechanism": "9-D descriptor stores 0 minutiae-type variables; cross-key re-issuance under fresh key invalidates stolen templates",
+      "empirical_finding": "9-D stores 0 discrete variables (MILP type lattice recovery N/A). Chebyshev radius r*=0.0772. Cross-key match score under fresh key drops to 0.3001 << T_accept=0.3751 (ASR=0.0%). In 12-D comparison branch, MILP recovers discrete types with 95.1% accuracy.",
+      "status": "Resistant via 9-D exclusion & re-issuance"
+    },
+    {
+      "threat_model_id": "TM-3",
+      "threat_model_name": "Cross-Application Linkability",
+      "attacker_capability": "Adversary intercepts enrolled credentials of the same subject across K=5 distinct application domains",
+      "target_asset": "Identity linkage across applications (G\u00f3mez-Barrero D_sys framework)",
+      "defense_mechanism": "Domain-separated CSPRNG HKDF derivation generates statistically orthogonal projection keys across applications",
+      "empirical_finding": "Descriptor-Only D_sys = 0.0064 [0.0033, 0.1167]. Topology-Only D_sys = 0.0375 [0.0252, 0.1186]. Combined D_sys = 0.0015 [0.0000, 0.0253]. Maximum Linkage D_sys^max = 0.0375 [0.0296, 0.1333].",
+      "status": "Low Residual Linkability (D_sys^max <= 0.05 point estimate; upper CI = 0.1333 < 0.20)"
+    },
+    {
+      "threat_model_id": "TM-4",
+      "threat_model_name": "Cross-Epoch Revocation & Cancellation",
+      "attacker_capability": "Adversary possesses revoked Epoch 1 credential and attempts authentication against Epoch 2 or identity linkage",
+      "target_asset": "Unauthorized re-authentication or tracking of revoked biometric identities across epochs",
+      "defense_mechanism": "ISO/IEC 24745:2022 registry-level blocking + cryptographic key decorrelation upon fresh re-issuance",
+      "empirical_finding": "Registry enforcement blocks 100.0% of revoked requests. Cryptographic bypass match score = 0.0034 << T_accept (ASR = 0.0%). Cross-Epoch D_sys = 0.0689 [0.0046, 0.2014].",
+      "status": "Fully Revocable (Low Residual Linkability across Epochs)"
+    }
+  ],
+  "inversion_summary": {
+    "total_triangles_evaluated": 3000,
+    "9D_M32_cheb_radius": 0.0771670010434118,
+    "9D_M32_continuous_mae": 0.17377082426473497,
+    "9D_M32_angular_wrap_mae": 0.0830751467589289,
+    "9D_M32_cross_key_reissuance_score": 0.3001173347234726,
+    "9D_M32_cross_key_reissuance_asr_pct": 0.0,
+    "12D_M32_type_recovery_accuracy": 0.9506666666666667,
+    "12D_M128_type_recovery_accuracy": 1.0
+  },
+  "leakage_summary": {
+    "total_triangles_ingested": 11450,
+    "num_folds": 5,
+    "raw_geom_lr_balanced_acc": 0.5210193208418853,
+    "raw_geom_lr_bh_adjusted_p": 0.039,
+    "raw_geom_rf_balanced_acc": 0.5084075419548189,
+    "raw_geom_rf_bh_adjusted_p": 0.269,
+    "protected_bits_lr_balanced_acc": 0.5156819798391641,
+    "protected_bits_lr_bh_adjusted_p": 0.039,
+    "protected_bits_rf_balanced_acc": 0.5129356910713537,
+    "protected_bits_rf_bh_adjusted_p": 0.269,
+    "majority_class_accuracy": 0.9150218340611354
+  },
+  "revocation_summary": {
+    "epoch2_genuine_tar_pct": 100.0,
+    "epoch2_degradation_vs_epoch1": -0.024580554962158163,
+    "registry_level_block_rate": 100.0,
+    "cryptographic_bypass_mean_score": 0.0033922068076208236,
+    "cryptographic_bypass_asr_pct": 0.0,
+    "cross_epoch_d_sys": 0.06887115299367143,
+    "cross_epoch_ci_95": [
+      0.0046037248962342465,
+      0.20139825753879922
+    ],
+    "cross_epoch_status": "Low Residual Linkability across Epochs (D_sys < 0.20)"
+  },
+  "unlinkability_summary": {
+    "descriptor_only_d_sys": 0.006433606372087009,
+    "descriptor_only_ci_95": [
+      0.0032563662119277485,
+      0.11671576633214181
+    ],
+    "topology_only_d_sys": 0.0374716875169941,
+    "topology_only_ci_95": [
+      0.025169397590753713,
+      0.11858475686728977
+    ],
+    "combined_d_sys": 0.0015493560227686338,
+    "combined_ci_95": [
+      0.0,
+      0.02534593524717018
+    ],
+    "d_sys_max_point": 0.0374716875169941,
+    "d_sys_max_ci_95": [
+      0.029602986637784892,
+      0.13332124323897207
+    ],
+    "system_privacy_status": "Low Residual Linkability across Evaluated Threat Models (D_sys_max = 0.0375, Upper CI = 0.1333)"
+  }
+}

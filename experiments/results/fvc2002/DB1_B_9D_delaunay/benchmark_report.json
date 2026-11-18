@@ -1,0 +1,60 @@
+{
+  "subset": "DB1_B",
+  "descriptor_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "dpi": 500.0,
+  "total_images": 80,
+  "fta_count": 0,
+  "fta_rate": 0.0,
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles_per_fingerprint": 143.125,
+  "avg_template_bytes": 572.5,
+  "matching_throughput_comp_per_sec": 115.31089643462607,
+  "protected": {
+    "eer": 0.4222222222222222,
+    "auc": 0.6315873015873016,
+    "eer_threshold": 0.3619743991943451,
+    "tar_at_1pct_far": 0.0035714285714285587,
+    "tar_at_01pct_far": 0.0035714285714285587,
+    "clopper_pearson_95ci": [
+      0.36291013764161517,
+      0.4816279575818944
+    ],
+    "bootstrap_eer_95ci": [
+      0.3381818181818182,
+      0.49272727272727274
+    ],
+    "bootstrap_auc_95ci": [
+      0.5482539682539682,
+      0.7112698412698413
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.2,
+      0.7
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.34523809523809523,
+      0.5306122448979592
+    ],
+    "genuine_score_mean": 0.3688826262950897,
+    "genuine_score_std": 0.027995038777589798,
+    "impostor_score_mean": 0.3561018705368042,
+    "impostor_score_std": 0.02906959317624569
+  },
+  "unprotected_baseline": {
+    "eer": 0.4888888888888889,
+    "auc": 0.5160317460317461,
+    "genuine_score_mean": 0.25073227286338806,
+    "impostor_score_mean": 0.2506781816482544
+  },
+  "security": {
+    "descriptor_dim": 9,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Immune to Minutia-Type Recovery"
+  }
+}

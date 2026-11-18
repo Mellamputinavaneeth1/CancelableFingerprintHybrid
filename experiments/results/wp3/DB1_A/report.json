@@ -1,0 +1,166 @@
+{
+  "subset": "DB1_A",
+  "database_family": "FVC2002_DB1",
+  "sensor_provenance": {
+    "sensor_name": "TouchView II",
+    "vendor": "Identix",
+    "technology": "Optical (Total Internal Reflection prism)",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      388,
+      374
+    ],
+    "data_provenance": "Empirical physical captures from real human fingers",
+    "is_synthetic": false
+  },
+  "num_genuine": 2800,
+  "num_impostor": 4950,
+  "total_comparisons": 7750,
+  "total_images": 800,
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "avg_triangles": 144.07375,
+  "throughput_comp_per_sec": 112.6,
+  "bootstrap_replicates": 2000,
+  "protected": {
+    "eer_pct": 41.2,
+    "auc": 0.6249,
+    "eer_threshold": 0.375072,
+    "tar_at_1pct_far": 5.54,
+    "tar_at_01pct_far": 1.25,
+    "clustered_eer_95ci": [
+      38.32,
+      44.42
+    ],
+    "clustered_auc_95ci": [
+      0.5845,
+      0.6675
+    ],
+    "genuine_mean": 0.3835,
+    "genuine_std": 0.0374,
+    "impostor_mean": 0.3681,
+    "impostor_std": 0.0314
+  },
+  "unprotected_baseline": {
+    "eer_pct": 45.53,
+    "auc": 0.5605,
+    "genuine_mean": 0.264,
+    "genuine_std": 0.0428,
+    "impostor_mean": 0.2554,
+    "impostor_std": 0.0315
+  },
+  "paired_difference": {
+    "delta_eer_point": -0.0433,
+    "delta_eer_95ci": [
+      -0.0665,
+      -0.0157
+    ],
+    "delta_auc_point": 0.0643,
+    "delta_auc_95ci": [
+      0.033,
+      0.0959
+    ]
+  },
+  "frozen_baseline_evaluations": {
+    "T_EER": {
+      "threshold": 0.3751,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 59.07,
+      "far_pct": 41.41,
+      "frr_pct": 40.93,
+      "confusion": {
+        "tp": 1654,
+        "fn": 1146,
+        "fp": 2050,
+        "tn": 2900
+      }
+    },
+    "T_1pct_FAR": {
+      "threshold": 0.4497,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 3.64,
+      "far_pct": 0.51,
+      "frr_pct": 96.36,
+      "confusion": {
+        "tp": 102,
+        "fn": 2698,
+        "fp": 25,
+        "tn": 4925
+      }
+    },
+    "T_01pct_FAR": {
+      "threshold": 0.4705,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 0.86,
+      "far_pct": 0.02,
+      "frr_pct": 99.14,
+      "confusion": {
+        "tp": 24,
+        "fn": 2776,
+        "fp": 1,
+        "tn": 4949
+      }
+    }
+  },
+  "transferred_threshold_evaluations": {
+    "T_EER": {
+      "transferred_threshold": 0.3619,
+      "source_calibration": "DB1_B freshly calibrated developmental partition",
+      "tar_pct": 73.14,
+      "far_pct": 58.79,
+      "frr_pct": 26.86,
+      "confusion": {
+        "tp": 2048,
+        "fn": 752,
+        "fp": 2910,
+        "tn": 2040
+      }
+    },
+    "T_1pct_FAR": {
+      "transferred_threshold": 0.4545,
+      "source_calibration": "DB1_B freshly calibrated developmental partition",
+      "tar_pct": 2.5,
+      "far_pct": 0.4,
+      "frr_pct": 97.5,
+      "confusion": {
+        "tp": 70,
+        "fn": 2730,
+        "fp": 20,
+        "tn": 4930
+      }
+    },
+    "T_01pct_FAR": {
+      "transferred_threshold": 0.4545,
+      "source_calibration": "DB1_B freshly calibrated developmental partition",
+      "tar_pct": 2.5,
+      "far_pct": 0.4,
+      "frr_pct": 97.5,
+      "confusion": {
+        "tp": 70,
+        "fn": 2730,
+        "fp": 20,
+        "tn": 4930
+      }
+    }
+  },
+  "storage": {
+    "num_triangles": 144,
+    "in_dim": 9,
+    "out_dim": 32,
+    "descriptor_bytes": 576,
+    "weights_bytes": 288,
+    "header_bytes": 32,
+    "matrix_uncompressed_bytes": 20736,
+    "matrix_full_2bit_packed_bytes": 5184,
+    "matrix_symmetric_2bit_packed_bytes": 2574,
+    "total_credential_descriptor_only_bytes": 896,
+    "total_credential_uncompressed_bytes": 21632,
+    "total_credential_full_2bit_bytes": 6080,
+    "total_credential_packed_bytes": 3470,
+    "baseline_unprotected_bytes": 5792,
+    "compression_ratio_descriptor_raw": 0.8888888888888888,
+    "true_compression_ratio_descriptor_only": 0.8453038674033149,
+    "true_compression_ratio_packed": 0.4008977900552486,
+    "true_compression_ratio_uncompressed": -2.734806629834254
+  }
+}

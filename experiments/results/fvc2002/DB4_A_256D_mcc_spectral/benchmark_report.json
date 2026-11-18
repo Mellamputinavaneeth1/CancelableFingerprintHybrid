@@ -1,0 +1,199 @@
+{
+  "subset": "DB4_A",
+  "is_pilot_set_b": false,
+  "sensor_provenance": {
+    "sensor_name": "SFinGe v2.51",
+    "vendor": "Synthetic Generator (Univ. of Bologna)",
+    "technology": "Synthetic generation model",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      288,
+      384
+    ],
+    "cross_sensor_scope_notice": "Evaluated on DB1_A (Identix TouchView II optical TIR prism). DB1_A represents optical prism sensors and does not substitute for cross-sensor evaluation across DB2 (CMOS optical), DB3 (capacitive solid-state), or DB4 (synthetic SFinGe)."
+  },
+  "descriptor_dim": 256,
+  "topology": "mcc_spectral",
+  "engine": "classical",
+  "k_nn": null,
+  "dpi": 500.0,
+  "total_images": 800,
+  "file_read_error_count": 0,
+  "capture_device_fta": "N/A (offline database)",
+  "fte_count": 52,
+  "fte_rate": 0.065,
+  "num_genuine": 2800,
+  "num_impostor": 4950,
+  "avg_triangles_per_fingerprint": 33.61497326203209,
+  "template_storage": {
+    "num_triangles": 34,
+    "in_dim": 256,
+    "out_dim": 192,
+    "descriptor_bytes": 816,
+    "weights_bytes": 68,
+    "header_bytes": 48,
+    "matrix_uncompressed_bytes": 1156,
+    "matrix_full_2bit_packed_bytes": 289,
+    "matrix_symmetric_2bit_packed_bytes": 141,
+    "total_credential_descriptor_only_bytes": 932,
+    "total_credential_uncompressed_bytes": 2088,
+    "total_credential_full_2bit_bytes": 1221,
+    "total_credential_packed_bytes": 34678,
+    "baseline_unprotected_bytes": 35000,
+    "compression_ratio_descriptor_raw": 0.9765625,
+    "true_compression_ratio_descriptor_only": 0.9733714285714286,
+    "true_compression_ratio_packed": 0.9693428571428572,
+    "true_compression_ratio_uncompressed": 0.9403428571428571,
+    "edge_token_packed_bytes": 33605
+  },
+  "dataset_storage_statistics": {
+    "num_enrolled_templates": 748,
+    "triangles": {
+      "mean": 33.61497326203209,
+      "std": 31.15038373467439,
+      "min": 3,
+      "max": 80
+    },
+    "packed_credential_bytes": {
+      "mean": 1180.6510695187167,
+      "std": 1131.6501308363158,
+      "min": 127,
+      "max": 2918,
+      "total_dataset_bytes": 883127
+    },
+    "descriptor_only_bytes": {
+      "mean": 921.9893048128342,
+      "std": 809.9099771015342,
+      "min": 126,
+      "max": 2128,
+      "total_dataset_bytes": 689648
+    },
+    "dense_uncompressed_bytes": {
+      "mean": 3022.3021390374333,
+      "std": 3426.790961878553,
+      "min": 135,
+      "max": 8528,
+      "total_dataset_bytes": 2260682
+    },
+    "baseline_unprotected_bytes": {
+      "mean": 34604.19251336899,
+      "std": 32022.594479245276,
+      "min": 3132,
+      "max": 82288,
+      "total_dataset_bytes": 25883936
+    },
+    "aggregate_serialized_compression": {
+      "packed_vs_baseline": 0.9658812709164479,
+      "descriptor_only_vs_baseline": 0.9733561387263514,
+      "dense_vs_baseline": 0.9126608101642656
+    }
+  },
+  "matching_throughput_comp_per_sec": 73.51236040191154,
+  "protected": {
+    "eer": 0.1975,
+    "auc": 0.8550052308802308,
+    "eer_threshold": 0.014055849771050958,
+    "tar_at_1pct_far": 0.4621428571428572,
+    "tar_at_01pct_far": 0.26928571428571424,
+    "clustered_eer_95ci": [
+      0.13443677639469775,
+      0.23980097508906206
+    ],
+    "clustered_auc_95ci": [
+      0.8115005913444691,
+      0.9005651720009344
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.14906199021207178,
+      0.25259515570934254
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.1332142857142857,
+      0.26321428571428573
+    ],
+    "genuine_score_mean": 0.10229167342185974,
+    "genuine_score_std": 0.081639863550663,
+    "impostor_score_mean": 0.01024752389639616,
+    "impostor_score_std": 0.018106918781995773,
+    "frozen_set_b_threshold_evaluation": {
+      "calibrated_from_subset": "DB4_B",
+      "frozen_operating_threshold": 0.015956,
+      "tar_at_frozen_threshold": 0.8025,
+      "far_at_frozen_threshold": 0.17474747474747473,
+      "frr_at_frozen_threshold": 0.1975,
+      "confusion_at_frozen_threshold": {
+        "tp": 2247,
+        "fn": 553,
+        "fp": 865,
+        "tn": 4085
+      },
+      "operating_points": {
+        "at_set_b_eer": {
+          "threshold": 0.015956,
+          "confusion_matrix": {
+            "tp": 2247,
+            "fn": 553,
+            "fp": 865,
+            "tn": 4085
+          },
+          "tar": 0.8025,
+          "frr": 0.1975,
+          "far": 0.17474747474747473,
+          "tnr": 0.8252525252525252
+        },
+        "at_set_b_1pct_far": {
+          "threshold": 0.02699,
+          "confusion_matrix": {
+            "tp": 2242,
+            "fn": 558,
+            "fp": 495,
+            "tn": 4455
+          },
+          "tar": 0.8007142857142857,
+          "frr": 0.1992857142857143,
+          "far": 0.1,
+          "tnr": 0.9
+        },
+        "at_set_b_01pct_far": {
+          "threshold": 0.034446,
+          "confusion_matrix": {
+            "tp": 2237,
+            "fn": 563,
+            "fp": 416,
+            "tn": 4534
+          },
+          "tar": 0.7989285714285714,
+          "frr": 0.20107142857142857,
+          "far": 0.08404040404040404,
+          "tnr": 0.915959595959596
+        }
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.16357142857142856,
+    "auc": 0.8518059163059163,
+    "genuine_score_mean": 0.1753498911857605,
+    "impostor_score_mean": 0.026066921651363373
+  },
+  "paired_difference_protected_vs_unprotected": {
+    "delta_eer_point": 0.03392857142857145,
+    "delta_eer_95ci": [
+      0.011809846876891156,
+      0.04129187683133975
+    ],
+    "delta_auc_point": 0.003199314574314549,
+    "delta_auc_95ci": [
+      -0.003823417961348996,
+      0.011118300387201963
+    ],
+    "delta_eer_mean": 0.027130549881887876,
+    "delta_auc_mean": 0.0034627607353430313
+  },
+  "security": {
+    "descriptor_dim": 256,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Excludes Direct Minutiae-Type Storage (0 variables stored); Weak Residual Geometric Signal"
+  }
+}

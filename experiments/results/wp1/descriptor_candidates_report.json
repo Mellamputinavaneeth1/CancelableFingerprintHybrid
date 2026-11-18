@@ -1,0 +1,170 @@
+{
+  "title": "WP1 Descriptor Candidate Benchmark (DB1_B)",
+  "timestamp": "2026-11-10 15:36:59",
+  "database": "FVC2002 DB1_B",
+  "trials": 325,
+  "genuine": 280,
+  "impostor": 45,
+  "candidates": [
+    {
+      "candidate_name": "12-D Minutiae-Type Leakage Ablation",
+      "dimension": 12,
+      "features": [
+        "r1",
+        "r2",
+        "P_mm",
+        "phi0",
+        "phi1",
+        "phi2",
+        "dth01",
+        "dth12",
+        "dth20",
+        "t0",
+        "t1",
+        "t2"
+      ],
+      "description": "Stores discrete minutiae types (ending=0, bifurcation=1). Susceptible to MILP inversion.",
+      "eer_pct": 42.22222222222222,
+      "auc": 0.6250793650793651,
+      "eer_threshold": 0.30611424144996896,
+      "tar_at_1pct_far": 2.500000000000002,
+      "tar_at_01pct_far": 2.500000000000002,
+      "separation_delta": 0.013379514217376709,
+      "genuine_mean": 0.31155675649642944,
+      "genuine_std": 0.030715104192495346,
+      "impostor_mean": 0.29817724227905273,
+      "impostor_std": 0.032803524285554886,
+      "throughput_comp_per_sec": 256.2,
+      "confusion": {
+        "tp": 162,
+        "fn": 118,
+        "fp": 19,
+        "tn": 26
+      }
+    },
+    {
+      "candidate_name": "9-D Primary Geometric Baseline",
+      "dimension": 9,
+      "features": [
+        "r1",
+        "r2",
+        "P_mm",
+        "phi0",
+        "phi1",
+        "phi2",
+        "dth01",
+        "dth12",
+        "dth20"
+      ],
+      "description": "Complete rigid geometry with redundant mutual orientations. Primary production system.",
+      "eer_pct": 39.729729729729726,
+      "auc": 0.6403968253968254,
+      "eer_threshold": 0.3461122200646558,
+      "tar_at_1pct_far": 0.3571428571428559,
+      "tar_at_01pct_far": 0.3571428571428559,
+      "separation_delta": 0.013675481081008911,
+      "genuine_mean": 0.35416507720947266,
+      "genuine_std": 0.02876746468245983,
+      "impostor_mean": 0.34048959612846375,
+      "impostor_std": 0.029843971133232117,
+      "throughput_comp_per_sec": 262.1,
+      "confusion": {
+        "tp": 167,
+        "fn": 113,
+        "fp": 18,
+        "tn": 27
+      }
+    },
+    {
+      "candidate_name": "8-D Non-Redundant Mutual Angle Candidate",
+      "dimension": 8,
+      "features": [
+        "r1",
+        "r2",
+        "P_mm",
+        "phi0",
+        "phi1",
+        "phi2",
+        "dth01",
+        "dth12"
+      ],
+      "description": "Eliminates dth20 redundancy (since directed angle sum mod pi = 0).",
+      "eer_pct": 41.07142857142857,
+      "auc": 0.6140476190476191,
+      "eer_threshold": 0.3667734680479353,
+      "tar_at_1pct_far": 0.3571428571428559,
+      "tar_at_01pct_far": 0.3571428571428559,
+      "separation_delta": 0.008881807327270508,
+      "genuine_mean": 0.3730029761791229,
+      "genuine_std": 0.026426102966070175,
+      "impostor_mean": 0.3641211688518524,
+      "impostor_std": 0.028355808928608894,
+      "throughput_comp_per_sec": 271.2,
+      "confusion": {
+        "tp": 165,
+        "fn": 115,
+        "fp": 18,
+        "tn": 27
+      }
+    },
+    {
+      "candidate_name": "6-D Minimal Non-Redundant Manifold",
+      "dimension": 6,
+      "features": [
+        "r1",
+        "r2",
+        "P_mm",
+        "phi0",
+        "phi1",
+        "phi2"
+      ],
+      "description": "Minimal intrinsic manifold dim(SE(2)) = 6. All mutual angles determined by geometry.",
+      "eer_pct": 55.55555555555556,
+      "auc": 0.44412698412698415,
+      "eer_threshold": 0.47042047288224503,
+      "tar_at_1pct_far": 1.4285714285714235,
+      "tar_at_01pct_far": 1.4285714285714235,
+      "separation_delta": -0.005563795566558838,
+      "genuine_mean": 0.4650703966617584,
+      "genuine_std": 0.028505822643637657,
+      "impostor_mean": 0.47063419222831726,
+      "impostor_std": 0.026612594723701477,
+      "throughput_comp_per_sec": 314.0,
+      "confusion": {
+        "tp": 124,
+        "fn": 156,
+        "fp": 25,
+        "tn": 20
+      }
+    },
+    {
+      "candidate_name": "5-D Reduced Scale-Invariant Candidate",
+      "dimension": 5,
+      "features": [
+        "L1",
+        "L2",
+        "dth01",
+        "dth12",
+        "dth20"
+      ],
+      "description": "Discards physical perimeter and edge relative angles; scale and rotation invariant.",
+      "eer_pct": 35.55555555555556,
+      "auc": 0.7019047619047619,
+      "eer_threshold": 0.5565439409856443,
+      "tar_at_1pct_far": 12.857142857142856,
+      "tar_at_01pct_far": 12.857142857142856,
+      "separation_delta": 0.03775590658187866,
+      "genuine_mean": 0.5695988535881042,
+      "genuine_std": 0.0404590405523777,
+      "impostor_mean": 0.5318429470062256,
+      "impostor_std": 0.053615864366292953,
+      "throughput_comp_per_sec": 355.1,
+      "confusion": {
+        "tp": 179,
+        "fn": 101,
+        "fp": 16,
+        "tn": 29
+      }
+    }
+  ]
+}

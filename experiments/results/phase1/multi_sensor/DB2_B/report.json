@@ -1,0 +1,106 @@
+{
+  "subset": "DB2_B",
+  "sensor_provenance": {
+    "sensor_name": "FX2000",
+    "vendor": "Biometrika",
+    "technology": "Optical (CMOS surface)",
+    "native_dpi": 569.0,
+    "image_size_px": [
+      296,
+      560
+    ]
+  },
+  "descriptor_dim": 9,
+  "topology": "delaunay",
+  "projection_dim": 32,
+  "dpi": 569.0,
+  "total_images": 80,
+  "fta": "N/A (offline database)",
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles": 141.675,
+  "matching_throughput_comp_per_sec": 123.45784429182103,
+  "protected": {
+    "eer": 0.39008264462809916,
+    "auc": 0.6487301587301587,
+    "eer_threshold": 0.36852704656474944,
+    "tar_at_1pct_far": 0.050000000000000044,
+    "tar_at_01pct_far": 0.050000000000000044,
+    "bootstrap_eer_95ci": [
+      0.3046153846153846,
+      0.4578034682080925
+    ],
+    "bootstrap_auc_95ci": [
+      0.5563492063492064,
+      0.731904761904762
+    ],
+    "clustered_eer_95ci": [
+      0.23684210526315788,
+      0.5426470588235294
+    ],
+    "clustered_auc_95ci": [
+      0.47247386759581883,
+      0.8162087912087912
+    ],
+    "genuine_mean": 0.37982177734375,
+    "genuine_std": 0.03668008744716644,
+    "impostor_mean": 0.3621392548084259,
+    "impostor_std": 0.03299878165125847,
+    "frozen_dev_threshold_eval": {
+      "threshold": 0.3751,
+      "tar": 0.5321428571428571,
+      "far": 0.28888888888888886,
+      "frr": 0.46785714285714286,
+      "confusion": {
+        "tp": 149,
+        "fn": 131,
+        "fp": 13,
+        "tn": 32
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.41785714285714287,
+    "auc": 0.5907142857142857,
+    "genuine_mean": 0.26949238777160645,
+    "genuine_std": 0.039018865674734116,
+    "impostor_mean": 0.25754880905151367,
+    "impostor_std": 0.023603638634085655
+  },
+  "paired_difference": {
+    "delta_eer_point": -0.02777449822904371,
+    "delta_eer_95ci": [
+      -0.172923400257933,
+      0.10940526727939665
+    ],
+    "delta_auc_point": 0.058015873015872965,
+    "delta_auc_95ci": [
+      -0.08609022556390977,
+      0.1908834586466165
+    ],
+    "delta_eer_mean": -0.04406202554721678,
+    "delta_auc_mean": 0.05655698746574465
+  },
+  "storage": {
+    "num_triangles": 142,
+    "in_dim": 9,
+    "out_dim": 32,
+    "descriptor_bytes": 568,
+    "weights_bytes": 284,
+    "header_bytes": 32,
+    "matrix_uncompressed_bytes": 20164,
+    "matrix_full_2bit_packed_bytes": 5041,
+    "matrix_symmetric_2bit_packed_bytes": 2503,
+    "total_credential_descriptor_only_bytes": 884,
+    "total_credential_uncompressed_bytes": 21048,
+    "total_credential_full_2bit_bytes": 5925,
+    "total_credential_packed_bytes": 3387,
+    "baseline_unprotected_bytes": 5712,
+    "compression_ratio_descriptor_raw": 0.8888888888888888,
+    "true_compression_ratio_descriptor_only": 0.8452380952380952,
+    "true_compression_ratio_packed": 0.4070378151260504,
+    "true_compression_ratio_uncompressed": -2.6848739495798317
+  }
+}

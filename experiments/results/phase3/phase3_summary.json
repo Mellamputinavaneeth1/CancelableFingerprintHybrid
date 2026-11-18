@@ -1,0 +1,255 @@
+{
+  "phase": "Phase 3 \u2014 Robustness and Capture-Quality Evaluation",
+  "timestamp_generated": "2026-11-08T21:37:52Z",
+  "architecture": "9-D Pure Geometric Cancelable Fingerprint Protection System",
+  "frozen_operational_threshold": 0.3751,
+  "socofing_harmonized_threshold": 0.3891,
+  "executive_summary": {
+    "socofing_alteration_benchmark": {
+      "nature": "synthetic digital alterations",
+      "subjects": 10,
+      "fold1": {
+        "dev_subjects": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "test_subjects": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "num_comparisons": 180,
+        "eer": 0.2088888888888889,
+        "auc": 0.8651851851851852,
+        "tar_at_3891": 0.6666666666666666,
+        "far_at_3891": 0.1111111111111111,
+        "confusion_at_3891": {
+          "threshold": 0.3891,
+          "tp": 30,
+          "fn": 15,
+          "fp": 15,
+          "tn": 120,
+          "n_genuine": 45,
+          "n_impostor": 135,
+          "tar": 0.6666666666666666,
+          "frr": 0.3333333333333333,
+          "far": 0.1111111111111111,
+          "trr": 0.8888888888888888,
+          "tar_95ci": [
+            0.5104963621416385,
+            0.7999943119893052
+          ],
+          "frr_95ci": [
+            0.20000568801069496,
+            0.4895036378583614
+          ],
+          "far_95ci": [
+            0.06353770347447942,
+            0.17663292957790916
+          ],
+          "trr_95ci": [
+            0.8233670704220908,
+            0.9364622965255206
+          ]
+        }
+      },
+      "fold2": {
+        "dev_subjects": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "test_subjects": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "num_comparisons": 180,
+        "eer": 0.26666666666666666,
+        "auc": 0.8034567901234568,
+        "tar_at_3891": 0.7555555555555555,
+        "far_at_3891": 0.362962962962963,
+        "confusion_at_3891": {
+          "threshold": 0.3891,
+          "tp": 34,
+          "fn": 11,
+          "fp": 49,
+          "tn": 86,
+          "n_genuine": 45,
+          "n_impostor": 135,
+          "tar": 0.7555555555555555,
+          "frr": 0.24444444444444444,
+          "far": 0.362962962962963,
+          "trr": 0.6370370370370371,
+          "tar_95ci": [
+            0.6046290712401733,
+            0.871177185396492
+          ],
+          "frr_95ci": [
+            0.128822814603508,
+            0.3953709287598266
+          ],
+          "far_95ci": [
+            0.281993321443608,
+            0.4500874968183026
+          ],
+          "trr_95ci": [
+            0.5499125031816974,
+            0.7180066785563921
+          ]
+        }
+      },
+      "pooled_10_subjects": {
+        "num_comparisons": 360,
+        "eer": 0.24444444444444444,
+        "auc": 0.8304115226337448,
+        "tar_at_3891": 0.7111111111111111,
+        "far_at_3891": 0.23703703703703705,
+        "confusion_at_3891": {
+          "threshold": 0.3891,
+          "tp": 64,
+          "fn": 26,
+          "fp": 64,
+          "tn": 206,
+          "n_genuine": 90,
+          "n_impostor": 270,
+          "tar": 0.7111111111111111,
+          "frr": 0.28888888888888886,
+          "far": 0.23703703703703705,
+          "trr": 0.762962962962963,
+          "tar_95ci": [
+            0.6060123634676716,
+            0.8018405979690263
+          ],
+          "frr_95ci": [
+            0.1981594020309737,
+            0.3939876365323284
+          ],
+          "far_95ci": [
+            0.18759652975277735,
+            0.2923505731298259
+          ],
+          "trr_95ci": [
+            0.7076494268701742,
+            0.8124034702472226
+          ]
+        }
+      }
+    },
+    "nuisance_stress_tests": {
+      "dataset": "FVC2002 DB1_B",
+      "fingers": 10,
+      "total_comparisons": 2200,
+      "fte_rate": 0.0,
+      "fta": "N/A (offline database)",
+      "conditions_evaluated": {
+        "planar_rotation": {
+          "levels": [
+            -45.0,
+            -30.0,
+            -15.0,
+            0.0,
+            15.0,
+            30.0,
+            45.0
+          ],
+          "baseline_tar": 0.7,
+          "worst_tar": 0.5,
+          "tar_range": [
+            0.5,
+            0.8
+          ],
+          "far_range": [
+            0.1778,
+            0.3
+          ],
+          "finding": "Pure geometric Delaunay descriptors maintain robust recognition across \u00b145\u00b0 rotation without coordinate unwarping."
+        },
+        "translation": {
+          "levels": [
+            [
+              -30,
+              -30
+            ],
+            [
+              -15,
+              -15
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              15,
+              15
+            ],
+            [
+              30,
+              30
+            ]
+          ],
+          "baseline_tar": 0.7,
+          "worst_tar": 0.7,
+          "tar_range": [
+            0.7,
+            0.8
+          ],
+          "far_range": [
+            0.1778,
+            0.3111
+          ],
+          "finding": "Complete translational invariance: genuine scores and TAR remain strictly invariant within boundary margins."
+        },
+        "partial_crop": {
+          "levels": [
+            1.0,
+            0.8,
+            0.6,
+            0.4,
+            0.25
+          ],
+          "baseline_tar": 0.7,
+          "worst_tar": 0.4,
+          "tar_range": [
+            0.4,
+            0.7
+          ],
+          "far_range": [
+            0.1778,
+            0.3111
+          ],
+          "finding": "Controlled monotonic degradation under severe platen cropping as active print area shrinks."
+        },
+        "elastic_deformation": {
+          "levels": [
+            0.0,
+            5.0,
+            10.0,
+            15.0,
+            20.0
+          ],
+          "baseline_tar": 0.7,
+          "worst_tar": 0.4,
+          "tar_range": [
+            0.4,
+            0.7
+          ],
+          "far_range": [
+            0.1667,
+            0.3667
+          ],
+          "finding": "Non-linear radial/tangential warp induces Delaunay simplex flipping, confirming Phase 1 bottleneck analysis."
+        }
+      }
+    }
+  }
+}

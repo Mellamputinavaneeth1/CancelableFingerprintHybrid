@@ -1,0 +1,106 @@
+{
+  "subset": "DB4_B",
+  "sensor_provenance": {
+    "sensor_name": "SFinGe v2.51",
+    "vendor": "Synthetic Generator (Univ. of Bologna)",
+    "technology": "Synthetic generation model",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      288,
+      384
+    ]
+  },
+  "descriptor_dim": 9,
+  "topology": "delaunay",
+  "projection_dim": 32,
+  "dpi": 500.0,
+  "total_images": 80,
+  "fta": "N/A (offline database)",
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles": 144.6875,
+  "matching_throughput_comp_per_sec": 113.47085865338528,
+  "protected": {
+    "eer": 0.37349397590361444,
+    "auc": 0.6724603174603174,
+    "eer_threshold": 0.3700316766579946,
+    "tar_at_1pct_far": 0.0035714285714285587,
+    "tar_at_01pct_far": 0.0035714285714285587,
+    "bootstrap_eer_95ci": [
+      0.30490196078431375,
+      0.4444444444444444
+    ],
+    "bootstrap_auc_95ci": [
+      0.5868253968253968,
+      0.7554761904761905
+    ],
+    "clustered_eer_95ci": [
+      0.2739602169981917,
+      0.48314606741573035
+    ],
+    "clustered_auc_95ci": [
+      0.5302197802197802,
+      0.8008241758241759
+    ],
+    "genuine_mean": 0.37994569540023804,
+    "genuine_std": 0.030886199325323105,
+    "impostor_mean": 0.3623856008052826,
+    "impostor_std": 0.03219831362366676,
+    "frozen_dev_threshold_eval": {
+      "threshold": 0.3751,
+      "tar": 0.5714285714285714,
+      "far": 0.3333333333333333,
+      "frr": 0.42857142857142855,
+      "confusion": {
+        "tp": 160,
+        "fn": 120,
+        "fp": 15,
+        "tn": 30
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.39692307692307693,
+    "auc": 0.6465873015873016,
+    "genuine_mean": 0.23272840678691864,
+    "genuine_std": 0.031861890107393265,
+    "impostor_mean": 0.21899795532226562,
+    "impostor_std": 0.02426777593791485
+  },
+  "paired_difference": {
+    "delta_eer_point": -0.023429101019462495,
+    "delta_eer_95ci": [
+      -0.08163265306122452,
+      0.10757295044001852
+    ],
+    "delta_auc_point": 0.025873015873015826,
+    "delta_auc_95ci": [
+      -0.07079831932773117,
+      0.11446428571428569
+    ],
+    "delta_eer_mean": 0.003872072034790655,
+    "delta_auc_mean": 0.020776472465085197
+  },
+  "storage": {
+    "num_triangles": 145,
+    "in_dim": 9,
+    "out_dim": 32,
+    "descriptor_bytes": 580,
+    "weights_bytes": 290,
+    "header_bytes": 32,
+    "matrix_uncompressed_bytes": 21025,
+    "matrix_full_2bit_packed_bytes": 5257,
+    "matrix_symmetric_2bit_packed_bytes": 2610,
+    "total_credential_descriptor_only_bytes": 902,
+    "total_credential_uncompressed_bytes": 21927,
+    "total_credential_full_2bit_bytes": 6159,
+    "total_credential_packed_bytes": 3512,
+    "baseline_unprotected_bytes": 5832,
+    "compression_ratio_descriptor_raw": 0.8888888888888888,
+    "true_compression_ratio_descriptor_only": 0.8453360768175583,
+    "true_compression_ratio_packed": 0.39780521262002744,
+    "true_compression_ratio_uncompressed": -2.7597736625514404
+  }
+}

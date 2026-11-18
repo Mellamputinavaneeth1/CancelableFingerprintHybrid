@@ -1,0 +1,108 @@
+{
+  "fvc2002": {
+    "total_images": 3520,
+    "subsets": {
+      "DB1_A": {
+        "status": "AVAILABLE",
+        "file_count": 800,
+        "unique_fingers": 100,
+        "impressions_per_finger": 8,
+        "sensor": "Optical (TouchView II by Identix)",
+        "dpi": 500.0,
+        "provenance_category": "Physical Optical Capture"
+      },
+      "DB1_B": {
+        "status": "AVAILABLE",
+        "file_count": 80,
+        "unique_fingers": 10,
+        "impressions_per_finger": 8,
+        "sensor": "Optical (TouchView II by Identix)",
+        "dpi": 500.0,
+        "provenance_category": "Physical Optical Capture"
+      },
+      "DB2_A": {
+        "status": "AVAILABLE",
+        "file_count": 800,
+        "unique_fingers": 100,
+        "impressions_per_finger": 8,
+        "sensor": "Optical (FX2000 by Biometrika)",
+        "dpi": 569.0,
+        "provenance_category": "Physical Optical Capture"
+      },
+      "DB2_B": {
+        "status": "AVAILABLE",
+        "file_count": 80,
+        "unique_fingers": 10,
+        "impressions_per_finger": 8,
+        "sensor": "Optical (FX2000 by Biometrika)",
+        "dpi": 569.0,
+        "provenance_category": "Physical Optical Capture"
+      },
+      "DB3_A": {
+        "status": "AVAILABLE",
+        "file_count": 800,
+        "unique_fingers": 100,
+        "impressions_per_finger": 8,
+        "sensor": "Capacitive (100 SC by Precise Biometrics)",
+        "dpi": 500.0,
+        "provenance_category": "Physical Capacitive Capture"
+      },
+      "DB3_B": {
+        "status": "AVAILABLE",
+        "file_count": 80,
+        "unique_fingers": 10,
+        "impressions_per_finger": 8,
+        "sensor": "Capacitive (100 SC by Precise Biometrics)",
+        "dpi": 500.0,
+        "provenance_category": "Physical Capacitive Capture"
+      },
+      "DB4_A": {
+        "status": "AVAILABLE",
+        "file_count": 800,
+        "unique_fingers": 100,
+        "impressions_per_finger": 8,
+        "sensor": "Synthetic Generator (SFinGe v2.51)",
+        "dpi": 500.0,
+        "provenance_category": "Synthetic SFinGe Software"
+      },
+      "DB4_B": {
+        "status": "AVAILABLE",
+        "file_count": 80,
+        "unique_fingers": 10,
+        "impressions_per_finger": 8,
+        "sensor": "Synthetic Generator (SFinGe v2.51)",
+        "dpi": 500.0,
+        "provenance_category": "Synthetic SFinGe Software"
+      }
+    },
+    "physical_sensor_images": 2640,
+    "synthetic_sensor_images": 880
+  },
+  "socofing": {
+    "dataset_scope": "100-Image Local Research Subset (NOT full 6,000-image dataset)",
+    "total_local_images": 100,
+    "counts_by_category": {
+      "Real": 10,
+      "Altered-Easy": 30,
+      "Altered-Medium": 30,
+      "Altered-Hard": 30
+    },
+    "unique_subjects_local": 10,
+    "unique_fingerprint_identities_local": 10,
+    "altered_mapped_to_clean_original": 90,
+    "unmapped_altered_images": 0,
+    "filename_parsing_errors": 0,
+    "finger_coverage": [
+      "Left_index",
+      "Left_little",
+      "Left_middle",
+      "Left_ring",
+      "Left_thumb",
+      "Right_index",
+      "Right_little",
+      "Right_middle",
+      "Right_ring",
+      "Right_thumb"
+    ]
+  }
+}

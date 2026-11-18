@@ -1,0 +1,159 @@
+{
+  "dataset": "SOCOFing",
+  "descriptor_dim": 9,
+  "num_subjects": 10,
+  "num_dev_subjects": 5,
+  "num_test_subjects": 5,
+  "threshold_definitions": {
+    "tau_pair": "Local triangle descriptor normalized Hamming distance threshold (<= 0.22)",
+    "T_accept": "Overall biometric verification similarity score decision threshold (Accept if score >= T_accept)"
+  },
+  "trial_accounting": {
+    "total_genuine_trials": 90,
+    "total_impostor_trials": 270,
+    "impostor_protocol": "3 random impostor gallery impressions per probe altered impression (90 x 3 = 270)",
+    "genuine_cross_tabulation": {
+      "Central_Rotation": {
+        "Easy": 10,
+        "Medium": 10,
+        "Hard": 10
+      },
+      "Z-cut": {
+        "Easy": 10,
+        "Medium": 10,
+        "Hard": 10
+      },
+      "Obliteration": {
+        "Easy": 10,
+        "Medium": 10,
+        "Hard": 10
+      }
+    }
+  },
+  "threshold_calibration": {
+    "dev_eer": 0.2222222222222222,
+    "dev_auc": 0.8281481481481482,
+    "frozen_calibrated_T_accept": 0.3999637312528249
+  },
+  "held_out_test_evaluation": {
+    "test_eer": 0.2533333333333333,
+    "test_auc": 0.8409876543209877,
+    "evaluation_at_frozen_T_accept": {
+      "threshold": 0.3999637312528249,
+      "tp": 29,
+      "fn": 16,
+      "fp": 16,
+      "tn": 119,
+      "n_genuine": 45,
+      "n_impostor": 135,
+      "tar": 0.6444444444444445,
+      "frr": 0.35555555555555557,
+      "far": 0.11851851851851852,
+      "trr": 0.8814814814814815,
+      "tar_95ci": [
+        0.487801005148146,
+        0.7813159892644141
+      ],
+      "frr_95ci": [
+        0.21868401073558577,
+        0.5121989948518539
+      ],
+      "far_95ci": [
+        0.06928365959893167,
+        0.18532303732815888
+      ],
+      "trr_95ci": [
+        0.8146769626718411,
+        0.9307163404010683
+      ]
+    }
+  },
+  "overall_evaluation": {
+    "overall_eer": 0.2507936507936508,
+    "overall_eer_threshold": 0.3878413965067229,
+    "overall_auc": 0.8323868312757202,
+    "genuine_mean": 0.42617449164390564,
+    "impostor_mean": 0.35955703258514404,
+    "confusion_at_calibrated_T_accept": {
+      "threshold": 0.3999637312528249,
+      "tp": 64,
+      "fn": 26,
+      "fp": 46,
+      "tn": 224,
+      "n_genuine": 90,
+      "n_impostor": 270,
+      "tar": 0.7111111111111111,
+      "frr": 0.28888888888888886,
+      "far": 0.17037037037037037,
+      "trr": 0.8296296296296296,
+      "tar_95ci": [
+        0.6060123634676716,
+        0.8018405979690263
+      ],
+      "frr_95ci": [
+        0.1981594020309737,
+        0.3939876365323284
+      ],
+      "far_95ci": [
+        0.12751466067462794,
+        0.22063025346144413
+      ],
+      "trr_95ci": [
+        0.7793697465385558,
+        0.872485339325372
+      ]
+    },
+    "naive_legacy_threshold_020": {
+      "threshold": 0.2,
+      "tar": 0.9777777777777777,
+      "far": 0.9777777777777777,
+      "flaw_explanation": "At naive T_accept=0.20, FAR is 97.78% (97.8% of impostors falsely accepted) because mean impostor score is 0.3596 > 0.20. Reporting high TAR at 0.20 without reporting FAR created a false impression of robustness."
+    }
+  },
+  "by_difficulty": {
+    "Easy": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.4650750835736593,
+      "std_genuine_score": 0.057745238675860545,
+      "tar_at_calibrated_threshold": 0.9333333333333333,
+      "accept_rate_at_naive_020": 1.0
+    },
+    "Medium": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.4313100198904673,
+      "std_genuine_score": 0.052509327353621224,
+      "tar_at_calibrated_threshold": 0.7,
+      "accept_rate_at_naive_020": 1.0
+    },
+    "Hard": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.382138488193353,
+      "std_genuine_score": 0.08346012337175333,
+      "tar_at_calibrated_threshold": 0.5,
+      "accept_rate_at_naive_020": 0.9333333333333333
+    }
+  },
+  "by_alteration_class": {
+    "Obliteration": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.40911235064268114,
+      "std_genuine_score": 0.11004210342787595,
+      "tar_at_calibrated_threshold": 0.5333333333333333,
+      "accept_rate_at_naive_020": 0.9333333333333333
+    },
+    "Central_Rotation": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.42177289227644604,
+      "std_genuine_score": 0.03269436819914969,
+      "tar_at_calibrated_threshold": 0.8,
+      "accept_rate_at_naive_020": 1.0
+    },
+    "Z-cut": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.44763834873835245,
+      "std_genuine_score": 0.05086019477118257,
+      "tar_at_calibrated_threshold": 0.8,
+      "accept_rate_at_naive_020": 1.0
+    }
+  }
+}

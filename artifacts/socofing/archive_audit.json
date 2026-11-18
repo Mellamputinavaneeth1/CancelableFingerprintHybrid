@@ -1,0 +1,24 @@
+{
+  "dataset_root": "C:\\Users\\mella\\.gemini\\antigravity\\scratch\\CancelableFingerprintHybrid\\dataset\\SOCOFing",
+  "total_files_discovered": 100,
+  "valid_manifest_records": 100,
+  "excluded_files_count": 0,
+  "unmapped_files_count": 0,
+  "unique_subjects_count": 10,
+  "unique_fingerprints_count": 10,
+  "real_gallery_images": 10,
+  "altered_probe_images": 90,
+  "linked_probes": 90,
+  "missing_gallery_links": 0,
+  "severity_counts": {
+    "Real": 10,
+    "Altered-Easy": 30,
+    "Altered-Medium": 30,
+    "Altered-Hard": 30
+  },
+  "gates": {
+    "Gate_0_Archive": true,
+    "Gate_1_Parser": true,
+    "Gate_2_Identity_Linkage": true
+  }
+}

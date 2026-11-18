@@ -1,0 +1,38 @@
+{
+  "name": "Exp_D_kNN_Cyclic",
+  "topology": "knn",
+  "mode": "cyclic",
+  "consensus": false,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.41081081081081083,
+  "auc": 0.6476984126984127,
+  "eer_threshold": 0.6961807683629675,
+  "tar_at_1pct_far": 0.010714285714285676,
+  "tar_at_01pct_far": 0.010714285714285676,
+  "clopper_pearson_95ci": [
+    0.3525223784561895,
+    0.4708166333780649
+  ],
+  "bootstrap_eer_95ci": [
+    0.3418181818181818,
+    0.472
+  ],
+  "bootstrap_auc_95ci": [
+    0.5584920634920635,
+    0.7321428571428571
+  ],
+  "clustered_eer_95ci": [
+    0.3333333333333333,
+    0.5
+  ],
+  "clustered_auc_95ci": [
+    0.4924603174603175,
+    0.7428571428571429
+  ],
+  "genuine_mean": 0.6990563273429871,
+  "genuine_std": 0.027401816099882126,
+  "impostor_mean": 0.6809845566749573,
+  "impostor_std": 0.03645271062850952,
+  "throughput_comp_per_sec": 8.430365963117792
+}

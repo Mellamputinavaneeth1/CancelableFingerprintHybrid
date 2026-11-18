@@ -1,0 +1,494 @@
+{
+  "title": "Phase 1: Controlled Recognition Factorial Ablation Report",
+  "timestamp": "2026-11-09 01:55:56",
+  "reference_configuration": {
+    "descriptor": "9-D Pure Geometry",
+    "topology": "Delaunay Triangulation (max_edge=120px)",
+    "projection_length": "M = 32 bits",
+    "representation": "Keyed 1-Bit Binary Indicator Quantization",
+    "matching": "Block-Augmented Hungarian Bipartite Matching",
+    "weighting": "Minutiae Directional Coherence Reliability Weights"
+  },
+  "ablations": {
+    "reference": {
+      "condition_name": "ref_9D_delaunay_32b_hungarian_weights",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.37777777777777777,
+      "auc": 0.645079365079365,
+      "eer_threshold": 0.378376661192977,
+      "tar_at_1pct_far": 0.010714285714285676,
+      "tar_at_01pct_far": 0.010714285714285676,
+      "bootstrap_eer_95ci": [
+        0.3180722891566265,
+        0.4527272727272727
+      ],
+      "bootstrap_auc_95ci": [
+        0.5608730158730159,
+        0.7342857142857143
+      ],
+      "genuine_mean": 0.3882386386394501,
+      "genuine_std": 0.028431368991732597,
+      "impostor_mean": 0.37658631801605225,
+      "impostor_std": 0.03025972656905651,
+      "throughput_comp_per_sec": 275.19579567721263
+    },
+    "descriptor_12D": {
+      "condition_name": "ablation_desc_12D_minutiae_type",
+      "dataset": "DB1_B",
+      "in_dim": 12,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.43870967741935485,
+      "auc": 0.6082539682539683,
+      "eer_threshold": 0.3154542616596928,
+      "tar_at_1pct_far": 0.02857142857142858,
+      "tar_at_01pct_far": 0.02857142857142858,
+      "bootstrap_eer_95ci": [
+        0.3639344262295082,
+        0.49782608695652175
+      ],
+      "bootstrap_auc_95ci": [
+        0.5220634920634921,
+        0.6968253968253968
+      ],
+      "genuine_mean": 0.3206309974193573,
+      "genuine_std": 0.02891496941447258,
+      "impostor_mean": 0.30976784229278564,
+      "impostor_std": 0.03126369044184685,
+      "throughput_comp_per_sec": 259.5886492732692
+    },
+    "topology_knn_k3": {
+      "condition_name": "ablation_topology_knn_k3",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "knn",
+      "k_nn": 3,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4888888888888889,
+      "auc": 0.5857936507936508,
+      "eer_threshold": 0.37789810427559745,
+      "tar_at_1pct_far": 0.0035714285714285587,
+      "tar_at_01pct_far": 0.0035714285714285587,
+      "bootstrap_eer_95ci": [
+        0.38461538461538464,
+        0.5446088794926004
+      ],
+      "bootstrap_auc_95ci": [
+        0.4897619047619048,
+        0.682063492063492
+      ],
+      "genuine_mean": 0.3804824948310852,
+      "genuine_std": 0.030481595546007156,
+      "impostor_mean": 0.3681139349937439,
+      "impostor_std": 0.04051885008811951,
+      "throughput_comp_per_sec": 184.2504299608507
+    },
+    "topology_knn_k4": {
+      "condition_name": "ablation_topology_knn_k4",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "knn",
+      "k_nn": 4,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4444444444444444,
+      "auc": 0.5756349206349206,
+      "eer_threshold": 0.43909449877485973,
+      "tar_at_1pct_far": 0.0035714285714285587,
+      "tar_at_01pct_far": 0.0035714285714285587,
+      "bootstrap_eer_95ci": [
+        0.3703125,
+        0.5229437229437229
+      ],
+      "bootstrap_auc_95ci": [
+        0.4815079365079365,
+        0.6736507936507936
+      ],
+      "genuine_mean": 0.4420979917049408,
+      "genuine_std": 0.02960335463285446,
+      "impostor_mean": 0.43283772468566895,
+      "impostor_std": 0.036026109009981155,
+      "throughput_comp_per_sec": 39.32412468442806
+    },
+    "topology_knn_k5": {
+      "condition_name": "ablation_topology_knn_k5",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "knn",
+      "k_nn": 5,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4222222222222222,
+      "auc": 0.618015873015873,
+      "eer_threshold": 0.4864895470055016,
+      "tar_at_1pct_far": 0.010714285714285676,
+      "tar_at_01pct_far": 0.010714285714285676,
+      "bootstrap_eer_95ci": [
+        0.31485148514851485,
+        0.49482071713147413
+      ],
+      "bootstrap_auc_95ci": [
+        0.5265873015873016,
+        0.7042063492063492
+      ],
+      "genuine_mean": 0.48993977904319763,
+      "genuine_std": 0.029175976291298866,
+      "impostor_mean": 0.4766252636909485,
+      "impostor_std": 0.035363323986530304,
+      "throughput_comp_per_sec": 10.298006741096332
+    },
+    "projection_64b": {
+      "condition_name": "ablation_projection_64b",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 64,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4035714285714286,
+      "auc": 0.5888095238095238,
+      "eer_threshold": 0.31674183010453577,
+      "tar_at_1pct_far": 0.0,
+      "tar_at_01pct_far": 0.0,
+      "bootstrap_eer_95ci": [
+        0.346218487394958,
+        0.4666666666666667
+      ],
+      "bootstrap_auc_95ci": [
+        0.49896825396825395,
+        0.6826190476190476
+      ],
+      "genuine_mean": 0.325162410736084,
+      "genuine_std": 0.028275102376937866,
+      "impostor_mean": 0.31851330399513245,
+      "impostor_std": 0.033400945365428925,
+      "throughput_comp_per_sec": 244.87063691031778
+    },
+    "projection_128b": {
+      "condition_name": "ablation_projection_128b",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 128,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4432432432432432,
+      "auc": 0.5901587301587301,
+      "eer_threshold": 0.2963778259225794,
+      "tar_at_1pct_far": 0.0,
+      "tar_at_01pct_far": 0.0,
+      "bootstrap_eer_95ci": [
+        0.3405714285714286,
+        0.5108695652173914
+      ],
+      "bootstrap_auc_95ci": [
+        0.49357142857142855,
+        0.6848412698412698
+      ],
+      "genuine_mean": 0.30144691467285156,
+      "genuine_std": 0.026959337294101715,
+      "impostor_mean": 0.2949724495410919,
+      "impostor_std": 0.03271251171827316,
+      "throughput_comp_per_sec": 185.36104062811904
+    },
+    "representation_continuous": {
+      "condition_name": "ablation_rep_continuous_standardized",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "continuous",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4888888888888889,
+      "auc": 0.5160317460317461,
+      "eer_threshold": 0.2444288306443899,
+      "tar_at_1pct_far": 0.0,
+      "tar_at_01pct_far": 0.0,
+      "bootstrap_eer_95ci": [
+        0.4,
+        0.5544554455445545
+      ],
+      "bootstrap_auc_95ci": [
+        0.42968253968253967,
+        0.6095238095238096
+      ],
+      "genuine_mean": 0.25073227286338806,
+      "genuine_std": 0.029271017760038376,
+      "impostor_mean": 0.2506781816482544,
+      "impostor_std": 0.030158599838614464,
+      "throughput_comp_per_sec": 213.61997597311847
+    },
+    "matching_greedy_1to1": {
+      "condition_name": "ablation_matching_greedy_1to1",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "greedy_1to1",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.3815384615384615,
+      "auc": 0.6777777777777778,
+      "eer_threshold": 0.36679216332006026,
+      "tar_at_1pct_far": 0.0071428571428571175,
+      "tar_at_01pct_far": 0.0071428571428571175,
+      "bootstrap_eer_95ci": [
+        0.3231671554252199,
+        0.43855421686746987
+      ],
+      "bootstrap_auc_95ci": [
+        0.5894444444444444,
+        0.7616666666666667
+      ],
+      "genuine_mean": 0.37709754705429077,
+      "genuine_std": 0.027411630377173424,
+      "impostor_mean": 0.3591519296169281,
+      "impostor_std": 0.030758637934923172,
+      "throughput_comp_per_sec": 868.62220205783
+    },
+    "matching_greedy_nn": {
+      "condition_name": "ablation_matching_greedy_nn",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "greedy_nn",
+      "use_quality_weights": true,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4444444444444444,
+      "auc": 0.6376190476190476,
+      "eer_threshold": 0.47563657618533145,
+      "tar_at_1pct_far": 0.0071428571428571175,
+      "tar_at_01pct_far": 0.0071428571428571175,
+      "bootstrap_eer_95ci": [
+        0.35555555555555557,
+        0.5111111111111111
+      ],
+      "bootstrap_auc_95ci": [
+        0.5518253968253968,
+        0.7263492063492063
+      ],
+      "genuine_mean": 0.4824315309524536,
+      "genuine_std": 0.03484176844358444,
+      "impostor_mean": 0.46254611015319824,
+      "impostor_std": 0.04172953963279724,
+      "throughput_comp_per_sec": 1073.2736785333266
+    },
+    "weighting_uniform": {
+      "condition_name": "ablation_weighting_uniform",
+      "dataset": "DB1_B",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": false,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "eer": 0.4222222222222222,
+      "auc": 0.5819841269841269,
+      "eer_threshold": 0.3921729112638964,
+      "tar_at_1pct_far": 0.0,
+      "tar_at_01pct_far": 0.0,
+      "bootstrap_eer_95ci": [
+        0.32465753424657534,
+        0.4823529411764706
+      ],
+      "bootstrap_auc_95ci": [
+        0.49047619047619045,
+        0.6723809523809524
+      ],
+      "genuine_mean": 0.3990781605243683,
+      "genuine_std": 0.02959556132555008,
+      "impostor_mean": 0.3934406340122223,
+      "impostor_std": 0.034648772329092026,
+      "throughput_comp_per_sec": 292.63467615017237
+    },
+    "db1_a_reference": {
+      "condition_name": "db1_a_ref_9D_delaunay_32b_hungarian_weights",
+      "dataset": "DB1_A",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "eer": 0.4304505183788878,
+      "auc": 0.6082649350649351,
+      "eer_threshold": 0.38219883751924094,
+      "tar_at_1pct_far": 0.06821428571428567,
+      "tar_at_01pct_far": 0.02749999999999997,
+      "bootstrap_eer_95ci": [
+        0.4196085021866585,
+        0.4412942796804701
+      ],
+      "bootstrap_auc_95ci": [
+        0.5954045454545455,
+        0.621454365079365
+      ],
+      "genuine_mean": 0.3902738690376282,
+      "genuine_std": 0.03886975347995758,
+      "impostor_mean": 0.37624406814575195,
+      "impostor_std": 0.030982371419668198,
+      "throughput_comp_per_sec": 278.48664992603744
+    },
+    "db1_a_descriptor_12D": {
+      "condition_name": "db1_a_ablation_desc_12D",
+      "dataset": "DB1_A",
+      "in_dim": 12,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": true,
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "eer": 0.4590232686471075,
+      "auc": 0.5676162337662337,
+      "eer_threshold": 0.32577761031657726,
+      "tar_at_1pct_far": 0.0485714285714286,
+      "tar_at_01pct_far": 0.007499999999999951,
+      "bootstrap_eer_95ci": [
+        0.44998241866268407,
+        0.4717036166461884
+      ],
+      "bootstrap_auc_95ci": [
+        0.5544169191919192,
+        0.5810222222222222
+      ],
+      "genuine_mean": 0.3323192596435547,
+      "genuine_std": 0.03915763646364212,
+      "impostor_mean": 0.32316702604293823,
+      "impostor_std": 0.03097543865442276,
+      "throughput_comp_per_sec": 268.40411914375056
+    },
+    "db1_a_matching_greedy_1to1": {
+      "condition_name": "db1_a_ablation_matching_greedy_1to1",
+      "dataset": "DB1_A",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "greedy_1to1",
+      "use_quality_weights": true,
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "eer": 0.42053249293631817,
+      "auc": 0.6193092352092352,
+      "eer_threshold": 0.3654805911178226,
+      "tar_at_1pct_far": 0.06071428571428572,
+      "tar_at_01pct_far": 0.016071428571428625,
+      "bootstrap_eer_95ci": [
+        0.4090190218952934,
+        0.431347862011981
+      ],
+      "bootstrap_auc_95ci": [
+        0.6069177128427128,
+        0.6323898268398268
+      ],
+      "genuine_mean": 0.3736412227153778,
+      "genuine_std": 0.03631848096847534,
+      "impostor_mean": 0.35906845331192017,
+      "impostor_std": 0.03028438426554203,
+      "throughput_comp_per_sec": 848.5565273214562
+    },
+    "db1_a_weighting_uniform": {
+      "condition_name": "db1_a_ablation_weighting_uniform",
+      "dataset": "DB1_A",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "hungarian",
+      "use_quality_weights": false,
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "eer": 0.41930714147474357,
+      "auc": 0.6168522005772006,
+      "eer_threshold": 0.37539759293213504,
+      "tar_at_1pct_far": 0.054642857142857104,
+      "tar_at_01pct_far": 0.011071428571428621,
+      "bootstrap_eer_95ci": [
+        0.40689585146504204,
+        0.42821874741457766
+      ],
+      "bootstrap_auc_95ci": [
+        0.6042808802308802,
+        0.630168759018759
+      ],
+      "genuine_mean": 0.3833581209182739,
+      "genuine_std": 0.037138622254133224,
+      "impostor_mean": 0.36921560764312744,
+      "impostor_std": 0.03061925433576107,
+      "throughput_comp_per_sec": 304.66293343417203
+    },
+    "db1_a_representation_continuous": {
+      "condition_name": "db1_a_ablation_rep_continuous",
+      "dataset": "DB1_A",
+      "in_dim": 9,
+      "topology": "delaunay",
+      "k_nn": null,
+      "projection_dim": 32,
+      "matcher_algo": "continuous",
+      "use_quality_weights": true,
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "eer": 0.45527793510801845,
+      "auc": 0.5605445526695526,
+      "eer_threshold": 0.2579195369622848,
+      "tar_at_1pct_far": 0.04785714285714282,
+      "tar_at_01pct_far": 0.011785714285714288,
+      "bootstrap_eer_95ci": [
+        0.4452707110241357,
+        0.46741841073499363
+      ],
+      "bootstrap_auc_95ci": [
+        0.5461987012987013,
+        0.574149062049062
+      ],
+      "genuine_mean": 0.2640213966369629,
+      "genuine_std": 0.042774856090545654,
+      "impostor_mean": 0.25540757179260254,
+      "impostor_std": 0.03149200975894928,
+      "throughput_comp_per_sec": 236.48753588906683
+    }
+  }
+}

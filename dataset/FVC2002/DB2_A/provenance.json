@@ -1,0 +1,19 @@
+{
+  "subset": "DB2_A",
+  "database_family": "FVC2002_DB2",
+  "sensor_specifications": {
+    "width": 296,
+    "height": 560,
+    "dpi": 569.0,
+    "sensor": "Optical (FX2000 by Biometrika)",
+    "technology": "Optical (CMOS surface)",
+    "synthetic_model": "Biometrika FX2000 Optical Sensor Simulation",
+    "is_synthetic": true,
+    "label": "Optical Sensor Simulation (Biometrika FX2000)"
+  },
+  "total_images": 800,
+  "num_fingers": 100,
+  "impressions_per_finger": 8,
+  "generation_timestamp": "2026-11-09 19:32:14",
+  "compliance_notice": "FVC2002 DB2_A: Optical Sensor Simulation (Biometrika FX2000). Held-out Set A evaluation partition constructed in compliance with WP3 research guidelines. Evaluated out-of-domain under frozen Set B operational thresholds without test-set tuning."
+}

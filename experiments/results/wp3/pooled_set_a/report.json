@@ -1,0 +1,127 @@
+{
+  "benchmark": "pooled_set_a",
+  "database_families_included": [
+    "DB1_A",
+    "DB2_A",
+    "DB3_A",
+    "DB4_A"
+  ],
+  "total_comparisons": 31000,
+  "num_genuine": 11200,
+  "num_impostor": 19800,
+  "bootstrap_replicates": 2000,
+  "protected": {
+    "eer_pct": 31.2,
+    "auc": 0.7759,
+    "eer_threshold": 0.414926,
+    "tar_at_1pct_far": 7.68,
+    "tar_at_01pct_far": 1.18,
+    "bootstrap_eer_95ci": [
+      30.64,
+      31.67
+    ],
+    "bootstrap_auc_95ci": [
+      0.771,
+      0.781
+    ],
+    "clustered_eer_95ci": [
+      27.01,
+      33.44
+    ],
+    "clustered_auc_95ci": [
+      0.7504,
+      0.8116
+    ],
+    "genuine_mean": 0.468,
+    "genuine_std": 0.081,
+    "impostor_mean": 0.3421,
+    "impostor_std": 0.1307
+  },
+  "unprotected_baseline": {
+    "eer_pct": 37.59,
+    "auc": 0.7149,
+    "genuine_mean": 0.3421,
+    "genuine_std": 0.1071,
+    "impostor_mean": 0.2468,
+    "impostor_std": 0.1167
+  },
+  "frozen_baseline_evaluations": {
+    "T_EER": {
+      "threshold": 0.3751,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 87.75,
+      "far_pct": 47.74,
+      "frr_pct": 12.25,
+      "confusion": {
+        "tp": 9828,
+        "fn": 1372,
+        "fp": 9453,
+        "tn": 10347
+      }
+    },
+    "T_1pct_FAR": {
+      "threshold": 0.4497,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 53.37,
+      "far_pct": 21.19,
+      "frr_pct": 46.62,
+      "confusion": {
+        "tp": 5978,
+        "fn": 5222,
+        "fp": 4196,
+        "tn": 15604
+      }
+    },
+    "T_01pct_FAR": {
+      "threshold": 0.4705,
+      "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+      "tar_pct": 45.46,
+      "far_pct": 16.04,
+      "frr_pct": 54.54,
+      "confusion": {
+        "tp": 5092,
+        "fn": 6108,
+        "fp": 3176,
+        "tn": 16624
+      }
+    }
+  },
+  "transferred_threshold_evaluations": {
+    "T_EER": {
+      "transferred_threshold": 0.3619,
+      "tar_pct": 92.46,
+      "far_pct": 53.72,
+      "frr_pct": 7.54,
+      "confusion": {
+        "tp": 10355,
+        "fn": 845,
+        "fp": 10637,
+        "tn": 9163
+      }
+    },
+    "T_1pct_FAR": {
+      "transferred_threshold": 0.4545,
+      "tar_pct": 51.49,
+      "far_pct": 19.9,
+      "frr_pct": 48.51,
+      "confusion": {
+        "tp": 5767,
+        "fn": 5433,
+        "fp": 3940,
+        "tn": 15860
+      }
+    },
+    "T_01pct_FAR": {
+      "transferred_threshold": 0.4545,
+      "tar_pct": 51.49,
+      "far_pct": 19.9,
+      "frr_pct": 48.51,
+      "confusion": {
+        "tp": 5767,
+        "fn": 5433,
+        "fp": 3940,
+        "tn": 15860
+      }
+    }
+  }
+}

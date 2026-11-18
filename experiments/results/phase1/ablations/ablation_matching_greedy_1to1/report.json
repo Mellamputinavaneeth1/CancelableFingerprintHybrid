@@ -1,0 +1,30 @@
+{
+  "condition_name": "ablation_matching_greedy_1to1",
+  "dataset": "DB1_B",
+  "in_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "projection_dim": 32,
+  "matcher_algo": "greedy_1to1",
+  "use_quality_weights": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.3815384615384615,
+  "auc": 0.6777777777777778,
+  "eer_threshold": 0.36679216332006026,
+  "tar_at_1pct_far": 0.0071428571428571175,
+  "tar_at_01pct_far": 0.0071428571428571175,
+  "bootstrap_eer_95ci": [
+    0.3231671554252199,
+    0.43855421686746987
+  ],
+  "bootstrap_auc_95ci": [
+    0.5894444444444444,
+    0.7616666666666667
+  ],
+  "genuine_mean": 0.37709754705429077,
+  "genuine_std": 0.027411630377173424,
+  "impostor_mean": 0.3591519296169281,
+  "impostor_std": 0.030758637934923172,
+  "throughput_comp_per_sec": 868.62220205783
+}

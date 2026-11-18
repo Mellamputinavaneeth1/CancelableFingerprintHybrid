@@ -1,0 +1,30 @@
+{
+  "condition_name": "ref_9D_delaunay_32b_hungarian_weights",
+  "dataset": "DB1_B",
+  "in_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "projection_dim": 32,
+  "matcher_algo": "hungarian",
+  "use_quality_weights": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.37777777777777777,
+  "auc": 0.645079365079365,
+  "eer_threshold": 0.378376661192977,
+  "tar_at_1pct_far": 0.010714285714285676,
+  "tar_at_01pct_far": 0.010714285714285676,
+  "bootstrap_eer_95ci": [
+    0.3180722891566265,
+    0.4527272727272727
+  ],
+  "bootstrap_auc_95ci": [
+    0.5608730158730159,
+    0.7342857142857143
+  ],
+  "genuine_mean": 0.3882386386394501,
+  "genuine_std": 0.028431368991732597,
+  "impostor_mean": 0.37658631801605225,
+  "impostor_std": 0.03025972656905651,
+  "throughput_comp_per_sec": 275.19579567721263
+}

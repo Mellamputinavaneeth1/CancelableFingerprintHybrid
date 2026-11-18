@@ -1,0 +1,83 @@
+{
+  "dataset": "DB1_B",
+  "num_subjects": 10,
+  "num_keys": 5,
+  "num_key_pairs": 10,
+  "models": {
+    "descriptor_only": {
+      "num_mated": 100,
+      "num_non_mated": 450,
+      "mated_mean": 0.005905876765173162,
+      "mated_std": 0.004155974658187792,
+      "non_mated_mean": 0.005495684921754421,
+      "non_mated_std": 0.0037664679294894354,
+      "d_sys": 0.006433606372087009,
+      "clustered_ci_95": [
+        0.0032563662119277485,
+        0.11671576633214181
+      ],
+      "bandwidth_sensitivity": {
+        "bw_0.50": 0.02460722975590651,
+        "bw_0.75": 0.011826030629375128,
+        "bw_1.00": 0.006433606372087009,
+        "bw_1.50": 0.021843021205214364,
+        "bw_2.00": 0.03235669520073487
+      },
+      "status": "Low Residual Linkability (D_sys <= 0.05, Upper CI > 0.05)"
+    },
+    "topology_only": {
+      "num_mated": 100,
+      "num_non_mated": 450,
+      "mated_mean": 0.9435300302774076,
+      "mated_std": 0.045856662687030036,
+      "non_mated_mean": 0.9326221200347916,
+      "non_mated_std": 0.05879649484019346,
+      "d_sys": 0.0374716875169941,
+      "clustered_ci_95": [
+        0.025169397590753713,
+        0.11858475686728977
+      ],
+      "bandwidth_sensitivity": {
+        "bw_0.50": 0.0495246369531674,
+        "bw_0.75": 0.03935792816871348,
+        "bw_1.00": 0.0374716875169941,
+        "bw_1.50": 0.034410472913028636,
+        "bw_2.00": 0.03089563167963471
+      },
+      "status": "Low Residual Linkability (D_sys <= 0.05, Upper CI > 0.05)"
+    },
+    "combined": {
+      "num_mated": 100,
+      "num_non_mated": 450,
+      "mated_mean": 0.001867710321312188,
+      "mated_std": 0.001886967301640987,
+      "non_mated_mean": 0.0016885164024764284,
+      "non_mated_std": 0.0016424255342482408,
+      "d_sys": 0.0015493560227686338,
+      "clustered_ci_95": [
+        0.0,
+        0.02534593524717018
+      ],
+      "bandwidth_sensitivity": {
+        "bw_0.50": 0.005181519138069211,
+        "bw_0.75": 0.003028220991600118,
+        "bw_1.00": 0.0015493560227686338,
+        "bw_1.50": 3.530656076466908e-05,
+        "bw_2.00": 0.001635287114629179
+      },
+      "status": "Fully Unlinkable (D_sys <= 0.05, Upper CI <= 0.05)"
+    }
+  },
+  "d_sys": 0.006433606372087009,
+  "clustered_bootstrap_95ci": [
+    0.0032563662119277485,
+    0.11671576633214181
+  ],
+  "d_sys_max": 0.0374716875169941,
+  "d_sys_max_ci_95": [
+    0.029602986637784892,
+    0.13332124323897207
+  ],
+  "status": "Low Residual Linkability (D_sys <= 0.05, Upper CI > 0.05)",
+  "system_privacy_status": "Low Residual Linkability across Evaluated Threat Models (D_sys_max = 0.0375, Upper CI = 0.1333)"
+}

@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and temporary runtime artifacts
+*.db
+*.tmp
+test_creds.db
+
+# Large release distribution archives (> 100 MB exceeds GitHub push limits)
+*.zip
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

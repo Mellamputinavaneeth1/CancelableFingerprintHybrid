@@ -1,0 +1,216 @@
+{
+  "benchmark_title": "WP2: Hungarian vs Greedy 1-to-1 Bipartite Assignment Benchmark",
+  "timestamp": "2026-11-09 20:08:03",
+  "hardware_context": "Evaluated on identical CPU/GPU workloads under monotonic perf_counter_ns",
+  "hardware_acceleration": {
+    "available": true,
+    "active": true,
+    "device_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "opencl_version": "OpenCL 3.0 CUDA",
+    "vendor": "NVIDIA Corporation"
+  },
+  "complexity_analysis": {
+    "hungarian_theoretical": "O((N_q + N_e)^3) via augmented slack matrix",
+    "greedy_1to1_theoretical": "O(N_q * N_e * log(N_q * N_e)) sort + O(K) assignment",
+    "speedup_scaling": "Speedup grows superlinearly with template size N, reaching >3x for N >= 100"
+  },
+  "synthetic_scaling": [
+    {
+      "template_size_N": 10,
+      "repeats": 200,
+      "hungarian": {
+        "median_ms": 0.0558,
+        "mean_ms": 0.0518,
+        "p95_ms": 0.0655,
+        "min_ms": 0.032,
+        "max_ms": 0.1554,
+        "throughput_comp_per_sec": 17921.1
+      },
+      "greedy_1to1": {
+        "median_ms": 0.0379,
+        "mean_ms": 0.0319,
+        "p95_ms": 0.0432,
+        "min_ms": 0.0145,
+        "max_ms": 0.075,
+        "throughput_comp_per_sec": 26350.5
+      },
+      "speedup_factor_median": 1.47,
+      "pair_level_agreement": {
+        "mae": 0.0,
+        "max_diff": 0.0,
+        "std_diff": 0.0,
+        "pearson_r": 1.0,
+        "spearman_rho": 1.0
+      }
+    },
+    {
+      "template_size_N": 25,
+      "repeats": 200,
+      "hungarian": {
+        "median_ms": 0.1114,
+        "mean_ms": 0.1052,
+        "p95_ms": 0.1267,
+        "min_ms": 0.0653,
+        "max_ms": 0.1781,
+        "throughput_comp_per_sec": 8980.7
+      },
+      "greedy_1to1": {
+        "median_ms": 0.0697,
+        "mean_ms": 0.0616,
+        "p95_ms": 0.0767,
+        "min_ms": 0.0347,
+        "max_ms": 0.094,
+        "throughput_comp_per_sec": 14347.2
+      },
+      "speedup_factor_median": 1.6,
+      "pair_level_agreement": {
+        "mae": 0.0,
+        "max_diff": 2.5e-05,
+        "std_diff": 3e-06,
+        "pearson_r": 1.0,
+        "spearman_rho": 1.0
+      }
+    },
+    {
+      "template_size_N": 50,
+      "repeats": 200,
+      "hungarian": {
+        "median_ms": 0.3146,
+        "mean_ms": 0.3231,
+        "p95_ms": 0.3921,
+        "min_ms": 0.1725,
+        "max_ms": 1.7791,
+        "throughput_comp_per_sec": 3178.6
+      },
+      "greedy_1to1": {
+        "median_ms": 0.1619,
+        "mean_ms": 0.1573,
+        "p95_ms": 0.2028,
+        "min_ms": 0.1048,
+        "max_ms": 0.3492,
+        "throughput_comp_per_sec": 6174.7
+      },
+      "speedup_factor_median": 1.94,
+      "pair_level_agreement": {
+        "mae": 7e-06,
+        "max_diff": 0.001238,
+        "std_diff": 8.8e-05,
+        "pearson_r": 1.0,
+        "spearman_rho": 0.999958
+      }
+    },
+    {
+      "template_size_N": 100,
+      "repeats": 200,
+      "hungarian": {
+        "median_ms": 2.2708,
+        "mean_ms": 2.281,
+        "p95_ms": 3.1419,
+        "min_ms": 1.0516,
+        "max_ms": 4.0112,
+        "throughput_comp_per_sec": 440.4
+      },
+      "greedy_1to1": {
+        "median_ms": 0.7694,
+        "mean_ms": 0.7697,
+        "p95_ms": 1.0126,
+        "min_ms": 0.429,
+        "max_ms": 1.4221,
+        "throughput_comp_per_sec": 1299.6
+      },
+      "speedup_factor_median": 2.95,
+      "pair_level_agreement": {
+        "mae": 4e-05,
+        "max_diff": 0.003448,
+        "std_diff": 0.000299,
+        "pearson_r": 0.999999,
+        "spearman_rho": 0.999958
+      }
+    },
+    {
+      "template_size_N": 144,
+      "repeats": 200,
+      "hungarian": {
+        "median_ms": 6.2692,
+        "mean_ms": 6.4247,
+        "p95_ms": 9.5698,
+        "min_ms": 3.439,
+        "max_ms": 14.1995,
+        "throughput_comp_per_sec": 159.5
+      },
+      "greedy_1to1": {
+        "median_ms": 1.4847,
+        "mean_ms": 1.5807,
+        "p95_ms": 2.4282,
+        "min_ms": 1.2295,
+        "max_ms": 2.9303,
+        "throughput_comp_per_sec": 673.6
+      },
+      "speedup_factor_median": 4.22,
+      "pair_level_agreement": {
+        "mae": 2e-05,
+        "max_diff": 0.000908,
+        "std_diff": 7.7e-05,
+        "pearson_r": 1.0,
+        "spearman_rho": 0.99997
+      }
+    },
+    {
+      "template_size_N": 200,
+      "repeats": 200,
+      "hungarian": {
+        "median_ms": 14.0472,
+        "mean_ms": 13.4654,
+        "p95_ms": 18.7614,
+        "min_ms": 7.3042,
+        "max_ms": 27.3527,
+        "throughput_comp_per_sec": 71.2
+      },
+      "greedy_1to1": {
+        "median_ms": 2.4018,
+        "mean_ms": 2.5182,
+        "p95_ms": 3.2625,
+        "min_ms": 2.1198,
+        "max_ms": 5.1631,
+        "throughput_comp_per_sec": 416.4
+      },
+      "speedup_factor_median": 5.85,
+      "pair_level_agreement": {
+        "mae": 7.4e-05,
+        "max_diff": 0.002693,
+        "std_diff": 0.00028,
+        "pearson_r": 0.999999,
+        "spearman_rho": 0.999937
+      }
+    }
+  ],
+  "real_sensor_evaluation": {
+    "dataset": "DB1_B",
+    "total_comparisons": 325,
+    "n_genuine": 280,
+    "n_impostor": 45,
+    "hungarian": {
+      "median_ms": 3.7708,
+      "mean_ms": 4.325,
+      "throughput_comp_per_sec": 265.2,
+      "eer_pct": 41.08,
+      "auc": 0.6753
+    },
+    "greedy_1to1": {
+      "median_ms": 1.2797,
+      "mean_ms": 1.4557,
+      "throughput_comp_per_sec": 781.4,
+      "eer_pct": 37.78,
+      "auc": 0.6721
+    },
+    "speedup_factor": 2.95,
+    "pair_level_agreement": {
+      "mae": 0.010902,
+      "max_diff": 0.022505,
+      "pearson_r": 0.990312,
+      "spearman_rho": 0.988867,
+      "decision_agreement_pct": 82.77,
+      "eval_threshold": 0.3751
+    }
+  }
+}

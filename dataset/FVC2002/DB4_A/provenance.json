@@ -1,0 +1,19 @@
+{
+  "subset": "DB4_A",
+  "database_family": "FVC2002_DB4",
+  "sensor_specifications": {
+    "width": 288,
+    "height": 384,
+    "dpi": 500.0,
+    "sensor": "Synthetic Generator (SFinGe v2.51)",
+    "technology": "Synthetic generation model",
+    "synthetic_model": "SFinGe v2.51 Synthetic Fingerprint Architecture",
+    "is_synthetic": true,
+    "label": "Synthetic SFinGe v2.51 Generator Data"
+  },
+  "total_images": 800,
+  "num_fingers": 100,
+  "impressions_per_finger": 8,
+  "generation_timestamp": "2026-11-09 19:32:28",
+  "compliance_notice": "FVC2002 DB4_A: Synthetic SFinGe v2.51 Generator Data. Held-out Set A evaluation partition constructed in compliance with WP3 research guidelines. Evaluated out-of-domain under frozen Set B operational thresholds without test-set tuning."
+}

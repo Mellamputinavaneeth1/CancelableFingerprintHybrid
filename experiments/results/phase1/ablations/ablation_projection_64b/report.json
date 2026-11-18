@@ -1,0 +1,30 @@
+{
+  "condition_name": "ablation_projection_64b",
+  "dataset": "DB1_B",
+  "in_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "projection_dim": 64,
+  "matcher_algo": "hungarian",
+  "use_quality_weights": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.4035714285714286,
+  "auc": 0.5888095238095238,
+  "eer_threshold": 0.31674183010453577,
+  "tar_at_1pct_far": 0.0,
+  "tar_at_01pct_far": 0.0,
+  "bootstrap_eer_95ci": [
+    0.346218487394958,
+    0.4666666666666667
+  ],
+  "bootstrap_auc_95ci": [
+    0.49896825396825395,
+    0.6826190476190476
+  ],
+  "genuine_mean": 0.325162410736084,
+  "genuine_std": 0.028275102376937866,
+  "impostor_mean": 0.31851330399513245,
+  "impostor_std": 0.033400945365428925,
+  "throughput_comp_per_sec": 244.87063691031778
+}

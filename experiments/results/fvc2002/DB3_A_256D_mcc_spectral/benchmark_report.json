@@ -1,0 +1,199 @@
+{
+  "subset": "DB3_A",
+  "is_pilot_set_b": false,
+  "sensor_provenance": {
+    "sensor_name": "100 SC",
+    "vendor": "Precise Biometrics",
+    "technology": "Capacitive (solid-state silicon sensor)",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      300,
+      300
+    ],
+    "cross_sensor_scope_notice": "Evaluated on DB1_A (Identix TouchView II optical TIR prism). DB1_A represents optical prism sensors and does not substitute for cross-sensor evaluation across DB2 (CMOS optical), DB3 (capacitive solid-state), or DB4 (synthetic SFinGe)."
+  },
+  "descriptor_dim": 256,
+  "topology": "mcc_spectral",
+  "engine": "classical",
+  "k_nn": null,
+  "dpi": 500.0,
+  "total_images": 800,
+  "file_read_error_count": 0,
+  "capture_device_fta": "N/A (offline database)",
+  "fte_count": 35,
+  "fte_rate": 0.04375,
+  "num_genuine": 2800,
+  "num_impostor": 4950,
+  "avg_triangles_per_fingerprint": 28.516339869281047,
+  "template_storage": {
+    "num_triangles": 29,
+    "in_dim": 256,
+    "out_dim": 192,
+    "descriptor_bytes": 696,
+    "weights_bytes": 58,
+    "header_bytes": 48,
+    "matrix_uncompressed_bytes": 841,
+    "matrix_full_2bit_packed_bytes": 211,
+    "matrix_symmetric_2bit_packed_bytes": 102,
+    "total_credential_descriptor_only_bytes": 802,
+    "total_credential_uncompressed_bytes": 1643,
+    "total_credential_full_2bit_bytes": 1013,
+    "total_credential_packed_bytes": 26483,
+    "baseline_unprotected_bytes": 29860,
+    "compression_ratio_descriptor_raw": 0.9765625,
+    "true_compression_ratio_descriptor_only": 0.9731413261888815,
+    "true_compression_ratio_packed": 0.9697253851306095,
+    "true_compression_ratio_uncompressed": 0.9449765572672472,
+    "edge_token_packed_bytes": 25579
+  },
+  "dataset_storage_statistics": {
+    "num_enrolled_templates": 765,
+    "triangles": {
+      "mean": 28.516339869281047,
+      "std": 28.026669039561522,
+      "min": 3,
+      "max": 80
+    },
+    "packed_credential_bytes": {
+      "mean": 986.0549019607843,
+      "std": 998.5584522734209,
+      "min": 127,
+      "max": 2918,
+      "total_dataset_bytes": 754332
+    },
+    "descriptor_only_bytes": {
+      "mean": 789.4248366013072,
+      "std": 728.6933950285996,
+      "min": 126,
+      "max": 2128,
+      "total_dataset_bytes": 603910
+    },
+    "dense_uncompressed_bytes": {
+      "mean": 2388.1006535947713,
+      "std": 2929.323655960898,
+      "min": 135,
+      "max": 8528,
+      "total_dataset_bytes": 1826897
+    },
+    "baseline_unprotected_bytes": {
+      "mean": 29362.797385620914,
+      "std": 28811.415772669243,
+      "min": 3132,
+      "max": 82288,
+      "total_dataset_bytes": 22462540
+    },
+    "aggregate_serialized_compression": {
+      "packed_vs_baseline": 0.9664182234066139,
+      "descriptor_only_vs_baseline": 0.973114794675936,
+      "dense_vs_baseline": 0.9186691709842253
+    }
+  },
+  "matching_throughput_comp_per_sec": 85.24145253190447,
+  "protected": {
+    "eer": 0.18285714285714286,
+    "auc": 0.8866516594516595,
+    "eer_threshold": 0.012739495517398502,
+    "tar_at_1pct_far": 0.6514285714285715,
+    "tar_at_01pct_far": 0.4496428571428571,
+    "clustered_eer_95ci": [
+      0.1300730576405949,
+      0.21775894184595923
+    ],
+    "clustered_auc_95ci": [
+      0.8550987322012138,
+      0.9210726336546888
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.14005716619028175,
+      0.2402120717781403
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.12857142857142856,
+      0.23464285714285715
+    ],
+    "genuine_score_mean": 0.09885875135660172,
+    "genuine_score_std": 0.07382036000490189,
+    "impostor_score_mean": 0.008390769362449646,
+    "impostor_score_std": 0.01421867124736309,
+    "frozen_set_b_threshold_evaluation": {
+      "calibrated_from_subset": "DB3_B",
+      "frozen_operating_threshold": 0.019112,
+      "tar_at_frozen_threshold": 0.8171428571428572,
+      "far_at_frozen_threshold": 0.12686868686868688,
+      "frr_at_frozen_threshold": 0.18285714285714286,
+      "confusion_at_frozen_threshold": {
+        "tp": 2288,
+        "fn": 512,
+        "fp": 628,
+        "tn": 4322
+      },
+      "operating_points": {
+        "at_set_b_eer": {
+          "threshold": 0.019112,
+          "confusion_matrix": {
+            "tp": 2288,
+            "fn": 512,
+            "fp": 628,
+            "tn": 4322
+          },
+          "tar": 0.8171428571428572,
+          "frr": 0.18285714285714286,
+          "far": 0.12686868686868688,
+          "tnr": 0.8731313131313131
+        },
+        "at_set_b_1pct_far": {
+          "threshold": 0.028837,
+          "confusion_matrix": {
+            "tp": 2276,
+            "fn": 524,
+            "fp": 373,
+            "tn": 4577
+          },
+          "tar": 0.8128571428571428,
+          "frr": 0.18714285714285714,
+          "far": 0.07535353535353535,
+          "tnr": 0.9246464646464646
+        },
+        "at_set_b_01pct_far": {
+          "threshold": 0.041099,
+          "confusion_matrix": {
+            "tp": 2230,
+            "fn": 570,
+            "fp": 236,
+            "tn": 4714
+          },
+          "tar": 0.7964285714285714,
+          "frr": 0.20357142857142857,
+          "far": 0.04767676767676768,
+          "tnr": 0.9523232323232323
+        }
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.13901874750698046,
+    "auc": 0.8868842712842713,
+    "genuine_score_mean": 0.1694541722536087,
+    "impostor_score_mean": 0.023524710908532143
+  },
+  "paired_difference_protected_vs_unprotected": {
+    "delta_eer_point": 0.0438383953501624,
+    "delta_eer_95ci": [
+      0.017923557791358208,
+      0.04937246721562871
+    ],
+    "delta_auc_point": -0.0002326118326118065,
+    "delta_auc_95ci": [
+      -0.008875321618618703,
+      0.0072987383817487705
+    ],
+    "delta_eer_mean": 0.03440537772378651,
+    "delta_auc_mean": -0.00022496818310187904
+  },
+  "security": {
+    "descriptor_dim": 256,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Excludes Direct Minutiae-Type Storage (0 variables stored); Weak Residual Geometric Signal"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Exp_E_Delaunay_Cyclic_Consensus",
+  "topology": "delaunay",
+  "mode": "cyclic",
+  "consensus": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.4888888888888889,
+  "auc": 0.5726190476190476,
+  "eer_threshold": 0.47298489721568376,
+  "tar_at_1pct_far": 0.0035714285714285587,
+  "tar_at_01pct_far": 0.0035714285714285587,
+  "clopper_pearson_95ci": [
+    0.4293335713931557,
+    0.549466972431555
+  ],
+  "bootstrap_eer_95ci": [
+    0.37777777777777777,
+    0.5753846153846154
+  ],
+  "bootstrap_auc_95ci": [
+    0.4807142857142857,
+    0.6611904761904762
+  ],
+  "clustered_eer_95ci": [
+    0.38095238095238093,
+    0.60932944606414
+  ],
+  "clustered_auc_95ci": [
+    0.41788143828960156,
+    0.6864285714285714
+  ],
+  "genuine_mean": 0.473922997713089,
+  "genuine_std": 0.04333297535777092,
+  "impostor_mean": 0.46202367544174194,
+  "impostor_std": 0.0481601245701313,
+  "throughput_comp_per_sec": 97.42016260030127
+}

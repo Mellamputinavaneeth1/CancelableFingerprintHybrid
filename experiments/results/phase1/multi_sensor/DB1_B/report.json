@@ -1,0 +1,106 @@
+{
+  "subset": "DB1_B",
+  "sensor_provenance": {
+    "sensor_name": "TouchView II",
+    "vendor": "Identix",
+    "technology": "Optical (Total Internal Reflection prism)",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      388,
+      374
+    ]
+  },
+  "descriptor_dim": 9,
+  "topology": "delaunay",
+  "projection_dim": 32,
+  "dpi": 500.0,
+  "total_images": 80,
+  "fta": "N/A (offline database)",
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles": 143.125,
+  "matching_throughput_comp_per_sec": 115.7225302112771,
+  "protected": {
+    "eer": 0.4222222222222222,
+    "auc": 0.6315873015873016,
+    "eer_threshold": 0.3619743991943451,
+    "tar_at_1pct_far": 0.0035714285714285587,
+    "tar_at_01pct_far": 0.0035714285714285587,
+    "bootstrap_eer_95ci": [
+      0.3381818181818182,
+      0.49272727272727274
+    ],
+    "bootstrap_auc_95ci": [
+      0.5482539682539682,
+      0.7112698412698413
+    ],
+    "clustered_eer_95ci": [
+      0.30458015267175576,
+      0.5305555555555556
+    ],
+    "clustered_auc_95ci": [
+      0.4697368421052632,
+      0.7444548872180451
+    ],
+    "genuine_mean": 0.3688826262950897,
+    "genuine_std": 0.027995038777589798,
+    "impostor_mean": 0.3561018705368042,
+    "impostor_std": 0.02906959317624569,
+    "frozen_dev_threshold_eval": {
+      "threshold": 0.3751,
+      "tar": 0.38571428571428573,
+      "far": 0.2222222222222222,
+      "frr": 0.6142857142857143,
+      "confusion": {
+        "tp": 108,
+        "fn": 172,
+        "fp": 10,
+        "tn": 35
+      }
+    }
+  },
+  "unprotected_baseline": {
+    "eer": 0.4888888888888889,
+    "auc": 0.5160317460317461,
+    "genuine_mean": 0.25073227286338806,
+    "genuine_std": 0.029271017760038376,
+    "impostor_mean": 0.2506781816482544,
+    "impostor_std": 0.030158599838614464
+  },
+  "paired_difference": {
+    "delta_eer_point": -0.06666666666666665,
+    "delta_eer_95ci": [
+      -0.21067950105371075,
+      0.07500000000000007
+    ],
+    "delta_auc_point": 0.11555555555555552,
+    "delta_auc_95ci": [
+      -0.022683397683397777,
+      0.24841269841269836
+    ],
+    "delta_eer_mean": -0.07000965346595998,
+    "delta_auc_mean": 0.11961957911112417
+  },
+  "storage": {
+    "num_triangles": 143,
+    "in_dim": 9,
+    "out_dim": 32,
+    "descriptor_bytes": 572,
+    "weights_bytes": 286,
+    "header_bytes": 32,
+    "matrix_uncompressed_bytes": 20449,
+    "matrix_full_2bit_packed_bytes": 5113,
+    "matrix_symmetric_2bit_packed_bytes": 2539,
+    "total_credential_descriptor_only_bytes": 890,
+    "total_credential_uncompressed_bytes": 21339,
+    "total_credential_full_2bit_bytes": 6003,
+    "total_credential_packed_bytes": 3429,
+    "baseline_unprotected_bytes": 5752,
+    "compression_ratio_descriptor_raw": 0.8888888888888888,
+    "true_compression_ratio_descriptor_only": 0.8452712100139081,
+    "true_compression_ratio_packed": 0.40385952712100137,
+    "true_compression_ratio_uncompressed": -2.7098400556328235
+  }
+}

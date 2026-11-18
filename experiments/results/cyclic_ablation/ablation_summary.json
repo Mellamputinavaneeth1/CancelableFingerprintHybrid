@@ -1,0 +1,192 @@
+{
+  "Exp_A_Delaunay_Canonical": {
+    "name": "Exp_A_Delaunay_Canonical",
+    "topology": "delaunay",
+    "mode": "canonical",
+    "consensus": false,
+    "num_genuine": 280,
+    "num_impostor": 45,
+    "eer": 0.4357142857142857,
+    "auc": 0.5836507936507936,
+    "eer_threshold": 0.36350230705802505,
+    "tar_at_1pct_far": 0.0035714285714285587,
+    "tar_at_01pct_far": 0.0035714285714285587,
+    "clopper_pearson_95ci": [
+      0.3768035489540643,
+      0.496000131299323
+    ],
+    "bootstrap_eer_95ci": [
+      0.3584158415841584,
+      0.5151515151515151
+    ],
+    "bootstrap_auc_95ci": [
+      0.4976984126984127,
+      0.6742857142857143
+    ],
+    "clustered_eer_95ci": [
+      0.3,
+      0.57
+    ],
+    "clustered_auc_95ci": [
+      0.41904761904761906,
+      0.7182539682539683
+    ],
+    "genuine_mean": 0.3681047260761261,
+    "genuine_std": 0.02846255712211132,
+    "impostor_mean": 0.36169764399528503,
+    "impostor_std": 0.028009194880723953,
+    "throughput_comp_per_sec": 171.42232681098358
+  },
+  "Exp_B_Delaunay_Cyclic": {
+    "name": "Exp_B_Delaunay_Cyclic",
+    "topology": "delaunay",
+    "mode": "cyclic",
+    "consensus": false,
+    "num_genuine": 280,
+    "num_impostor": 45,
+    "eer": 0.41204819277108434,
+    "auc": 0.6161904761904762,
+    "eer_threshold": 0.5725806943830427,
+    "tar_at_1pct_far": 0.0,
+    "tar_at_01pct_far": 0.0,
+    "clopper_pearson_95ci": [
+      0.3525223784561895,
+      0.4708166333780649
+    ],
+    "bootstrap_eer_95ci": [
+      0.3490909090909091,
+      0.4888888888888889
+    ],
+    "bootstrap_auc_95ci": [
+      0.5283333333333333,
+      0.703968253968254
+    ],
+    "clustered_eer_95ci": [
+      0.32105263157894737,
+      0.5333333333333333
+    ],
+    "clustered_auc_95ci": [
+      0.45476190476190476,
+      0.726984126984127
+    ],
+    "genuine_mean": 0.5768953561782837,
+    "genuine_std": 0.026863645762205124,
+    "impostor_mean": 0.5651302933692932,
+    "impostor_std": 0.030008267611265182,
+    "throughput_comp_per_sec": 138.70813631313317
+  },
+  "Exp_C_kNN_Canonical": {
+    "name": "Exp_C_kNN_Canonical",
+    "topology": "knn",
+    "mode": "canonical",
+    "consensus": false,
+    "num_genuine": 280,
+    "num_impostor": 45,
+    "eer": 0.39280575539568346,
+    "auc": 0.6152380952380953,
+    "eer_threshold": 0.53239263086634,
+    "tar_at_1pct_far": 0.0,
+    "tar_at_01pct_far": 0.0,
+    "clopper_pearson_95ci": [
+      0.33527191382306654,
+      0.45273553611436185
+    ],
+    "bootstrap_eer_95ci": [
+      0.3324324324324325,
+      0.4772277227722772
+    ],
+    "bootstrap_auc_95ci": [
+      0.5230952380952381,
+      0.7034920634920635
+    ],
+    "clustered_eer_95ci": [
+      0.3157894736842105,
+      0.5333333333333333
+    ],
+    "clustered_auc_95ci": [
+      0.4448412698412698,
+      0.7400793650793651
+    ],
+    "genuine_mean": 0.5370562672615051,
+    "genuine_std": 0.028391454368829727,
+    "impostor_mean": 0.5242304801940918,
+    "impostor_std": 0.035822026431560516,
+    "throughput_comp_per_sec": 7.89278266445442
+  },
+  "Exp_D_kNN_Cyclic": {
+    "name": "Exp_D_kNN_Cyclic",
+    "topology": "knn",
+    "mode": "cyclic",
+    "consensus": false,
+    "num_genuine": 280,
+    "num_impostor": 45,
+    "eer": 0.41081081081081083,
+    "auc": 0.6476984126984127,
+    "eer_threshold": 0.6961807683629675,
+    "tar_at_1pct_far": 0.010714285714285676,
+    "tar_at_01pct_far": 0.010714285714285676,
+    "clopper_pearson_95ci": [
+      0.3525223784561895,
+      0.4708166333780649
+    ],
+    "bootstrap_eer_95ci": [
+      0.3418181818181818,
+      0.472
+    ],
+    "bootstrap_auc_95ci": [
+      0.5584920634920635,
+      0.7321428571428571
+    ],
+    "clustered_eer_95ci": [
+      0.3333333333333333,
+      0.5
+    ],
+    "clustered_auc_95ci": [
+      0.4924603174603175,
+      0.7428571428571429
+    ],
+    "genuine_mean": 0.6990563273429871,
+    "genuine_std": 0.027401816099882126,
+    "impostor_mean": 0.6809845566749573,
+    "impostor_std": 0.03645271062850952,
+    "throughput_comp_per_sec": 8.430365963117792
+  },
+  "Exp_E_Delaunay_Cyclic_Consensus": {
+    "name": "Exp_E_Delaunay_Cyclic_Consensus",
+    "topology": "delaunay",
+    "mode": "cyclic",
+    "consensus": true,
+    "num_genuine": 280,
+    "num_impostor": 45,
+    "eer": 0.4888888888888889,
+    "auc": 0.5726190476190476,
+    "eer_threshold": 0.47298489721568376,
+    "tar_at_1pct_far": 0.0035714285714285587,
+    "tar_at_01pct_far": 0.0035714285714285587,
+    "clopper_pearson_95ci": [
+      0.4293335713931557,
+      0.549466972431555
+    ],
+    "bootstrap_eer_95ci": [
+      0.37777777777777777,
+      0.5753846153846154
+    ],
+    "bootstrap_auc_95ci": [
+      0.4807142857142857,
+      0.6611904761904762
+    ],
+    "clustered_eer_95ci": [
+      0.38095238095238093,
+      0.60932944606414
+    ],
+    "clustered_auc_95ci": [
+      0.41788143828960156,
+      0.6864285714285714
+    ],
+    "genuine_mean": 0.473922997713089,
+    "genuine_std": 0.04333297535777092,
+    "impostor_mean": 0.46202367544174194,
+    "impostor_std": 0.0481601245701313,
+    "throughput_comp_per_sec": 97.42016260030127
+  }
+}

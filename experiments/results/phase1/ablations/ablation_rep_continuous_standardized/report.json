@@ -1,0 +1,30 @@
+{
+  "condition_name": "ablation_rep_continuous_standardized",
+  "dataset": "DB1_B",
+  "in_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "projection_dim": 32,
+  "matcher_algo": "continuous",
+  "use_quality_weights": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.4888888888888889,
+  "auc": 0.5160317460317461,
+  "eer_threshold": 0.2444288306443899,
+  "tar_at_1pct_far": 0.0,
+  "tar_at_01pct_far": 0.0,
+  "bootstrap_eer_95ci": [
+    0.4,
+    0.5544554455445545
+  ],
+  "bootstrap_auc_95ci": [
+    0.42968253968253967,
+    0.6095238095238096
+  ],
+  "genuine_mean": 0.25073227286338806,
+  "genuine_std": 0.029271017760038376,
+  "impostor_mean": 0.2506781816482544,
+  "impostor_std": 0.030158599838614464,
+  "throughput_comp_per_sec": 213.61997597311847
+}

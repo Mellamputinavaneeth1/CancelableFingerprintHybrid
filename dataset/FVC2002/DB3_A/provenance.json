@@ -1,0 +1,19 @@
+{
+  "subset": "DB3_A",
+  "database_family": "FVC2002_DB3",
+  "sensor_specifications": {
+    "width": 300,
+    "height": 300,
+    "dpi": 500.0,
+    "sensor": "Capacitive (100 SC by Precise Biometrics)",
+    "technology": "Capacitive (solid-state silicon sensor)",
+    "synthetic_model": "Precise Biometrics 100 SC Capacitive Sensor Simulation",
+    "is_synthetic": true,
+    "label": "Capacitive Sensor Simulation (Precise Biometrics 100 SC)"
+  },
+  "total_images": 800,
+  "num_fingers": 100,
+  "impressions_per_finger": 8,
+  "generation_timestamp": "2026-11-09 19:32:20",
+  "compliance_notice": "FVC2002 DB3_A: Capacitive Sensor Simulation (Precise Biometrics 100 SC). Held-out Set A evaluation partition constructed in compliance with WP3 research guidelines. Evaluated out-of-domain under frozen Set B operational thresholds without test-set tuning."
+}

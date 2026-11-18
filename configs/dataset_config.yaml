@@ -1,0 +1,24 @@
+# Dataset configuration and splitting rules
+datasets:
+  fvc2002:
+    root_dir: "dataset/FVC2002"
+    subsets: ["DB1_B", "DB2_B"]
+    num_fingers: 10
+    impressions_per_finger: 8
+  socofing:
+    root_dir: "dataset/SOCOFing"
+    real_dir: "SOCOFing/Real"
+    altered_dir: "SOCOFing/Altered"
+    alteration_types: ["Easy", "Medium", "Hard"]
+    alteration_classes: ["Obliteration", "Central_Rotation", "Z-cut"]
+
+splits:
+  dev_ratio: 0.60
+  val_ratio: 0.20
+  test_ratio: 0.20
+  random_seed: 42
+  subject_disjoint: true
+
+pairs:
+  output_dir: "experiments/pair_lists"
+  save_csv: true

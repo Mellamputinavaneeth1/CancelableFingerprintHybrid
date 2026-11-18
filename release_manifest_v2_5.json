@@ -1,0 +1,8 @@
+{
+  "archive_name": "CancelableFingerprintHybrid-v2.5-ResearchRelease.zip",
+  "sha256": "2a758ce6b0096ae13f3a5de37109653a4b9301190cc6181985764bd521da8934",
+  "size_bytes": 322983241,
+  "release_version": "v2.5-Research-Release",
+  "test_count": 224,
+  "gates_passed": 7
+}

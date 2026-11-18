@@ -1,0 +1,136 @@
+{
+  "title": "WP7 Automated Testing, Provenance, and Reproducibility Audit Report",
+  "timestamp": "2026-11-10 00:21:50",
+  "environment": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "python_version": "3.11.9",
+    "numpy_version": "2.4.6",
+    "scipy_version": "1.17.1",
+    "pytest_version": "9.2.0",
+    "opencv_version": "5.0.0",
+    "processor": "AMD64 Family 25 Model 116 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  },
+  "test_suite_audit": {
+    "total_tests_collected": 146,
+    "total_tests_passed": 146,
+    "execution_runtime_seconds": 17.18,
+    "pytest_exit_code": 0,
+    "categories": {
+      "Unit and Mathematical Property Tests": {
+        "test_count": 44,
+        "files": [
+          "tests/test_descriptor_properties.py",
+          "tests/test_graph.py",
+          "tests/test_minutiae.py",
+          "tests/test_preprocessing.py",
+          "tests/test_protection.py"
+        ],
+        "sample_tests": [
+          "tests/test_descriptor_properties.py::TestMinutiaeOrientationConvention::test_axial_orientation_periodicity",
+          "tests/test_descriptor_properties.py::TestMinutiaeOrientationConvention::test_axial_diff_maximum_orthogonal",
+          "tests/test_descriptor_properties.py::TestMinutiaeOrientationConvention::test_axial_diff_symmetry_and_bounds"
+        ]
+      },
+      "Integration Lifecycle Tests": {
+        "test_count": 43,
+        "files": [
+          "tests/test_integration.py",
+          "tests/test_real_image_pipeline.py",
+          "tests/test_phase4.py",
+          "tests/test_matching.py"
+        ],
+        "sample_tests": [
+          "tests/test_integration.py::test_end_to_end_enrollment_and_genuine_verification",
+          "tests/test_integration.py::test_impostor_rejection_flow_across_distinct_identities",
+          "tests/test_integration.py::test_revocation_and_re_enrollment_under_new_epoch"
+        ]
+      },
+      "Security Regression Tests": {
+        "test_count": 15,
+        "files": [
+          "tests/test_security.py",
+          "tests/test_security_regressions.py",
+          "tests/test_revocation.py"
+        ],
+        "sample_tests": [
+          "tests/test_revocation.py::test_template_registry_lifecycle",
+          "tests/test_security.py::test_system_unlinkability_metric",
+          "tests/test_security.py::test_topology_matching_and_balanced_unlinkability"
+        ]
+      },
+      "Dataset and Trial-Accounting Tests": {
+        "test_count": 36,
+        "files": [
+          "tests/test_evaluation.py",
+          "tests/test_socofing_full.py",
+          "tests/test_phase3.py",
+          "tests/test_wp2_wp3.py"
+        ],
+        "sample_tests": [
+          "tests/test_evaluation.py::test_roc_metrics_computation",
+          "tests/test_evaluation.py::test_bootstrap_confidence_intervals",
+          "tests/test_evaluation.py::test_pair_list_generation"
+        ]
+      },
+      "Concurrency Tests": {
+        "test_count": 4,
+        "files": [
+          "tests/test_concurrency.py"
+        ],
+        "sample_tests": [
+          "tests/test_concurrency.py::test_multithreaded_verification_stress",
+          "tests/test_concurrency.py::test_multiprocess_verification_isolation",
+          "tests/test_concurrency.py::test_concurrent_key_rotation_and_cache_consistency"
+        ]
+      },
+      "Reproducibility Tests": {
+        "test_count": 4,
+        "files": [
+          "tests/test_reproducibility.py"
+        ],
+        "sample_tests": [
+          "tests/test_reproducibility.py::test_trial_accounting_identity_assertions",
+          "tests/test_reproducibility.py::test_baseline_manifest_checksum_integrity",
+          "tests/test_reproducibility.py::test_zero_identity_overlap_between_train_and_test_splits"
+        ]
+      }
+    },
+    "uncategorized": []
+  },
+  "experiment_provenance": {
+    "verified_artifacts_count": 76,
+    "missing_files_count": 0,
+    "checksum_failures_count": 0,
+    "random_seeds_locked": {
+      "evaluation_seed": 42,
+      "synthetic_generation_seed": 123,
+      "bootstrap_seed": 999
+    },
+    "bootstrap_parameters": {
+      "replicates_B": 2000,
+      "clustering": "Two-way Subject and Key-Pair Clustered",
+      "confidence_level": 0.95
+    },
+    "frozen_thresholds": {
+      "FVC2002_DB1_A": 0.3751,
+      "FVC2002_DB1_B": 0.38,
+      "SOCOFing_Harmonized": 0.3891
+    }
+  },
+  "reproduction_commands": {
+    "quick_test": "python -m pytest tests/ -v",
+    "full_baseline_reproduction": "python experiments/reproduce_baseline.py",
+    "wp5_cryptographic_audit": "python experiments/benchmark_wp5_crypto_hardening.py",
+    "wp6_storage_performance": "python experiments/benchmark_wp6_storage_performance.py",
+    "clean_environment_instructions": [
+      "git clone <repo_url> CancelableFingerprintHybrid",
+      "cd CancelableFingerprintHybrid",
+      "python -m venv .venv",
+      ".venv\\Scripts\\activate  # on Windows, or source .venv/bin/activate on Linux",
+      "pip install -r requirements.txt",
+      "python -m pytest tests/ -v",
+      "python experiments/reproduce_baseline.py"
+    ]
+  }
+}

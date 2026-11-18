@@ -1,0 +1,37 @@
+{
+  "release_version": "v2.2-Hardened",
+  "commit_identifier": "v2.2-Hardened-20261110-p0-complete",
+  "release_timestamp": "2026-11-10T19:46:40.496738Z",
+  "archive_package": {
+    "filename": "CancelableFingerprintHybrid-v2.2-Hardened.zip",
+    "sha256": "7caa8cc20ad7d79158a772fa652329bc75476924739b976b958df9012932771b",
+    "size_bytes": 319040884,
+    "packaged_file_count": 4261
+  },
+  "authoritative_report_hashes": {
+    "final_research_report_md": "79bd186df7bcfb75981a05938d04d048fa857647fdc1c5c9a1346ddce4f54669",
+    "master_project_architecture_and_completion_report_md": "3ab23acf499e6be8c73a09cf0185b89d277348c3cd97968656fac375718c667c"
+  },
+  "dynamic_pytest_verification": {
+    "collected_test_count": 192,
+    "collection_sample": [
+      "tests/test_concurrency.py::test_multithreaded_verification_stress",
+      "tests/test_concurrency.py::test_multiprocess_verification_isolation",
+      "tests/test_concurrency.py::test_concurrent_key_rotation_and_cache_consistency",
+      "tests/test_concurrency.py::test_concurrent_enrollment_and_revocation_stress",
+      "tests/test_descriptor_properties.py::TestMinutiaeOrientationConvention::test_axial_orientation_periodicity",
+      "tests/test_descriptor_properties.py::TestMinutiaeOrientationConvention::test_axial_diff_maximum_orthogonal",
+      "tests/test_descriptor_properties.py::TestMinutiaeOrientationConvention::test_axial_diff_symmetry_and_bounds",
+      "tests/test_descriptor_properties.py::TestCanonicalVertexOrderingAndTieBreaking::test_scalene_all_six_permutations",
+      "tests/test_descriptor_properties.py::TestCanonicalVertexOrderingAndTieBreaking::test_isosceles_tie_breaking_all_permutations",
+      "tests/test_descriptor_properties.py::TestCanonicalVertexOrderingAndTieBreaking::test_equilateral_tie_breaking_all_permutations"
+    ],
+    "execution_summary": "============================ 191 passed in 18.03s =============================",
+    "exit_code": 0
+  },
+  "seven_gate_verification": {
+    "all_gates_passed": true,
+    "exit_code": 0,
+    "execution_log": "================================================================================\n  CANCELABLE FINGERPRINT HYBRID \u2014 MASTER REPRODUCTION HARNESS (v2.2-Hardened)\n================================================================================\n\n---> Executing Gate 1: Environment & Core Dependencies...\n  [PASS] Gate 1: Environment & Core Dependencies (0.07s): Python 3.11.9, NumPy 2.4.6, SciPy 1.17.1, OpenCV 5.0.0, Pytest 9.2.0\n\n---> Executing Gate 2: Raw Artifact SHA-256 Digest Verification...\n  [PASS] Gate 2: Raw Artifact SHA-256 Digest Verification (0.01s): Verified 76 raw score artifacts against baseline_manifest.json\n\n---> Executing Gate 3: Biometric Trial Conservation Identities...\n  [PASS] Gate 3: Biometric Trial Conservation Identities (0.00s): DB1_A (2,800 gen / 4,950 imp) and SOCOFing (90 gen / 500 imp) trial identities verified\n\n---> Executing Gate 4: Mathematical & Cryptographic Invariants...\n  [PASS] Gate 4: Mathematical & Cryptographic Invariants (0.00s): Augmented matrix, NonceManager, and 944 B storage layout verified\n\n---> Executing Gate 5: Pytest Test Suite Execution...\n  [PASS] Gate 5: Pytest Test Suite Execution (18.15s): Pytest passed cleanly: 191 passed in 17.67s\n\n---> Executing Gate 6: Independent Metric Evaluator Reconciliation...\n  [PASS] Gate 6: Independent Metric Evaluator Reconciliation (0.00s): Independent evaluator confirmed DB1_A: EER=41.13%, AUC=0.6249\n\n---> Executing Gate 7: Master Report Consistency & Terminology Audit...\n  [PASS] Gate 7: Master Report Consistency & Terminology Audit (0.00s): Report v2.2 verified (SHA256: 79bd186df7bcfb75...)\n\n================================================================================\n  MASTER REPRODUCTION HARNESS SUMMARY\n================================================================================\n  [PASS] Gate 1: Environment & Core Dependencies            | Python 3.11.9, NumPy 2.4.6, SciPy 1.17.1, OpenCV 5.0.0, Pytest 9.2.0\n  [PASS] Gate 2: Raw Artifact SHA-256 Digest Verification   | Verified 76 raw score artifacts against baseline_manifest.json\n  [PASS] Gate 3: Biometric Trial Conservation Identities    | DB1_A (2,800 gen / 4,950 imp) and SOCOFing (90 gen / 500 imp) trial identities verified\n  [PASS] Gate 4: Mathematical & Cryptographic Invariants    | Augmented matrix, NonceManager, and 944 B storage layout verified\n  [PASS] Gate 5: Pytest Test Suite Execution                | Pytest passed cleanly: 191 passed in 17.67s\n  [PASS] Gate 6: Independent Metric Evaluator Reconciliation | Independent evaluator confirmed DB1_A: EER=41.13%, AUC=0.6249\n  [PASS] Gate 7: Master Report Consistency & Terminology Audit | Report v2.2 verified (SHA256: 79bd186df7bcfb75...)\n================================================================================\n  OVERALL REPRODUCTION STATUS: ALL 7 GATES PASSED [CLEAN EXIT 0]\n================================================================================"
+  }
+}

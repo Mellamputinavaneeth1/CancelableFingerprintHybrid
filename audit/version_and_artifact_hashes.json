@@ -1,0 +1,31 @@
+{
+  "active_workspace_snapshot": {
+    "platform_version": "2.2-Hardened",
+    "report_file": "final_research_report.md",
+    "report_sha256": "7c8da5f72506b5b01e849be6b5d6cee3aedd68e3b2b9646e787bbea6e0cbd785",
+    "report_size_bytes": 34611,
+    "test_count_collected": 146,
+    "test_count_passed": 146,
+    "git_commit": "NONE (.git not initialized; directory is unpacked release tree)"
+  },
+  "historical_v21_reference_snapshot": {
+    "framework_version": "2.1-Reconciled",
+    "report_file": "report.md",
+    "report_sha256": "436d5f65cdf5ad6d4f2d7537b89ddb37de97a7fa4b168bb678f68acddf24ca3d",
+    "report_size_bytes": 35453,
+    "test_count_reported": 141
+  },
+  "distribution_archive": {
+    "archive_filename": "CancelableFingerprintHybrid.zip",
+    "archive_sha256": "9966b669ce99ecca82641268e72030863a056270fdb5ae4acbae1c07aa1f2cc4",
+    "archive_size_bytes": 5602621,
+    "member_count": 774,
+    "uncompressed_total_bytes": 26684012,
+    "internal_final_research_report_sha256": "c8cb8e9a6b463eda7871c7f816e42b23a7f875370539bfd563c88dde9c6ea01c",
+    "archive_version_state": "Version 2.1-Reconciled snapshot (141 tests, prior to WP1 property test additions)"
+  },
+  "version_gate_assessment": {
+    "status": "PASS",
+    "finding": "The active workspace represents Version 2.2-Hardened containing all 146 tests (including 5 added WP1 mathematical property and dependency tests). CancelableFingerprintHybrid.zip preserves the historical Version 2.1 baseline snapshot (141 tests). Both are fully accounted for without version confusion."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Exp_C_kNN_Canonical",
+  "topology": "knn",
+  "mode": "canonical",
+  "consensus": false,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.39280575539568346,
+  "auc": 0.6152380952380953,
+  "eer_threshold": 0.53239263086634,
+  "tar_at_1pct_far": 0.0,
+  "tar_at_01pct_far": 0.0,
+  "clopper_pearson_95ci": [
+    0.33527191382306654,
+    0.45273553611436185
+  ],
+  "bootstrap_eer_95ci": [
+    0.3324324324324325,
+    0.4772277227722772
+  ],
+  "bootstrap_auc_95ci": [
+    0.5230952380952381,
+    0.7034920634920635
+  ],
+  "clustered_eer_95ci": [
+    0.3157894736842105,
+    0.5333333333333333
+  ],
+  "clustered_auc_95ci": [
+    0.4448412698412698,
+    0.7400793650793651
+  ],
+  "genuine_mean": 0.5370562672615051,
+  "genuine_std": 0.028391454368829727,
+  "impostor_mean": 0.5242304801940918,
+  "impostor_std": 0.035822026431560516,
+  "throughput_comp_per_sec": 7.89278266445442
+}

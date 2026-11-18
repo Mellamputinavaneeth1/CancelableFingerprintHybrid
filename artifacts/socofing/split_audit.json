@@ -1,0 +1,53 @@
+{
+  "num_folds": 5,
+  "seed": 20261109,
+  "total_subjects": 10,
+  "folds": [
+    {
+      "fold": "fold_01",
+      "test_subjects": 2,
+      "dev_fit_subjects": 6,
+      "dev_cal_subjects": 2,
+      "test_files": 20,
+      "dev_files": 80,
+      "leakage_assertion_passed": true
+    },
+    {
+      "fold": "fold_02",
+      "test_subjects": 2,
+      "dev_fit_subjects": 6,
+      "dev_cal_subjects": 2,
+      "test_files": 20,
+      "dev_files": 80,
+      "leakage_assertion_passed": true
+    },
+    {
+      "fold": "fold_03",
+      "test_subjects": 2,
+      "dev_fit_subjects": 6,
+      "dev_cal_subjects": 2,
+      "test_files": 20,
+      "dev_files": 80,
+      "leakage_assertion_passed": true
+    },
+    {
+      "fold": "fold_04",
+      "test_subjects": 2,
+      "dev_fit_subjects": 6,
+      "dev_cal_subjects": 2,
+      "test_files": 20,
+      "dev_files": 80,
+      "leakage_assertion_passed": true
+    },
+    {
+      "fold": "fold_05",
+      "test_subjects": 2,
+      "dev_fit_subjects": 6,
+      "dev_cal_subjects": 2,
+      "test_files": 20,
+      "dev_files": 80,
+      "leakage_assertion_passed": true
+    }
+  ],
+  "gate_3_splits_passed": true
+}

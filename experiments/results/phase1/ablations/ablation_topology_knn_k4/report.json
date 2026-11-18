@@ -1,0 +1,30 @@
+{
+  "condition_name": "ablation_topology_knn_k4",
+  "dataset": "DB1_B",
+  "in_dim": 9,
+  "topology": "knn",
+  "k_nn": 4,
+  "projection_dim": 32,
+  "matcher_algo": "hungarian",
+  "use_quality_weights": true,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "eer": 0.4444444444444444,
+  "auc": 0.5756349206349206,
+  "eer_threshold": 0.43909449877485973,
+  "tar_at_1pct_far": 0.0035714285714285587,
+  "tar_at_01pct_far": 0.0035714285714285587,
+  "bootstrap_eer_95ci": [
+    0.3703125,
+    0.5229437229437229
+  ],
+  "bootstrap_auc_95ci": [
+    0.4815079365079365,
+    0.6736507936507936
+  ],
+  "genuine_mean": 0.4420979917049408,
+  "genuine_std": 0.02960335463285446,
+  "impostor_mean": 0.43283772468566895,
+  "impostor_std": 0.036026109009981155,
+  "throughput_comp_per_sec": 39.32412468442806
+}

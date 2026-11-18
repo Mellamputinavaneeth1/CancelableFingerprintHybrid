@@ -1,0 +1,145 @@
+{
+  "subset": "DB2_B",
+  "is_pilot_set_b": true,
+  "sensor_provenance": {
+    "sensor_name": "FX2000",
+    "vendor": "Biometrika",
+    "technology": "Optical (CMOS surface)",
+    "native_dpi": 569.0,
+    "image_size_px": [
+      296,
+      560
+    ]
+  },
+  "descriptor_dim": 256,
+  "topology": "mcc_spectral",
+  "engine": "classical",
+  "k_nn": null,
+  "dpi": 569.0,
+  "total_images": 80,
+  "file_read_error_count": 0,
+  "capture_device_fta": "N/A (offline database)",
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles_per_fingerprint": 69.975,
+  "template_storage": {
+    "num_triangles": 70,
+    "in_dim": 256,
+    "out_dim": 192,
+    "descriptor_bytes": 1680,
+    "weights_bytes": 140,
+    "header_bytes": 48,
+    "matrix_uncompressed_bytes": 4900,
+    "matrix_full_2bit_packed_bytes": 1225,
+    "matrix_symmetric_2bit_packed_bytes": 604,
+    "total_credential_descriptor_only_bytes": 1868,
+    "total_credential_uncompressed_bytes": 6768,
+    "total_credential_full_2bit_bytes": 3093,
+    "total_credential_packed_bytes": 83791,
+    "baseline_unprotected_bytes": 72008,
+    "compression_ratio_descriptor_raw": 0.9765625,
+    "true_compression_ratio_descriptor_only": 0.9740584379513387,
+    "true_compression_ratio_packed": 0.9656704810576603,
+    "true_compression_ratio_uncompressed": 0.9060104432840795,
+    "edge_token_packed_bytes": 81319
+  },
+  "dataset_storage_statistics": {
+    "num_enrolled_templates": 80,
+    "triangles": {
+      "mean": 69.975,
+      "std": 13.636325568128681,
+      "min": 36,
+      "max": 80
+    },
+    "packed_credential_bytes": {
+      "mean": 2494.0875,
+      "std": 569.4939023762678,
+      "min": 1142,
+      "max": 2918,
+      "total_dataset_bytes": 199527
+    },
+    "descriptor_only_bytes": {
+      "mean": 1867.35,
+      "std": 354.5444647713457,
+      "min": 984,
+      "max": 2128,
+      "total_dataset_bytes": 149388
+    },
+    "dense_uncompressed_bytes": {
+      "mean": 6949.8,
+      "std": 2091.3927321285214,
+      "min": 2280,
+      "max": 8528,
+      "total_dataset_bytes": 555984
+    },
+    "baseline_unprotected_bytes": {
+      "mean": 71982.3,
+      "std": 14018.142684036284,
+      "min": 37056,
+      "max": 82288,
+      "total_dataset_bytes": 5758584
+    },
+    "aggregate_serialized_compression": {
+      "packed_vs_baseline": 0.9653513780471032,
+      "descriptor_only_vs_baseline": 0.9740582059756356,
+      "dense_vs_baseline": 0.903451265102671
+    }
+  },
+  "matching_throughput_comp_per_sec": 99.22789759692336,
+  "protected": {
+    "eer": 0.034710743801652885,
+    "auc": 0.9837301587301587,
+    "eer_threshold": 0.011375340631335659,
+    "tar_at_1pct_far": 0.9571428571428572,
+    "tar_at_01pct_far": 0.9571428571428572,
+    "clustered_eer_95ci": [
+      0.0,
+      0.08888888888888888
+    ],
+    "clustered_auc_95ci": [
+      0.954616724738676,
+      1.0
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.0,
+      0.14705882352941177
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.0,
+      0.08571428571428572
+    ],
+    "genuine_score_mean": 0.07695428282022476,
+    "genuine_score_std": 0.0533396415412426,
+    "impostor_score_mean": 0.007410994730889797,
+    "impostor_score_std": 0.002341079991310835,
+    "frozen_set_b_threshold_evaluation": null
+  },
+  "unprotected_baseline": {
+    "eer": 0.025,
+    "auc": 0.9888888888888889,
+    "genuine_score_mean": 0.15350084006786346,
+    "impostor_score_mean": 0.016820628196001053
+  },
+  "paired_difference_protected_vs_unprotected": {
+    "delta_eer_point": 0.009710743801652884,
+    "delta_eer_95ci": [
+      -0.006434465918053772,
+      0.028762428566546427
+    ],
+    "delta_auc_point": -0.005158730158730251,
+    "delta_auc_95ci": [
+      -0.01538461538461533,
+      0.0007142857142857784
+    ],
+    "delta_eer_mean": 0.007540460979748943,
+    "delta_auc_mean": -0.0044472031955506905
+  },
+  "security": {
+    "descriptor_dim": 256,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Excludes Direct Minutiae-Type Storage (0 variables stored); Weak Residual Geometric Signal"
+  }
+}

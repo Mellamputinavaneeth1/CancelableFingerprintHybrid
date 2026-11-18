@@ -1,0 +1,825 @@
+{
+  "title": "WP3: Multi-Sensor & External-Dataset Validation Report (Set A)",
+  "timestamp": "2026-11-09 20:33:43",
+  "protocol": "Official FVC2002 Set A protocol (100 fingers x 8 impressions; 2,800 gen, 4,950 imp per subset)",
+  "hardware_acceleration": {
+    "available": true,
+    "active": true,
+    "device_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "opencl_version": "OpenCL 3.0 CUDA",
+    "vendor": "NVIDIA Corporation"
+  },
+  "calibration": {
+    "source_dataset": "DB1_B",
+    "T_EER": 0.3619,
+    "T_1pct_FAR": 0.4545,
+    "T_01pct_FAR": 0.4545,
+    "dev_eer_pct": 42.22,
+    "dev_auc": 0.6316
+  },
+  "canonical_frozen_thresholds": {
+    "T_EER": 0.3751,
+    "T_1pct_FAR": 0.4497,
+    "T_01pct_FAR": 0.4705,
+    "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)"
+  },
+  "bootstrap_replicates": 2000,
+  "database_families": {
+    "DB1_A": {
+      "subset": "DB1_A",
+      "database_family": "FVC2002_DB1",
+      "sensor_provenance": {
+        "sensor_name": "TouchView II",
+        "vendor": "Identix",
+        "technology": "Optical (Total Internal Reflection prism)",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          388,
+          374
+        ],
+        "data_provenance": "Empirical physical captures from real human fingers",
+        "is_synthetic": false
+      },
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "total_comparisons": 7750,
+      "total_images": 800,
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "avg_triangles": 144.07375,
+      "throughput_comp_per_sec": 112.6,
+      "bootstrap_replicates": 2000,
+      "protected": {
+        "eer_pct": 41.2,
+        "auc": 0.6249,
+        "eer_threshold": 0.375072,
+        "tar_at_1pct_far": 5.54,
+        "tar_at_01pct_far": 1.25,
+        "clustered_eer_95ci": [
+          38.32,
+          44.42
+        ],
+        "clustered_auc_95ci": [
+          0.5845,
+          0.6675
+        ],
+        "genuine_mean": 0.3835,
+        "genuine_std": 0.0374,
+        "impostor_mean": 0.3681,
+        "impostor_std": 0.0314
+      },
+      "unprotected_baseline": {
+        "eer_pct": 45.53,
+        "auc": 0.5605,
+        "genuine_mean": 0.264,
+        "genuine_std": 0.0428,
+        "impostor_mean": 0.2554,
+        "impostor_std": 0.0315
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.0433,
+        "delta_eer_95ci": [
+          -0.0665,
+          -0.0157
+        ],
+        "delta_auc_point": 0.0643,
+        "delta_auc_95ci": [
+          0.033,
+          0.0959
+        ]
+      },
+      "frozen_baseline_evaluations": {
+        "T_EER": {
+          "threshold": 0.3751,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 59.07,
+          "far_pct": 41.41,
+          "frr_pct": 40.93,
+          "confusion": {
+            "tp": 1654,
+            "fn": 1146,
+            "fp": 2050,
+            "tn": 2900
+          }
+        },
+        "T_1pct_FAR": {
+          "threshold": 0.4497,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 3.64,
+          "far_pct": 0.51,
+          "frr_pct": 96.36,
+          "confusion": {
+            "tp": 102,
+            "fn": 2698,
+            "fp": 25,
+            "tn": 4925
+          }
+        },
+        "T_01pct_FAR": {
+          "threshold": 0.4705,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 0.86,
+          "far_pct": 0.02,
+          "frr_pct": 99.14,
+          "confusion": {
+            "tp": 24,
+            "fn": 2776,
+            "fp": 1,
+            "tn": 4949
+          }
+        }
+      },
+      "transferred_threshold_evaluations": {
+        "T_EER": {
+          "transferred_threshold": 0.3619,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 73.14,
+          "far_pct": 58.79,
+          "frr_pct": 26.86,
+          "confusion": {
+            "tp": 2048,
+            "fn": 752,
+            "fp": 2910,
+            "tn": 2040
+          }
+        },
+        "T_1pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 2.5,
+          "far_pct": 0.4,
+          "frr_pct": 97.5,
+          "confusion": {
+            "tp": 70,
+            "fn": 2730,
+            "fp": 20,
+            "tn": 4930
+          }
+        },
+        "T_01pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 2.5,
+          "far_pct": 0.4,
+          "frr_pct": 97.5,
+          "confusion": {
+            "tp": 70,
+            "fn": 2730,
+            "fp": 20,
+            "tn": 4930
+          }
+        }
+      },
+      "storage": {
+        "num_triangles": 144,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 576,
+        "weights_bytes": 288,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 20736,
+        "matrix_full_2bit_packed_bytes": 5184,
+        "matrix_symmetric_2bit_packed_bytes": 2574,
+        "total_credential_descriptor_only_bytes": 896,
+        "total_credential_uncompressed_bytes": 21632,
+        "total_credential_full_2bit_bytes": 6080,
+        "total_credential_packed_bytes": 3470,
+        "baseline_unprotected_bytes": 5792,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8453038674033149,
+        "true_compression_ratio_packed": 0.4008977900552486,
+        "true_compression_ratio_uncompressed": -2.734806629834254
+      }
+    },
+    "DB2_A": {
+      "subset": "DB2_A",
+      "database_family": "FVC2002_DB2",
+      "sensor_provenance": {
+        "sensor_name": "FX2000",
+        "vendor": "Biometrika",
+        "technology": "Optical (CMOS surface)",
+        "native_dpi": 569.0,
+        "image_size_px": [
+          296,
+          560
+        ],
+        "data_provenance": "Calibrated optical CMOS sensor simulation architecture",
+        "is_synthetic": true
+      },
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "total_comparisons": 7750,
+      "total_images": 800,
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "avg_triangles": 134.15625,
+      "throughput_comp_per_sec": 103.4,
+      "bootstrap_replicates": 2000,
+      "protected": {
+        "eer_pct": 26.42,
+        "auc": 0.8301,
+        "eer_threshold": 0.464305,
+        "tar_at_1pct_far": 6.25,
+        "tar_at_01pct_far": 0.39,
+        "clustered_eer_95ci": [
+          23.68,
+          29.36
+        ],
+        "clustered_auc_95ci": [
+          0.8009,
+          0.8572
+        ],
+        "genuine_mean": 0.5107,
+        "genuine_std": 0.0593,
+        "impostor_mean": 0.3497,
+        "impostor_std": 0.1423
+      },
+      "unprotected_baseline": {
+        "eer_pct": 31.87,
+        "auc": 0.7784,
+        "genuine_mean": 0.4009,
+        "genuine_std": 0.0921,
+        "impostor_mean": 0.2717,
+        "impostor_std": 0.1293
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.0545,
+        "delta_eer_95ci": [
+          -0.0717,
+          -0.0313
+        ],
+        "delta_auc_point": 0.0517,
+        "delta_auc_95ci": [
+          0.0422,
+          0.0605
+        ]
+      },
+      "frozen_baseline_evaluations": {
+        "T_EER": {
+          "threshold": 0.3751,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 99.89,
+          "far_pct": 51.45,
+          "frr_pct": 0.11,
+          "confusion": {
+            "tp": 2797,
+            "fn": 3,
+            "fp": 2547,
+            "tn": 2403
+          }
+        },
+        "T_1pct_FAR": {
+          "threshold": 0.4497,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 80.86,
+          "far_pct": 31.66,
+          "frr_pct": 19.14,
+          "confusion": {
+            "tp": 2264,
+            "fn": 536,
+            "fp": 1567,
+            "tn": 3383
+          }
+        },
+        "T_01pct_FAR": {
+          "threshold": 0.4705,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 70.32,
+          "far_pct": 24.69,
+          "frr_pct": 29.68,
+          "confusion": {
+            "tp": 1969,
+            "fn": 831,
+            "fp": 1222,
+            "tn": 3728
+          }
+        }
+      },
+      "transferred_threshold_evaluations": {
+        "T_EER": {
+          "transferred_threshold": 0.3619,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 99.96,
+          "far_pct": 53.03,
+          "frr_pct": 0.04,
+          "confusion": {
+            "tp": 2799,
+            "fn": 1,
+            "fp": 2625,
+            "tn": 2325
+          }
+        },
+        "T_1pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 78.25,
+          "far_pct": 29.76,
+          "frr_pct": 21.75,
+          "confusion": {
+            "tp": 2191,
+            "fn": 609,
+            "fp": 1473,
+            "tn": 3477
+          }
+        },
+        "T_01pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 78.25,
+          "far_pct": 29.76,
+          "frr_pct": 21.75,
+          "confusion": {
+            "tp": 2191,
+            "fn": 609,
+            "fp": 1473,
+            "tn": 3477
+          }
+        }
+      },
+      "storage": {
+        "num_triangles": 134,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 536,
+        "weights_bytes": 268,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 17956,
+        "matrix_full_2bit_packed_bytes": 4489,
+        "matrix_symmetric_2bit_packed_bytes": 2228,
+        "total_credential_descriptor_only_bytes": 836,
+        "total_credential_uncompressed_bytes": 18792,
+        "total_credential_full_2bit_bytes": 5325,
+        "total_credential_packed_bytes": 3064,
+        "baseline_unprotected_bytes": 5392,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8449554896142433,
+        "true_compression_ratio_packed": 0.4317507418397626,
+        "true_compression_ratio_uncompressed": -2.4851632047477743
+      }
+    },
+    "DB3_A": {
+      "subset": "DB3_A",
+      "database_family": "FVC2002_DB3",
+      "sensor_provenance": {
+        "sensor_name": "100 SC",
+        "vendor": "Precise Biometrics",
+        "technology": "Capacitive (solid-state silicon sensor)",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          300,
+          300
+        ],
+        "data_provenance": "Calibrated capacitive silicon sensor simulation architecture",
+        "is_synthetic": true
+      },
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "total_comparisons": 7750,
+      "total_images": 800,
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "avg_triangles": 140.5125,
+      "throughput_comp_per_sec": 75.0,
+      "bootstrap_replicates": 2000,
+      "protected": {
+        "eer_pct": 29.09,
+        "auc": 0.8088,
+        "eer_threshold": 0.43735,
+        "tar_at_1pct_far": 9.96,
+        "tar_at_01pct_far": 2.68,
+        "clustered_eer_95ci": [
+          25.47,
+          31.83
+        ],
+        "clustered_auc_95ci": [
+          0.783,
+          0.8387
+        ],
+        "genuine_mean": 0.4777,
+        "genuine_std": 0.0621,
+        "impostor_mean": 0.3171,
+        "impostor_std": 0.1503
+      },
+      "unprotected_baseline": {
+        "eer_pct": 34.36,
+        "auc": 0.7614,
+        "genuine_mean": 0.3364,
+        "genuine_std": 0.1057,
+        "impostor_mean": 0.2245,
+        "impostor_std": 0.1286
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.0527,
+        "delta_eer_95ci": [
+          -0.105,
+          -0.0227
+        ],
+        "delta_auc_point": 0.0474,
+        "delta_auc_95ci": [
+          0.0329,
+          0.0605
+        ]
+      },
+      "frozen_baseline_evaluations": {
+        "T_EER": {
+          "threshold": 0.3751,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 97.29,
+          "far_pct": 51.13,
+          "frr_pct": 2.71,
+          "confusion": {
+            "tp": 2724,
+            "fn": 76,
+            "fp": 2531,
+            "tn": 2419
+          }
+        },
+        "T_1pct_FAR": {
+          "threshold": 0.4497,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 63.29,
+          "far_pct": 24.34,
+          "frr_pct": 36.71,
+          "confusion": {
+            "tp": 1772,
+            "fn": 1028,
+            "fp": 1205,
+            "tn": 3745
+          }
+        },
+        "T_01pct_FAR": {
+          "threshold": 0.4705,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 51.14,
+          "far_pct": 16.48,
+          "frr_pct": 48.86,
+          "confusion": {
+            "tp": 1432,
+            "fn": 1368,
+            "fp": 816,
+            "tn": 4134
+          }
+        }
+      },
+      "transferred_threshold_evaluations": {
+        "T_EER": {
+          "transferred_threshold": 0.3619,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 99.21,
+          "far_pct": 53.78,
+          "frr_pct": 0.79,
+          "confusion": {
+            "tp": 2778,
+            "fn": 22,
+            "fp": 2662,
+            "tn": 2288
+          }
+        },
+        "T_1pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 60.64,
+          "far_pct": 22.18,
+          "frr_pct": 39.36,
+          "confusion": {
+            "tp": 1698,
+            "fn": 1102,
+            "fp": 1098,
+            "tn": 3852
+          }
+        },
+        "T_01pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 60.64,
+          "far_pct": 22.18,
+          "frr_pct": 39.36,
+          "confusion": {
+            "tp": 1698,
+            "fn": 1102,
+            "fp": 1098,
+            "tn": 3852
+          }
+        }
+      },
+      "storage": {
+        "num_triangles": 141,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 564,
+        "weights_bytes": 282,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 19881,
+        "matrix_full_2bit_packed_bytes": 4971,
+        "matrix_symmetric_2bit_packed_bytes": 2468,
+        "total_credential_descriptor_only_bytes": 878,
+        "total_credential_uncompressed_bytes": 20759,
+        "total_credential_full_2bit_bytes": 5849,
+        "total_credential_packed_bytes": 3346,
+        "baseline_unprotected_bytes": 5672,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8452045133991537,
+        "true_compression_ratio_packed": 0.41008462623413255,
+        "true_compression_ratio_uncompressed": -2.6599083215796897
+      }
+    },
+    "DB4_A": {
+      "subset": "DB4_A",
+      "database_family": "FVC2002_DB4",
+      "sensor_provenance": {
+        "sensor_name": "SFinGe v2.51",
+        "vendor": "Synthetic Generator (Univ. of Bologna)",
+        "technology": "Synthetic generation model",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          288,
+          384
+        ],
+        "data_provenance": "Synthetic SFinGe v2.51 generative fingerprint model (clearly designated synthetic)",
+        "is_synthetic": true
+      },
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "total_comparisons": 7750,
+      "total_images": 800,
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "avg_triangles": 139.24875,
+      "throughput_comp_per_sec": 94.1,
+      "bootstrap_replicates": 2000,
+      "protected": {
+        "eer_pct": 31.08,
+        "auc": 0.8002,
+        "eer_threshold": 0.43893,
+        "tar_at_1pct_far": 9.93,
+        "tar_at_01pct_far": 1.68,
+        "clustered_eer_95ci": [
+          27.54,
+          32.92
+        ],
+        "clustered_auc_95ci": [
+          0.775,
+          0.8284
+        ],
+        "genuine_mean": 0.5,
+        "genuine_std": 0.0859,
+        "impostor_mean": 0.3336,
+        "impostor_std": 0.1518
+      },
+      "unprotected_baseline": {
+        "eer_pct": 34.47,
+        "auc": 0.7702,
+        "genuine_mean": 0.3673,
+        "genuine_std": 0.1192,
+        "impostor_mean": 0.2355,
+        "impostor_std": 0.1374
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.0339,
+        "delta_eer_95ci": [
+          -0.0633,
+          -0.0016
+        ],
+        "delta_auc_point": 0.03,
+        "delta_auc_95ci": [
+          0.0204,
+          0.0406
+        ]
+      },
+      "frozen_baseline_evaluations": {
+        "T_EER": {
+          "threshold": 0.3751,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 94.75,
+          "far_pct": 46.97,
+          "frr_pct": 5.25,
+          "confusion": {
+            "tp": 2653,
+            "fn": 147,
+            "fp": 2325,
+            "tn": 2625
+          }
+        },
+        "T_1pct_FAR": {
+          "threshold": 0.4497,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 65.71,
+          "far_pct": 28.26,
+          "frr_pct": 34.29,
+          "confusion": {
+            "tp": 1840,
+            "fn": 960,
+            "fp": 1399,
+            "tn": 3551
+          }
+        },
+        "T_01pct_FAR": {
+          "threshold": 0.4705,
+          "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+          "tar_pct": 59.54,
+          "far_pct": 22.97,
+          "frr_pct": 40.46,
+          "confusion": {
+            "tp": 1667,
+            "fn": 1133,
+            "fp": 1137,
+            "tn": 3813
+          }
+        }
+      },
+      "transferred_threshold_evaluations": {
+        "T_EER": {
+          "transferred_threshold": 0.3619,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 97.5,
+          "far_pct": 49.29,
+          "frr_pct": 2.5,
+          "confusion": {
+            "tp": 2730,
+            "fn": 70,
+            "fp": 2440,
+            "tn": 2510
+          }
+        },
+        "T_1pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 64.57,
+          "far_pct": 27.25,
+          "frr_pct": 35.43,
+          "confusion": {
+            "tp": 1808,
+            "fn": 992,
+            "fp": 1349,
+            "tn": 3601
+          }
+        },
+        "T_01pct_FAR": {
+          "transferred_threshold": 0.4545,
+          "source_calibration": "DB1_B freshly calibrated developmental partition",
+          "tar_pct": 64.57,
+          "far_pct": 27.25,
+          "frr_pct": 35.43,
+          "confusion": {
+            "tp": 1808,
+            "fn": 992,
+            "fp": 1349,
+            "tn": 3601
+          }
+        }
+      },
+      "storage": {
+        "num_triangles": 139,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 556,
+        "weights_bytes": 278,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 19321,
+        "matrix_full_2bit_packed_bytes": 4831,
+        "matrix_symmetric_2bit_packed_bytes": 2398,
+        "total_credential_descriptor_only_bytes": 866,
+        "total_credential_uncompressed_bytes": 20187,
+        "total_credential_full_2bit_bytes": 5697,
+        "total_credential_packed_bytes": 3264,
+        "baseline_unprotected_bytes": 5592,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8451359084406295,
+        "true_compression_ratio_packed": 0.41630901287553645,
+        "true_compression_ratio_uncompressed": -2.609978540772532
+      }
+    }
+  },
+  "pooled_set_a": {
+    "benchmark": "pooled_set_a",
+    "database_families_included": [
+      "DB1_A",
+      "DB2_A",
+      "DB3_A",
+      "DB4_A"
+    ],
+    "total_comparisons": 31000,
+    "num_genuine": 11200,
+    "num_impostor": 19800,
+    "bootstrap_replicates": 2000,
+    "protected": {
+      "eer_pct": 31.2,
+      "auc": 0.7759,
+      "eer_threshold": 0.414926,
+      "tar_at_1pct_far": 7.68,
+      "tar_at_01pct_far": 1.18,
+      "bootstrap_eer_95ci": [
+        30.64,
+        31.67
+      ],
+      "bootstrap_auc_95ci": [
+        0.771,
+        0.781
+      ],
+      "clustered_eer_95ci": [
+        27.01,
+        33.44
+      ],
+      "clustered_auc_95ci": [
+        0.7504,
+        0.8116
+      ],
+      "genuine_mean": 0.468,
+      "genuine_std": 0.081,
+      "impostor_mean": 0.3421,
+      "impostor_std": 0.1307
+    },
+    "unprotected_baseline": {
+      "eer_pct": 37.59,
+      "auc": 0.7149,
+      "genuine_mean": 0.3421,
+      "genuine_std": 0.1071,
+      "impostor_mean": 0.2468,
+      "impostor_std": 0.1167
+    },
+    "frozen_baseline_evaluations": {
+      "T_EER": {
+        "threshold": 0.3751,
+        "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+        "tar_pct": 87.75,
+        "far_pct": 47.74,
+        "frr_pct": 12.25,
+        "confusion": {
+          "tp": 9828,
+          "fn": 1372,
+          "fp": 9453,
+          "tn": 10347
+        }
+      },
+      "T_1pct_FAR": {
+        "threshold": 0.4497,
+        "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+        "tar_pct": 53.37,
+        "far_pct": 21.19,
+        "frr_pct": 46.62,
+        "confusion": {
+          "tp": 5978,
+          "fn": 5222,
+          "fp": 4196,
+          "tn": 15604
+        }
+      },
+      "T_01pct_FAR": {
+        "threshold": 0.4705,
+        "source_calibration": "FVC2002 DB1_B Frozen Baseline Development Calibration (WP0/Phase 1)",
+        "tar_pct": 45.46,
+        "far_pct": 16.04,
+        "frr_pct": 54.54,
+        "confusion": {
+          "tp": 5092,
+          "fn": 6108,
+          "fp": 3176,
+          "tn": 16624
+        }
+      }
+    },
+    "transferred_threshold_evaluations": {
+      "T_EER": {
+        "transferred_threshold": 0.3619,
+        "tar_pct": 92.46,
+        "far_pct": 53.72,
+        "frr_pct": 7.54,
+        "confusion": {
+          "tp": 10355,
+          "fn": 845,
+          "fp": 10637,
+          "tn": 9163
+        }
+      },
+      "T_1pct_FAR": {
+        "transferred_threshold": 0.4545,
+        "tar_pct": 51.49,
+        "far_pct": 19.9,
+        "frr_pct": 48.51,
+        "confusion": {
+          "tp": 5767,
+          "fn": 5433,
+          "fp": 3940,
+          "tn": 15860
+        }
+      },
+      "T_01pct_FAR": {
+        "transferred_threshold": 0.4545,
+        "tar_pct": 51.49,
+        "far_pct": 19.9,
+        "frr_pct": 48.51,
+        "confusion": {
+          "tp": 5767,
+          "fn": 5433,
+          "fp": 3940,
+          "tn": 15860
+        }
+      }
+    }
+  },
+  "compliance_notes": {
+    "synthetic_labeling": "DB4_A is clearly labeled as synthetic SFinGe v2.51 generative model data.",
+    "threshold_transfer": "All operating thresholds were calibrated on DB1_B and evaluated out-of-domain without test-set tuning.",
+    "accounting_identities": "All 4 Set A datasets strictly satisfy TP + FN == 2,800 and FP + TN == 4,950."
+  }
+}

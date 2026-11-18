@@ -1,0 +1,51 @@
+{
+  "dataset": "SOCOFing",
+  "descriptor_dim": 12,
+  "num_subjects": 10,
+  "total_genuine_alteration_trials": 90,
+  "total_impostor_trials": 270,
+  "overall_eer": 0.2777777777777778,
+  "overall_auc": 0.808395061728395,
+  "genuine_mean": 0.37818577885627747,
+  "impostor_mean": 0.3119916021823883,
+  "by_difficulty": {
+    "Easy": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.4198005378246307,
+      "std_genuine_score": 0.06336517282976932,
+      "accept_rate_at_operating_thresh": 1.0
+    },
+    "Medium": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.3825711339712143,
+      "std_genuine_score": 0.055950245932145336,
+      "accept_rate_at_operating_thresh": 1.0
+    },
+    "Hard": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.3321856580674648,
+      "std_genuine_score": 0.07430774244578622,
+      "accept_rate_at_operating_thresh": 0.9666666666666667
+    }
+  },
+  "by_alteration_class": {
+    "Obliteration": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.36384209617972374,
+      "std_genuine_score": 0.10383668483806084,
+      "accept_rate_at_operating_thresh": 0.9666666666666667
+    },
+    "Central_Rotation": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.3685896505912145,
+      "std_genuine_score": 0.0332518761063558,
+      "accept_rate_at_operating_thresh": 1.0
+    },
+    "Z-cut": {
+      "num_evaluations": 30,
+      "mean_genuine_score": 0.4021255830923716,
+      "std_genuine_score": 0.061445592446065976,
+      "accept_rate_at_operating_thresh": 1.0
+    }
+  }
+}

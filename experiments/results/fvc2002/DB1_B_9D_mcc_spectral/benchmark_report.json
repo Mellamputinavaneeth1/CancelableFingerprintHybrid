@@ -1,0 +1,143 @@
+{
+  "subset": "DB1_B",
+  "is_pilot_set_b": true,
+  "sensor_provenance": {
+    "sensor_name": "TouchView II",
+    "vendor": "Identix",
+    "technology": "Optical (Total Internal Reflection prism)",
+    "native_dpi": 500.0,
+    "image_size_px": [
+      388,
+      374
+    ]
+  },
+  "descriptor_dim": 256,
+  "topology": "mcc_spectral",
+  "k_nn": null,
+  "dpi": 500.0,
+  "total_images": 80,
+  "file_read_error_count": 0,
+  "capture_device_fta": "N/A (offline database)",
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles_per_fingerprint": 77.8625,
+  "template_storage": {
+    "num_triangles": 78,
+    "in_dim": 256,
+    "out_dim": 64,
+    "descriptor_bytes": 624,
+    "weights_bytes": 156,
+    "header_bytes": 32,
+    "matrix_uncompressed_bytes": 6084,
+    "matrix_full_2bit_packed_bytes": 1521,
+    "matrix_symmetric_2bit_packed_bytes": 751,
+    "total_credential_descriptor_only_bytes": 812,
+    "total_credential_uncompressed_bytes": 6896,
+    "total_credential_full_2bit_bytes": 2333,
+    "total_credential_packed_bytes": 1563,
+    "baseline_unprotected_bytes": 80216,
+    "compression_ratio_descriptor_raw": 0.9921875,
+    "true_compression_ratio_descriptor_only": 0.9898773312057445,
+    "true_compression_ratio_packed": 0.9805151092051461,
+    "true_compression_ratio_uncompressed": 0.9140321132941059
+  },
+  "dataset_storage_statistics": {
+    "num_enrolled_templates": 80,
+    "triangles": {
+      "mean": 77.8625,
+      "std": 5.57840422970584,
+      "min": 54,
+      "max": 80
+    },
+    "packed_credential_bytes": {
+      "mean": 1562.6625,
+      "std": 151.9479305346078,
+      "min": 930,
+      "max": 1622,
+      "total_dataset_bytes": 125013
+    },
+    "descriptor_only_bytes": {
+      "mean": 810.625,
+      "std": 55.78404229705839,
+      "min": 572,
+      "max": 832,
+      "total_dataset_bytes": 64850
+    },
+    "dense_uncompressed_bytes": {
+      "mean": 6904.3125,
+      "std": 831.8305355321779,
+      "min": 3488,
+      "max": 7232,
+      "total_dataset_bytes": 552345
+    },
+    "baseline_unprotected_bytes": {
+      "mean": 80074.65,
+      "std": 5734.599548137603,
+      "min": 55544,
+      "max": 82272,
+      "total_dataset_bytes": 6405972
+    },
+    "aggregate_serialized_compression": {
+      "packed_vs_baseline": 0.9804849287508594,
+      "descriptor_only_vs_baseline": 0.9898766338660238,
+      "dense_vs_baseline": 0.9137765510058427
+    }
+  },
+  "matching_throughput_comp_per_sec": 143.34877503282044,
+  "protected": {
+    "eer": 0.27384615384615385,
+    "auc": 0.8167460317460318,
+    "eer_threshold": 0.3075131168044246,
+    "tar_at_1pct_far": 0.35,
+    "tar_at_01pct_far": 0.35,
+    "clustered_eer_95ci": [
+      0.15,
+      0.3922976501305483
+    ],
+    "clustered_auc_95ci": [
+      0.6436974789915967,
+      0.9267857142857143
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.047619047619047616,
+      0.5789473684210527
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.17857142857142858,
+      0.375
+    ],
+    "genuine_score_mean": 0.4026879668235779,
+    "genuine_score_std": 0.13881300389766693,
+    "impostor_score_mean": 0.26706260442733765,
+    "impostor_score_std": 0.0643310397863388,
+    "frozen_set_b_threshold_evaluation": null
+  },
+  "unprotected_baseline": {
+    "eer": 0.3216216216216216,
+    "auc": 0.7561904761904762,
+    "genuine_score_mean": 0.6300718188285828,
+    "impostor_score_mean": 0.4776885211467743
+  },
+  "paired_difference_protected_vs_unprotected": {
+    "delta_eer_point": -0.04777546777546776,
+    "delta_eer_95ci": [
+      -0.1953125,
+      0.09814949201741655
+    ],
+    "delta_auc_point": 0.060555555555555585,
+    "delta_auc_95ci": [
+      -0.1021428571428572,
+      0.20082417582417578
+    ],
+    "delta_eer_mean": -0.047733623444569925,
+    "delta_auc_mean": 0.04615407266263509
+  },
+  "security": {
+    "descriptor_dim": 256,
+    "type_leakage_rate": 0.946,
+    "unique_minutia_type_leakage": 0.9956,
+    "vulnerability_status": "Vulnerable to Direct MILP Type Recovery under Known Key"
+  }
+}

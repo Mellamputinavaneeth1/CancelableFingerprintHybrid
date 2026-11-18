@@ -1,0 +1,623 @@
+{
+  "title": "Phase 1: Multi-Sensor Recognition Performance Benchmark Report",
+  "timestamp": "2026-11-09 01:49:30",
+  "protocol": "Official FVC2002 standard matching protocol (Genuine: all i<j; Impostor: imp 1 across distinct fingers)",
+  "individual_subsets": {
+    "DB1_A": {
+      "subset": "DB1_A",
+      "sensor_provenance": {
+        "sensor_name": "TouchView II",
+        "vendor": "Identix",
+        "technology": "Optical (Total Internal Reflection prism)",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          388,
+          374
+        ]
+      },
+      "descriptor_dim": 9,
+      "topology": "delaunay",
+      "projection_dim": 32,
+      "dpi": 500.0,
+      "total_images": 800,
+      "fta": "N/A (offline database)",
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "num_genuine": 2800,
+      "num_impostor": 4950,
+      "avg_triangles": 144.07375,
+      "matching_throughput_comp_per_sec": 119.42978736484054,
+      "protected": {
+        "eer": 0.4119682636557827,
+        "auc": 0.6248510461760461,
+        "eer_threshold": 0.375071819586582,
+        "tar_at_1pct_far": 0.05535714285714288,
+        "tar_at_01pct_far": 0.012499999999999956,
+        "bootstrap_eer_95ci": [
+          0.4020475236387922,
+          0.42331658291457286
+        ],
+        "bootstrap_auc_95ci": [
+          0.6128074675324675,
+          0.6387522727272728
+        ],
+        "clustered_eer_95ci": [
+          0.3832302885325806,
+          0.4441652414156032
+        ],
+        "clustered_auc_95ci": [
+          0.5839500684991401,
+          0.669812820961718
+        ],
+        "genuine_mean": 0.38352665305137634,
+        "genuine_std": 0.037369146943092346,
+        "impostor_mean": 0.368095338344574,
+        "impostor_std": 0.03138984739780426,
+        "frozen_dev_threshold_eval": {
+          "threshold": 0.3751,
+          "tar": 0.5907142857142857,
+          "far": 0.41414141414141414,
+          "frr": 0.4092857142857143,
+          "confusion": {
+            "tp": 1654,
+            "fn": 1146,
+            "fp": 2050,
+            "tn": 2900
+          }
+        }
+      },
+      "unprotected_baseline": {
+        "eer": 0.45527793510801845,
+        "auc": 0.5605445526695526,
+        "genuine_mean": 0.2640213966369629,
+        "genuine_std": 0.042774856090545654,
+        "impostor_mean": 0.25540757179260254,
+        "impostor_std": 0.03149200975894928
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.04330967145223574,
+        "delta_eer_95ci": [
+          -0.0677684067691745,
+          -0.016609605402387873
+        ],
+        "delta_auc_point": 0.06430649350649353,
+        "delta_auc_95ci": [
+          0.03230309392587416,
+          0.09876051704561994
+        ],
+        "delta_eer_mean": -0.0414310762604118,
+        "delta_auc_mean": 0.06451348388119599
+      },
+      "storage": {
+        "num_triangles": 144,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 576,
+        "weights_bytes": 288,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 20736,
+        "matrix_full_2bit_packed_bytes": 5184,
+        "matrix_symmetric_2bit_packed_bytes": 2574,
+        "total_credential_descriptor_only_bytes": 896,
+        "total_credential_uncompressed_bytes": 21632,
+        "total_credential_full_2bit_bytes": 6080,
+        "total_credential_packed_bytes": 3470,
+        "baseline_unprotected_bytes": 5792,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8453038674033149,
+        "true_compression_ratio_packed": 0.4008977900552486,
+        "true_compression_ratio_uncompressed": -2.734806629834254
+      }
+    },
+    "DB1_B": {
+      "subset": "DB1_B",
+      "sensor_provenance": {
+        "sensor_name": "TouchView II",
+        "vendor": "Identix",
+        "technology": "Optical (Total Internal Reflection prism)",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          388,
+          374
+        ]
+      },
+      "descriptor_dim": 9,
+      "topology": "delaunay",
+      "projection_dim": 32,
+      "dpi": 500.0,
+      "total_images": 80,
+      "fta": "N/A (offline database)",
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "avg_triangles": 143.125,
+      "matching_throughput_comp_per_sec": 115.7225302112771,
+      "protected": {
+        "eer": 0.4222222222222222,
+        "auc": 0.6315873015873016,
+        "eer_threshold": 0.3619743991943451,
+        "tar_at_1pct_far": 0.0035714285714285587,
+        "tar_at_01pct_far": 0.0035714285714285587,
+        "bootstrap_eer_95ci": [
+          0.3381818181818182,
+          0.49272727272727274
+        ],
+        "bootstrap_auc_95ci": [
+          0.5482539682539682,
+          0.7112698412698413
+        ],
+        "clustered_eer_95ci": [
+          0.30458015267175576,
+          0.5305555555555556
+        ],
+        "clustered_auc_95ci": [
+          0.4697368421052632,
+          0.7444548872180451
+        ],
+        "genuine_mean": 0.3688826262950897,
+        "genuine_std": 0.027995038777589798,
+        "impostor_mean": 0.3561018705368042,
+        "impostor_std": 0.02906959317624569,
+        "frozen_dev_threshold_eval": {
+          "threshold": 0.3751,
+          "tar": 0.38571428571428573,
+          "far": 0.2222222222222222,
+          "frr": 0.6142857142857143,
+          "confusion": {
+            "tp": 108,
+            "fn": 172,
+            "fp": 10,
+            "tn": 35
+          }
+        }
+      },
+      "unprotected_baseline": {
+        "eer": 0.4888888888888889,
+        "auc": 0.5160317460317461,
+        "genuine_mean": 0.25073227286338806,
+        "genuine_std": 0.029271017760038376,
+        "impostor_mean": 0.2506781816482544,
+        "impostor_std": 0.030158599838614464
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.06666666666666665,
+        "delta_eer_95ci": [
+          -0.21067950105371075,
+          0.07500000000000007
+        ],
+        "delta_auc_point": 0.11555555555555552,
+        "delta_auc_95ci": [
+          -0.022683397683397777,
+          0.24841269841269836
+        ],
+        "delta_eer_mean": -0.07000965346595998,
+        "delta_auc_mean": 0.11961957911112417
+      },
+      "storage": {
+        "num_triangles": 143,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 572,
+        "weights_bytes": 286,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 20449,
+        "matrix_full_2bit_packed_bytes": 5113,
+        "matrix_symmetric_2bit_packed_bytes": 2539,
+        "total_credential_descriptor_only_bytes": 890,
+        "total_credential_uncompressed_bytes": 21339,
+        "total_credential_full_2bit_bytes": 6003,
+        "total_credential_packed_bytes": 3429,
+        "baseline_unprotected_bytes": 5752,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8452712100139081,
+        "true_compression_ratio_packed": 0.40385952712100137,
+        "true_compression_ratio_uncompressed": -2.7098400556328235
+      }
+    },
+    "DB2_B": {
+      "subset": "DB2_B",
+      "sensor_provenance": {
+        "sensor_name": "FX2000",
+        "vendor": "Biometrika",
+        "technology": "Optical (CMOS surface)",
+        "native_dpi": 569.0,
+        "image_size_px": [
+          296,
+          560
+        ]
+      },
+      "descriptor_dim": 9,
+      "topology": "delaunay",
+      "projection_dim": 32,
+      "dpi": 569.0,
+      "total_images": 80,
+      "fta": "N/A (offline database)",
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "avg_triangles": 141.675,
+      "matching_throughput_comp_per_sec": 123.45784429182103,
+      "protected": {
+        "eer": 0.39008264462809916,
+        "auc": 0.6487301587301587,
+        "eer_threshold": 0.36852704656474944,
+        "tar_at_1pct_far": 0.050000000000000044,
+        "tar_at_01pct_far": 0.050000000000000044,
+        "bootstrap_eer_95ci": [
+          0.3046153846153846,
+          0.4578034682080925
+        ],
+        "bootstrap_auc_95ci": [
+          0.5563492063492064,
+          0.731904761904762
+        ],
+        "clustered_eer_95ci": [
+          0.23684210526315788,
+          0.5426470588235294
+        ],
+        "clustered_auc_95ci": [
+          0.47247386759581883,
+          0.8162087912087912
+        ],
+        "genuine_mean": 0.37982177734375,
+        "genuine_std": 0.03668008744716644,
+        "impostor_mean": 0.3621392548084259,
+        "impostor_std": 0.03299878165125847,
+        "frozen_dev_threshold_eval": {
+          "threshold": 0.3751,
+          "tar": 0.5321428571428571,
+          "far": 0.28888888888888886,
+          "frr": 0.46785714285714286,
+          "confusion": {
+            "tp": 149,
+            "fn": 131,
+            "fp": 13,
+            "tn": 32
+          }
+        }
+      },
+      "unprotected_baseline": {
+        "eer": 0.41785714285714287,
+        "auc": 0.5907142857142857,
+        "genuine_mean": 0.26949238777160645,
+        "genuine_std": 0.039018865674734116,
+        "impostor_mean": 0.25754880905151367,
+        "impostor_std": 0.023603638634085655
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.02777449822904371,
+        "delta_eer_95ci": [
+          -0.172923400257933,
+          0.10940526727939665
+        ],
+        "delta_auc_point": 0.058015873015872965,
+        "delta_auc_95ci": [
+          -0.08609022556390977,
+          0.1908834586466165
+        ],
+        "delta_eer_mean": -0.04406202554721678,
+        "delta_auc_mean": 0.05655698746574465
+      },
+      "storage": {
+        "num_triangles": 142,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 568,
+        "weights_bytes": 284,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 20164,
+        "matrix_full_2bit_packed_bytes": 5041,
+        "matrix_symmetric_2bit_packed_bytes": 2503,
+        "total_credential_descriptor_only_bytes": 884,
+        "total_credential_uncompressed_bytes": 21048,
+        "total_credential_full_2bit_bytes": 5925,
+        "total_credential_packed_bytes": 3387,
+        "baseline_unprotected_bytes": 5712,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8452380952380952,
+        "true_compression_ratio_packed": 0.4070378151260504,
+        "true_compression_ratio_uncompressed": -2.6848739495798317
+      }
+    },
+    "DB3_B": {
+      "subset": "DB3_B",
+      "sensor_provenance": {
+        "sensor_name": "100 SC",
+        "vendor": "Precise Biometrics",
+        "technology": "Capacitive (solid-state silicon sensor)",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          300,
+          300
+        ]
+      },
+      "descriptor_dim": 9,
+      "topology": "delaunay",
+      "projection_dim": 32,
+      "dpi": 500.0,
+      "total_images": 80,
+      "fta": "N/A (offline database)",
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "avg_triangles": 144.4625,
+      "matching_throughput_comp_per_sec": 116.56569115054282,
+      "protected": {
+        "eer": 0.4222222222222222,
+        "auc": 0.6426984126984127,
+        "eer_threshold": 0.38468387882267985,
+        "tar_at_1pct_far": 0.06785714285714284,
+        "tar_at_01pct_far": 0.06785714285714284,
+        "bootstrap_eer_95ci": [
+          0.3520661157024793,
+          0.4775330396475771
+        ],
+        "bootstrap_auc_95ci": [
+          0.5643650793650794,
+          0.7164285714285714
+        ],
+        "clustered_eer_95ci": [
+          0.2789203084832905,
+          0.5216494845360825
+        ],
+        "clustered_auc_95ci": [
+          0.503061224489796,
+          0.8042293233082707
+        ],
+        "genuine_mean": 0.39317992329597473,
+        "genuine_std": 0.04107734188437462,
+        "impostor_mean": 0.3684872090816498,
+        "impostor_std": 0.04253116622567177,
+        "frozen_dev_threshold_eval": {
+          "threshold": 0.3751,
+          "tar": 0.6464285714285715,
+          "far": 0.5555555555555556,
+          "frr": 0.3535714285714286,
+          "confusion": {
+            "tp": 181,
+            "fn": 99,
+            "fp": 25,
+            "tn": 20
+          }
+        }
+      },
+      "unprotected_baseline": {
+        "eer": 0.4888888888888889,
+        "auc": 0.5698412698412698,
+        "genuine_mean": 0.25704559683799744,
+        "genuine_std": 0.040148213505744934,
+        "impostor_mean": 0.24360592663288116,
+        "impostor_std": 0.032798320055007935
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.06666666666666665,
+        "delta_eer_95ci": [
+          -0.14758135016998553,
+          0.02485130013685649
+        ],
+        "delta_auc_point": 0.07285714285714284,
+        "delta_auc_95ci": [
+          -0.0030219780219780112,
+          0.15164835164835166
+        ],
+        "delta_eer_mean": -0.057164266783751236,
+        "delta_auc_mean": 0.06810473649553188
+      },
+      "storage": {
+        "num_triangles": 144,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 576,
+        "weights_bytes": 288,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 20736,
+        "matrix_full_2bit_packed_bytes": 5184,
+        "matrix_symmetric_2bit_packed_bytes": 2574,
+        "total_credential_descriptor_only_bytes": 896,
+        "total_credential_uncompressed_bytes": 21632,
+        "total_credential_full_2bit_bytes": 6080,
+        "total_credential_packed_bytes": 3470,
+        "baseline_unprotected_bytes": 5792,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8453038674033149,
+        "true_compression_ratio_packed": 0.4008977900552486,
+        "true_compression_ratio_uncompressed": -2.734806629834254
+      }
+    },
+    "DB4_B": {
+      "subset": "DB4_B",
+      "sensor_provenance": {
+        "sensor_name": "SFinGe v2.51",
+        "vendor": "Synthetic Generator (Univ. of Bologna)",
+        "technology": "Synthetic generation model",
+        "native_dpi": 500.0,
+        "image_size_px": [
+          288,
+          384
+        ]
+      },
+      "descriptor_dim": 9,
+      "topology": "delaunay",
+      "projection_dim": 32,
+      "dpi": 500.0,
+      "total_images": 80,
+      "fta": "N/A (offline database)",
+      "fte_count": 0,
+      "fte_rate": 0.0,
+      "num_genuine": 280,
+      "num_impostor": 45,
+      "avg_triangles": 144.6875,
+      "matching_throughput_comp_per_sec": 113.47085865338528,
+      "protected": {
+        "eer": 0.37349397590361444,
+        "auc": 0.6724603174603174,
+        "eer_threshold": 0.3700316766579946,
+        "tar_at_1pct_far": 0.0035714285714285587,
+        "tar_at_01pct_far": 0.0035714285714285587,
+        "bootstrap_eer_95ci": [
+          0.30490196078431375,
+          0.4444444444444444
+        ],
+        "bootstrap_auc_95ci": [
+          0.5868253968253968,
+          0.7554761904761905
+        ],
+        "clustered_eer_95ci": [
+          0.2739602169981917,
+          0.48314606741573035
+        ],
+        "clustered_auc_95ci": [
+          0.5302197802197802,
+          0.8008241758241759
+        ],
+        "genuine_mean": 0.37994569540023804,
+        "genuine_std": 0.030886199325323105,
+        "impostor_mean": 0.3623856008052826,
+        "impostor_std": 0.03219831362366676,
+        "frozen_dev_threshold_eval": {
+          "threshold": 0.3751,
+          "tar": 0.5714285714285714,
+          "far": 0.3333333333333333,
+          "frr": 0.42857142857142855,
+          "confusion": {
+            "tp": 160,
+            "fn": 120,
+            "fp": 15,
+            "tn": 30
+          }
+        }
+      },
+      "unprotected_baseline": {
+        "eer": 0.39692307692307693,
+        "auc": 0.6465873015873016,
+        "genuine_mean": 0.23272840678691864,
+        "genuine_std": 0.031861890107393265,
+        "impostor_mean": 0.21899795532226562,
+        "impostor_std": 0.02426777593791485
+      },
+      "paired_difference": {
+        "delta_eer_point": -0.023429101019462495,
+        "delta_eer_95ci": [
+          -0.08163265306122452,
+          0.10757295044001852
+        ],
+        "delta_auc_point": 0.025873015873015826,
+        "delta_auc_95ci": [
+          -0.07079831932773117,
+          0.11446428571428569
+        ],
+        "delta_eer_mean": 0.003872072034790655,
+        "delta_auc_mean": 0.020776472465085197
+      },
+      "storage": {
+        "num_triangles": 145,
+        "in_dim": 9,
+        "out_dim": 32,
+        "descriptor_bytes": 580,
+        "weights_bytes": 290,
+        "header_bytes": 32,
+        "matrix_uncompressed_bytes": 21025,
+        "matrix_full_2bit_packed_bytes": 5257,
+        "matrix_symmetric_2bit_packed_bytes": 2610,
+        "total_credential_descriptor_only_bytes": 902,
+        "total_credential_uncompressed_bytes": 21927,
+        "total_credential_full_2bit_bytes": 6159,
+        "total_credential_packed_bytes": 3512,
+        "baseline_unprotected_bytes": 5832,
+        "compression_ratio_descriptor_raw": 0.8888888888888888,
+        "true_compression_ratio_descriptor_only": 0.8453360768175583,
+        "true_compression_ratio_packed": 0.39780521262002744,
+        "true_compression_ratio_uncompressed": -2.7597736625514404
+      }
+    }
+  },
+  "pooled_benchmarks": {
+    "pooled_set_b": {
+      "pooled_benchmark": "pooled_set_b",
+      "subsets_included": [
+        "DB1_B",
+        "DB2_B",
+        "DB3_B",
+        "DB4_B"
+      ],
+      "total_comparisons": 1300,
+      "num_genuine": 1120,
+      "num_impostor": 180,
+      "eer": 0.3961139896373057,
+      "auc": 0.6412996031746032,
+      "eer_threshold": 0.3687775078890918,
+      "tar_at_1pct_far": 0.025000000000000022,
+      "tar_at_01pct_far": 0.020535714285714324,
+      "bootstrap_eer_95ci": [
+        0.36185897435897435,
+        0.4415690866510539
+      ],
+      "bootstrap_auc_95ci": [
+        0.5984920634920635,
+        0.6842013888888889
+      ],
+      "genuine_mean": 0.3804575204849243,
+      "genuine_std": 0.03559128940105438,
+      "impostor_mean": 0.3622784912586212,
+      "impostor_std": 0.03484366089105606,
+      "frozen_dev_threshold_eval": {
+        "threshold": 0.3751,
+        "tar": 0.5339285714285714,
+        "far": 0.35,
+        "frr": 0.4660714285714286,
+        "confusion": {
+          "tp": 598,
+          "fn": 522,
+          "fp": 63,
+          "tn": 117
+        }
+      }
+    },
+    "pooled_all": {
+      "pooled_benchmark": "pooled_all",
+      "subsets_included": [
+        "DB1_A",
+        "DB1_B",
+        "DB2_B",
+        "DB3_B",
+        "DB4_B"
+      ],
+      "total_comparisons": 9050,
+      "num_genuine": 3920,
+      "num_impostor": 5130,
+      "eer": 0.41900923551186975,
+      "auc": 0.6176347117794486,
+      "eer_threshold": 0.37428562061750853,
+      "tar_at_1pct_far": 0.053316326530612246,
+      "tar_at_01pct_far": 0.014285714285714235,
+      "bootstrap_eer_95ci": [
+        0.410156524998164,
+        0.4293087777365947
+      ],
+      "bootstrap_auc_95ci": [
+        0.6075952778772328,
+        0.6289042049568365
+      ],
+      "genuine_mean": 0.3826497495174408,
+      "genuine_std": 0.0368959978222847,
+      "impostor_mean": 0.36789125204086304,
+      "impostor_std": 0.03153561055660248,
+      "frozen_dev_threshold_eval": {
+        "threshold": 0.3751,
+        "tar": 0.5744897959183674,
+        "far": 0.4118908382066277,
+        "frr": 0.42551020408163265,
+        "confusion": {
+          "tp": 2252,
+          "fn": 1668,
+          "fp": 2113,
+          "tn": 3017
+        }
+      }
+    }
+  },
+  "external_acquisition_notice": "FVC2002 DB2_A, DB3_A, and DB4_A require external manual download and remain documented as pending external acquisition. All available local datasets (DB1_A, DB1_B, DB2_B, DB3_B, DB4_B) are fully evaluated and reported herein."
+}

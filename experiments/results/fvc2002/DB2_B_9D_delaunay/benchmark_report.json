@@ -1,0 +1,60 @@
+{
+  "subset": "DB2_B",
+  "descriptor_dim": 9,
+  "topology": "delaunay",
+  "k_nn": null,
+  "dpi": 569.0,
+  "total_images": 80,
+  "fta_count": 0,
+  "fta_rate": 0.0,
+  "fte_count": 0,
+  "fte_rate": 0.0,
+  "num_genuine": 280,
+  "num_impostor": 45,
+  "avg_triangles_per_fingerprint": 141.675,
+  "avg_template_bytes": 566.7,
+  "matching_throughput_comp_per_sec": 122.07083687841899,
+  "protected": {
+    "eer": 0.39008264462809916,
+    "auc": 0.6487301587301587,
+    "eer_threshold": 0.36852704656474944,
+    "tar_at_1pct_far": 0.050000000000000044,
+    "tar_at_01pct_far": 0.050000000000000044,
+    "clopper_pearson_95ci": [
+      0.33183131418660633,
+      0.44910986506737316
+    ],
+    "bootstrap_eer_95ci": [
+      0.3046153846153846,
+      0.4578034682080925
+    ],
+    "bootstrap_auc_95ci": [
+      0.5563492063492064,
+      0.731904761904762
+    ],
+    "clustered_bootstrap_far_ci": [
+      0.1,
+      0.7
+    ],
+    "clustered_bootstrap_frr_ci": [
+      0.2714285714285714,
+      0.5178571428571429
+    ],
+    "genuine_score_mean": 0.37982177734375,
+    "genuine_score_std": 0.03668008744716644,
+    "impostor_score_mean": 0.3621392548084259,
+    "impostor_score_std": 0.03299878165125847
+  },
+  "unprotected_baseline": {
+    "eer": 0.41785714285714287,
+    "auc": 0.5907142857142857,
+    "genuine_score_mean": 0.26949238777160645,
+    "impostor_score_mean": 0.25754880905151367
+  },
+  "security": {
+    "descriptor_dim": 9,
+    "type_leakage_rate": 0.0,
+    "unique_minutia_type_leakage": 0.0,
+    "vulnerability_status": "Immune to Minutia-Type Recovery"
+  }
+}

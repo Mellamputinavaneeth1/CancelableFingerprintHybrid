@@ -1,0 +1,239 @@
+{
+  "benchmark": "Phase 4 Serialized Credential Storage Accounting",
+  "timestamp_utc": "2026-11-09T05:51:28Z",
+  "binary_framing": {
+    "magic_bytes": "CFPB",
+    "version": 1,
+    "header_bytes": 64,
+    "aead_nonce_bytes": 12,
+    "aead_auth_tag_bytes": 16,
+    "aead_cipher": "ChaCha20-Poly1305 (RFC 8439)",
+    "descriptor_encoding": "32-bit column-orthonormal binary projection (4 B/tri)",
+    "quality_weight_encoding": "float16 (2 B/tri)",
+    "topology_packing": "Lossless symmetric 2-bit upper-triangle (ceil(N(N-1)/8) B)"
+  },
+  "DB1_A": {
+    "subset": "DB1_A",
+    "num_templates": 800,
+    "triangles": {
+      "count": 800,
+      "total_bytes": 115259,
+      "mean": 144.07375,
+      "std": 2.8610856221895915,
+      "median": 145.0,
+      "p5": 139.0,
+      "p95": 148.0,
+      "min": 129,
+      "max": 150
+    },
+    "prot_descriptor_only": {
+      "count": 800,
+      "total_bytes": 755554,
+      "mean": 944.4425,
+      "std": 17.166513733137545,
+      "median": 950.0,
+      "p5": 914.0,
+      "p95": 968.0,
+      "min": 854,
+      "max": 980
+    },
+    "prot_with_topology": {
+      "count": 800,
+      "total_bytes": 2817977,
+      "mean": 3522.47125,
+      "std": 118.52875884542746,
+      "median": 3560.0,
+      "p5": 3312.0,
+      "p95": 3688.0,
+      "min": 2918,
+      "max": 3774
+    },
+    "cont_baseline_descriptor_only": {
+      "count": 800,
+      "total_bytes": 4661560,
+      "mean": 5826.95,
+      "std": 114.44342488758365,
+      "median": 5864.0,
+      "p5": 5624.0,
+      "p95": 5984.0,
+      "min": 5224,
+      "max": 6064
+    },
+    "cont_baseline_with_topology_packed": {
+      "count": 800,
+      "total_bytes": 6723983,
+      "mean": 8404.97875,
+      "std": 215.79906347905566,
+      "median": 8474.0,
+      "p5": 8022.0,
+      "p95": 8704.0,
+      "min": 7288,
+      "max": 8858
+    },
+    "cont_baseline_with_topology_uint8": {
+      "count": 800,
+      "total_bytes": 21273905,
+      "mean": 26592.38125,
+      "std": 928.1081057174522,
+      "median": 26889.0,
+      "p5": 24945.0,
+      "p95": 27888.0,
+      "min": 21865,
+      "max": 28564
+    },
+    "average_compression": {
+      "descriptor_only_vs_baseline_pct": 83.79,
+      "topology_packed_vs_baseline_packed_pct": 58.09,
+      "topology_packed_vs_baseline_uint8_pct": 86.75
+    }
+  },
+  "DB1_B": {
+    "subset": "DB1_B",
+    "num_templates": 80,
+    "triangles": {
+      "count": 80,
+      "total_bytes": 11450,
+      "mean": 143.125,
+      "std": 3.2340957005011464,
+      "median": 144.0,
+      "p5": 137.0,
+      "p95": 147.05,
+      "min": 131,
+      "max": 150
+    },
+    "prot_descriptor_only": {
+      "count": 80,
+      "total_bytes": 75100,
+      "mean": 938.75,
+      "std": 19.404574203006877,
+      "median": 944.0,
+      "p5": 902.0,
+      "p95": 962.3,
+      "min": 866,
+      "max": 980
+    },
+    "prot_with_topology": {
+      "count": 80,
+      "total_bytes": 278650,
+      "mean": 3483.125,
+      "std": 133.35004452567685,
+      "median": 3518.0,
+      "p5": 3231.0,
+      "p95": 3647.15,
+      "min": 2995,
+      "max": 3774
+    },
+    "cont_baseline_descriptor_only": {
+      "count": 80,
+      "total_bytes": 463120,
+      "mean": 5789.0,
+      "std": 129.36382802004584,
+      "median": 5824.0,
+      "p5": 5544.0,
+      "p95": 5946.0,
+      "min": 5304,
+      "max": 6064
+    },
+    "cont_baseline_with_topology_packed": {
+      "count": 80,
+      "total_bytes": 666670,
+      "mean": 8333.375,
+      "std": 243.30127285939136,
+      "median": 8398.0,
+      "p5": 7873.0,
+      "p95": 8630.85,
+      "min": 7433,
+      "max": 8858
+    },
+    "cont_baseline_with_topology_uint8": {
+      "count": 80,
+      "total_bytes": 2102738,
+      "mean": 26284.225,
+      "std": 1044.232169766379,
+      "median": 26560.0,
+      "p5": 24313.0,
+      "p95": 27569.75,
+      "min": 22465,
+      "max": 28564
+    },
+    "average_compression": {
+      "descriptor_only_vs_baseline_pct": 83.78,
+      "topology_packed_vs_baseline_packed_pct": 58.2,
+      "topology_packed_vs_baseline_uint8_pct": 86.75
+    }
+  },
+  "Pooled_All": {
+    "num_templates": 880,
+    "triangles": {
+      "count": 880,
+      "total_bytes": 126709,
+      "mean": 143.9875,
+      "std": 2.909791952106792,
+      "median": 145.0,
+      "p5": 139.0,
+      "p95": 148.0,
+      "min": 129,
+      "max": 150
+    },
+    "prot_descriptor_only": {
+      "count": 880,
+      "total_bytes": 830654,
+      "mean": 943.925,
+      "std": 17.458751712640748,
+      "median": 950.0,
+      "p5": 914.0,
+      "p95": 968.0,
+      "min": 854,
+      "max": 980
+    },
+    "prot_with_topology": {
+      "count": 880,
+      "total_bytes": 3096627,
+      "mean": 3518.894318181818,
+      "std": 120.4839822039301,
+      "median": 3560.0,
+      "p5": 3312.0,
+      "p95": 3688.0,
+      "min": 2918,
+      "max": 3774
+    },
+    "cont_baseline_descriptor_only": {
+      "count": 880,
+      "total_bytes": 5124680,
+      "mean": 5823.5,
+      "std": 116.39167808427167,
+      "median": 5864.0,
+      "p5": 5624.0,
+      "p95": 5984.0,
+      "min": 5224,
+      "max": 6064
+    },
+    "cont_baseline_with_topology_packed": {
+      "count": 880,
+      "total_bytes": 7390653,
+      "mean": 8398.469318181818,
+      "std": 219.4101316639864,
+      "median": 8474.0,
+      "p5": 8022.0,
+      "p95": 8704.0,
+      "min": 7288,
+      "max": 8858
+    },
+    "cont_baseline_with_topology_uint8": {
+      "count": 880,
+      "total_bytes": 23376643,
+      "mean": 26564.367045454546,
+      "std": 943.4267763441361,
+      "median": 26889.0,
+      "p5": 24945.0,
+      "p95": 27888.0,
+      "min": 21865,
+      "max": 28564
+    },
+    "average_compression": {
+      "descriptor_only_vs_baseline_pct": 83.79,
+      "topology_packed_vs_baseline_packed_pct": 58.1,
+      "topology_packed_vs_baseline_uint8_pct": 86.75
+    }
+  }
+}
